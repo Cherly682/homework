@@ -13,6 +13,9 @@ public final class Keys {
     public static final String RECORDER_FRAME_PREFIX = "Record:";
     public static final String CONTROLLER_LOCK = "controller:lock";
 
+    /** 回放命名空间前缀：隔离分析员回放数据与配置员实时数据 */
+    public static final String PLAYBACK_PREFIX = "playback:";
+
     private Keys() {
     }
 

@@ -3538,3 +3538,459 @@ java.lang.NumberFormatException: Cannot parse null string
 2026-06-23 17:36:29.681 [AWT-EventQueue-0] INFO  C.Controller.MainController - Experiment reset complete: default map, A* algorithm
 2026-06-23 17:36:31.178 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 10 cars, tiles=20x20, cost=0ms
 2026-06-23 17:36:31.985 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:30:40.821 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-23 20:30:40.824 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-23 20:30:40.825 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Redis  : 192.168.3.69:6379/9
+2026-06-23 20:30:40.825 [Login.Main.Main.main()] INFO  Utils.ConfigManager - RabbitMQ: 192.168.3.69:5672/ (user=remote)
+2026-06-23 20:30:40.825 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Log dir: D:\Java\homework(3)\homework\logs
+2026-06-23 20:30:40.827 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ==========================================
+2026-06-23 20:30:40.832 [Login.Main.Main.main()] INFO  Utils.ConfigManager - CONFIG: 远程模式 -> Redis=192.168.3.69:6379  RabbitMQ=192.168.3.69:5672
+2026-06-23 20:30:40.976 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-23 20:30:41.129 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:30:41.288 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: 192.168.3.69:6379/9
+2026-06-23 20:30:41.758 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:30:41.759 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-23 20:30:51.687 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=config role=Configurator
+2026-06-23 20:30:51.688 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 配置员登录成功
+2026-06-23 20:30:52.963 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 80 blocks from Redis blockview bitmap
+2026-06-23 20:30:53.187 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel initialized: 20x20, loaded 10 existing cars, 80 existing blocks
+2026-06-23 20:30:53.188 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel created: 20x20 area=400 maxCars=400 maxBlocks=80
+2026-06-23 20:30:53.659 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-23 20:30:53.660 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer initialized: RabbitMQ connected to 192.168.3.69:5672
+2026-06-23 20:30:53.793 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView initialized: 20x20 timer=200ms
+2026-06-23 20:30:53.840 [AWT-EventQueue-0] INFO  Configurator.View.StatusPanel - StatusPanel initialized: monitoring every 2s
+2026-06-23 20:30:53.895 [AWT-EventQueue-0] INFO  Configurator.View.MainView - MainView initialized: 1060x800
+2026-06-23 20:30:53.898 [AWT-EventQueue-0] INFO  C.Controller.MainController - MainController initialized: default map=20x20
+2026-06-23 20:30:53.900 [AWT-EventQueue-0] INFO  C.Controller.MainController - Configurator UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:30:53.909 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:30:53.909 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - MainController (Configurator) opened for user: config
+2026-06-23 20:30:53.960 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cache re-allocated: 20x20
+2026-06-23 20:30:57.988 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT START command (controller.start + save.start)
+2026-06-23 20:30:58.001 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 80 blocks from Redis blockview bitmap
+2026-06-23 20:30:58.002 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer started
+2026-06-23 20:30:58.125 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis写入: inspection_start_time=1782217858002
+2026-06-23 20:30:58.125 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STARTED
+2026-06-23 20:30:58.127 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=true
+2026-06-23 20:31:01.956 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT START command (controller.start + save.start)
+2026-06-23 20:31:02.023 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 80 blocks from Redis blockview bitmap
+2026-06-23 20:31:02.051 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer started
+2026-06-23 20:31:02.189 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis写入: inspection_start_time=1782217862052
+2026-06-23 20:31:02.214 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STARTED
+2026-06-23 20:31:02.218 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=true
+2026-06-23 20:31:06.419 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 10 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:13.276 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 10 cars, tiles=20x20, cost=1ms
+2026-06-23 20:31:16.790 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 10 cars, tiles=20x20, cost=1ms
+2026-06-23 20:31:18.805 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #20: timerRunning=true, inspection_start_time=1782217862052
+2026-06-23 20:31:18.854 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:31:18.855 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer stopped at 00:16:804
+2026-06-23 20:31:18.856 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=false
+2026-06-23 20:31:19.013 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STOPPED
+2026-06-23 20:31:21.000 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 10 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:25.840 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 10 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:27.882 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT START command (controller.start + save.start)
+2026-06-23 20:31:27.900 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 80 blocks from Redis blockview bitmap
+2026-06-23 20:31:27.902 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer started
+2026-06-23 20:31:27.943 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis写入: inspection_start_time=1782217887903
+2026-06-23 20:31:27.944 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STARTED
+2026-06-23 20:31:27.944 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=true
+2026-06-23 20:31:29.258 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration RESET
+2026-06-23 20:31:29.266 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:31:29.268 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer stopped at 00:01:367
+2026-06-23 20:31:29.467 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis地图状态已清空（重置）
+2026-06-23 20:31:29.536 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 0 blocks from Redis blockview bitmap
+2026-06-23 20:31:29.572 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel initialized: 20x20, loaded 0 existing cars, 0 existing blocks
+2026-06-23 20:31:29.578 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel created: 20x20 area=400 maxCars=400 maxBlocks=80
+2026-06-23 20:31:29.585 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView model reset: 20x20
+2026-06-23 20:31:29.597 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cache re-allocated: 20x20
+2026-06-23 20:31:29.996 [AWT-EventQueue-0] INFO  Configurator.View.MainView - MainView updating MapView component
+2026-06-23 20:31:29.999 [AWT-EventQueue-0] INFO  C.Controller.MainController - Experiment reset complete: default map, A* algorithm
+2026-06-23 20:31:30.538 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration RESET
+2026-06-23 20:31:30.541 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:31:30.701 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis地图状态已清空（重置）
+2026-06-23 20:31:30.765 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 0 blocks from Redis blockview bitmap
+2026-06-23 20:31:30.800 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel initialized: 20x20, loaded 0 existing cars, 0 existing blocks
+2026-06-23 20:31:30.806 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel created: 20x20 area=400 maxCars=400 maxBlocks=80
+2026-06-23 20:31:30.825 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView model reset: 20x20
+2026-06-23 20:31:30.840 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cache re-allocated: 20x20
+2026-06-23 20:31:31.103 [AWT-EventQueue-0] INFO  Configurator.View.MainView - MainView updating MapView component
+2026-06-23 20:31:31.109 [AWT-EventQueue-0] INFO  C.Controller.MainController - Experiment reset complete: default map, A* algorithm
+2026-06-23 20:31:32.752 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 0 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:35.408 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #40: timerRunning=false, inspection_start_time=null
+2026-06-23 20:31:35.451 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 0 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:37.505 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 0 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:40.371 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 0 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:41.048 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 1 added at (3,10)
+2026-06-23 20:31:41.154 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 2 added at (13,19)
+2026-06-23 20:31:41.262 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 3 added at (14,19)
+2026-06-23 20:31:41.391 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 4 added at (10,17)
+2026-06-23 20:31:41.486 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 5 added at (17,14)
+2026-06-23 20:31:41.612 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 6 added at (2,14)
+2026-06-23 20:31:41.827 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 7 added at (4,16)
+2026-06-23 20:31:42.045 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 8 added at (11,1)
+2026-06-23 20:31:42.177 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 9 added at (18,2)
+2026-06-23 20:31:42.489 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 10 added at (12,4)
+2026-06-23 20:31:42.862 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 11 added at (16,7)
+2026-06-23 20:31:43.246 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 12 added at (1,18)
+2026-06-23 20:31:43.703 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 13 added at (10,2)
+2026-06-23 20:31:44.079 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 14 added at (14,14)
+2026-06-23 20:31:44.460 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 15 added at (1,16)
+2026-06-23 20:31:44.942 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 16 added at (4,1)
+2026-06-23 20:31:45.298 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 17 added at (19,2)
+2026-06-23 20:31:45.956 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 18 added at (12,7)
+2026-06-23 20:31:46.436 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 19 added at (2,5)
+2026-06-23 20:31:46.741 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 20 added at (7,10)
+2026-06-23 20:31:46.741 [AWT-EventQueue-0] INFO  C.Controller.MainController - Cars auto-added: requested=20 actual=20 total=20
+2026-06-23 20:31:49.695 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:51.607 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (14,15) SET -> total=1
+2026-06-23 20:31:51.880 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (3,19) SET -> total=2
+2026-06-23 20:31:52.155 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,9) SET -> total=3
+2026-06-23 20:31:52.372 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (17,6) SET -> total=4
+2026-06-23 20:31:52.666 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (2,10) SET -> total=5
+2026-06-23 20:31:52.921 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,1) SET -> total=6
+2026-06-23 20:31:53.170 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (16,4) SET -> total=7
+2026-06-23 20:31:53.640 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,10) SET -> total=8
+2026-06-23 20:31:54.002 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (9,1) SET -> total=9
+2026-06-23 20:31:54.231 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (5,9) SET -> total=10
+2026-06-23 20:31:54.818 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (6,0) SET -> total=11
+2026-06-23 20:31:55.175 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,7) SET -> total=12
+2026-06-23 20:31:55.378 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,17) SET -> total=13
+2026-06-23 20:31:55.612 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (2,17) SET -> total=14
+2026-06-23 20:31:55.836 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,7) SET -> total=15
+2026-06-23 20:31:56.059 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (19,3) SET -> total=16
+2026-06-23 20:31:56.222 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (19,8) SET -> total=17
+2026-06-23 20:31:56.428 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (7,8) SET -> total=18
+2026-06-23 20:31:56.597 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,13) SET -> total=19
+2026-06-23 20:31:56.828 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (1,5) SET -> total=20
+2026-06-23 20:31:56.828 [AWT-EventQueue-0] INFO  C.Controller.MainController - Blocks auto-added: 20 blocks, total blockCount=20
+2026-06-23 20:31:57.198 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #60: timerRunning=false, inspection_start_time=null
+2026-06-23 20:31:57.574 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #30: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:31:59.609 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #35: 20 cars, tiles=20x20, cost=1ms
+2026-06-23 20:32:01.809 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT START command (controller.start + save.start)
+2026-06-23 20:32:01.821 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 20 blocks from Redis blockview bitmap
+2026-06-23 20:32:01.823 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer started
+2026-06-23 20:32:01.858 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis写入: inspection_start_time=1782217921824
+2026-06-23 20:32:01.859 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STARTED
+2026-06-23 20:32:01.859 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=true
+2026-06-23 20:32:03.929 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 20 cars, tiles=20x20, cost=5ms
+2026-06-23 20:32:06.185 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 20 cars, tiles=20x20, cost=6ms
+2026-06-23 20:32:07.626 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #80: timerRunning=true, inspection_start_time=1782217921824
+2026-06-23 20:32:08.395 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 20 cars, tiles=20x20, cost=1ms
+2026-06-23 20:32:11.514 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:32:13.456 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:32:15.565 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #30: 20 cars, tiles=20x20, cost=1ms
+2026-06-23 20:32:18.495 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #100: timerRunning=true, inspection_start_time=1782217921824
+2026-06-23 20:32:18.798 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #35: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:32:20.323 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:32:20.323 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer stopped at 00:18:500
+2026-06-23 20:32:20.324 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=false
+2026-06-23 20:32:20.377 [AWT-EventQueue-0] INFO  C.Controller.MainController - Redis: inspection_start_time 已删除（探索自动完成）
+2026-06-23 20:32:21.748 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #40: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:32:22.188 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration COMPLETE: map fully explored
+2026-06-23 20:32:24.854 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #45: 20 cars, tiles=20x20, cost=1ms
+2026-06-23 20:32:28.382 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #50: 20 cars, tiles=20x20, cost=0ms
+2026-06-23 20:32:29.971 [AWT-EventQueue-0] INFO  Utils.NavigationBar - 切换账号: 关闭当前窗口，打开登录界面
+2026-06-23 20:32:30.113 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:32:30.168 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:32:30.901 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #120: timerRunning=false, inspection_start_time=null
+2026-06-23 20:32:45.295 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-23 20:32:45.297 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-23 20:32:45.926 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #140: timerRunning=false, inspection_start_time=null
+2026-06-23 20:32:49.134 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400 (从Redis加载已有数据)
+2026-06-23 20:32:49.147 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 20x20 定时器=500ms
+2026-06-23 20:32:49.327 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到19条记录
+2026-06-23 20:32:49.353 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=36
+2026-06-23 20:32:49.353 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-23 20:32:49.379 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - Playback UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:32:49.379 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-23 20:32:49.387 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:32:49.387 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-23 20:32:54.733 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:32:57.815 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:32:57.830 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:32:59.481 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #160: timerRunning=false, inspection_start_time=null
+2026-06-23 20:32:59.494 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:33:07.115 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=19 frame=0 result=true
+2026-06-23 20:33:07.118 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=36
+2026-06-23 20:33:07.119 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 19 (2026-06-23 20:32:02) (fileNo=19)
+2026-06-23 20:33:09.551 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 20 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:33:18.148 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #40: 20 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:33:19.907 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #180: timerRunning=false, inspection_start_time=null
+2026-06-23 20:33:25.326 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=2 frame=0 result=true
+2026-06-23 20:33:25.327 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=36
+2026-06-23 20:33:25.328 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 2 (2026-06-23 19:24:19) (fileNo=2)
+2026-06-23 20:33:27.700 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #50: 2 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:33:29.232 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:33:29.255 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放暂停
+2026-06-23 20:33:33.376 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #60: 3 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:33:38.609 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:33:38.611 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=36
+2026-06-23 20:33:38.612 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:33:39.455 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:33:39.489 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:33:42.064 [AWT-EventQueue-0] INFO  C.Controller.MainController - UI同步心跳 #200: timerRunning=false, inspection_start_time=null
+2026-06-23 20:33:44.559 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:33:44.599 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放暂停
+2026-06-23 20:33:45.973 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #70: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:33:50.511 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 地图尺寸变更: 20 -> 5 (来自Redis map_width)
+2026-06-23 20:33:51.515 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=5 frame=0 result=true
+2026-06-23 20:33:51.518 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=36
+2026-06-23 20:33:51.519 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 5 (2026-06-23 19:48:43) (fileNo=5)
+2026-06-23 20:33:51.562 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel: 地图尺寸从 20 变更为 5 (来自Redis)
+2026-06-23 20:33:51.568 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 5 blocks from Redis blockview bitmap
+2026-06-23 20:33:51.569 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cache re-allocated: 5x5
+2026-06-23 20:33:55.196 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #80: 5 辆小车, 地图=5x5, tileSize=140, 耗时=0ms, 速度=1.0x
+2026-06-23 20:33:55.238 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:37:58.128 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-23 20:37:58.130 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-23 20:37:58.131 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Redis  : 192.168.3.69:6379/9
+2026-06-23 20:37:58.131 [Login.Main.Main.main()] INFO  Utils.ConfigManager - RabbitMQ: 192.168.3.69:5672/ (user=remote)
+2026-06-23 20:37:58.131 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Log dir: D:\Java\homework(3)\homework\logs
+2026-06-23 20:37:58.131 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ==========================================
+2026-06-23 20:37:58.131 [Login.Main.Main.main()] INFO  Utils.ConfigManager - CONFIG: 远程模式 -> Redis=192.168.3.69:6379  RabbitMQ=192.168.3.69:5672
+2026-06-23 20:37:58.255 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-23 20:37:58.375 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:37:58.493 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: 192.168.3.69:6379/9
+2026-06-23 20:37:58.795 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:37:58.796 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-23 20:38:08.165 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-23 20:38:08.166 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-23 20:38:09.377 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 5x5 area=25 (从Redis加载已有数据)
+2026-06-23 20:38:09.394 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 5x5 定时器=500ms
+2026-06-23 20:38:09.691 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到19条记录
+2026-06-23 20:38:09.720 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=36
+2026-06-23 20:38:09.721 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-23 20:38:09.756 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - Playback UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:38:09.756 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-23 20:38:09.762 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:38:09.762 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-23 20:38:14.068 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 0 辆小车, 地图=5x5, tileSize=140, 耗时=1ms, 速度=1.0x
+2026-06-23 20:38:18.882 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:38:22.823 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 地图尺寸变更: 5 -> 20 (来自Redis map_width)
+2026-06-23 20:38:23.118 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 10 辆小车, 地图=20x20, tileSize=35, 耗时=17ms, 速度=1.0x
+2026-06-23 20:38:27.430 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:38:27.435 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:38:27.436 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:38:28.035 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:38:31.650 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:38:31.651 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:38:32.079 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:38:38.784 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:38:38.786 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:38:38.786 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放记录列表已刷新
+2026-06-23 20:38:38.873 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:38:44.080 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:38:44.081 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:38:44.885 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:38:49.488 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:38:49.488 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:38:49.489 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放记录列表已刷新
+2026-06-23 20:38:50.235 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-23 20:38:50.239 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:38:54.722 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400 (从Redis加载已有数据)
+2026-06-23 20:38:54.724 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 地图已重置
+2026-06-23 20:38:54.731 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView: resetDisplay 完成, 20x20
+2026-06-23 20:38:54.745 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:38:54.746 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放重置完成
+2026-06-23 20:38:56.428 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录16 总帧数已更新 -> last_view=4
+2026-06-23 20:39:05.383 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=16 frame=0 result=true
+2026-06-23 20:39:05.386 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=4
+2026-06-23 20:39:05.387 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 16 (2026-06-23 20:02:18) (fileNo=16)
+2026-06-23 20:39:08.620 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 1 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:39:09.949 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:40:51.605 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-23 20:40:51.607 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-23 20:40:51.607 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Redis  : 192.168.3.69:6379/9
+2026-06-23 20:40:51.607 [Login.Main.Main.main()] INFO  Utils.ConfigManager - RabbitMQ: 192.168.3.69:5672/ (user=remote)
+2026-06-23 20:40:51.608 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Log dir: D:\Java\homework(3)\homework\logs
+2026-06-23 20:40:51.608 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ==========================================
+2026-06-23 20:40:51.608 [Login.Main.Main.main()] INFO  Utils.ConfigManager - CONFIG: 远程模式 -> Redis=192.168.3.69:6379  RabbitMQ=192.168.3.69:5672
+2026-06-23 20:40:51.731 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-23 20:40:51.853 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:40:51.987 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: 192.168.3.69:6379/9
+2026-06-23 20:40:52.296 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:40:52.297 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-23 20:41:00.978 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-23 20:41:00.981 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-23 20:41:04.928 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400 (从Redis加载已有数据)
+2026-06-23 20:41:04.937 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 20x20 定时器=500ms
+2026-06-23 20:41:05.106 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到19条记录
+2026-06-23 20:41:05.137 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=4
+2026-06-23 20:41:05.138 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-23 20:41:05.171 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - Playback UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:41:05.172 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-23 20:41:05.181 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:41:05.182 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-23 20:41:08.314 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录14 总帧数已更新 -> last_view=10
+2026-06-23 20:41:12.764 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=14 frame=0 result=true
+2026-06-23 20:41:12.768 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=10
+2026-06-23 20:41:12.768 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 14 (2026-06-23 20:01:14) (fileNo=14)
+2026-06-23 20:41:13.097 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:41:16.015 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:41:20.881 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:41:20.886 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:41:20.887 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:41:21.760 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:41:22.868 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-23 20:41:22.874 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:41:22.933 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:41:26.857 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:41:31.971 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #40: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:41:37.985 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #50: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:41:43.839 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #60: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:41:48.823 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #70: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:41:54.168 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #80: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:41:55.451 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:47:37.290 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-23 20:47:37.293 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-23 20:47:37.293 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Redis  : 192.168.3.69:6379/9
+2026-06-23 20:47:37.293 [Login.Main.Main.main()] INFO  Utils.ConfigManager - RabbitMQ: 192.168.3.69:5672/ (user=remote)
+2026-06-23 20:47:37.293 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Log dir: D:\Java\homework(3)\homework\logs
+2026-06-23 20:47:37.293 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ==========================================
+2026-06-23 20:47:37.293 [Login.Main.Main.main()] INFO  Utils.ConfigManager - CONFIG: 远程模式 -> Redis=192.168.3.69:6379  RabbitMQ=192.168.3.69:5672
+2026-06-23 20:47:37.431 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-23 20:47:37.596 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:47:37.736 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: 192.168.3.69:6379/9
+2026-06-23 20:47:38.067 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:47:38.074 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-23 20:47:46.627 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-23 20:47:46.628 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-23 20:47:49.882 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400 (只读加载)
+2026-06-23 20:47:49.897 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 20x20 定时器=500ms
+2026-06-23 20:47:50.074 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到19条记录
+2026-06-23 20:47:50.102 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=73
+2026-06-23 20:47:50.103 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-23 20:47:50.134 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - Playback UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:47:50.135 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-23 20:47:50.140 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:47:50.140 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-23 20:47:54.514 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:47:54.568 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:48:00.413 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:48:00.415 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:48:00.415 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:48:04.364 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:48:05.091 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-23 20:48:05.095 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:48:05.115 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:48:07.189 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:48:12.442 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 10 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:48:13.376 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:50:50.830 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-23 20:50:50.833 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-23 20:50:50.833 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Redis  : 192.168.3.69:6379/9
+2026-06-23 20:50:50.833 [Login.Main.Main.main()] INFO  Utils.ConfigManager - RabbitMQ: 192.168.3.69:5672/ (user=remote)
+2026-06-23 20:50:50.833 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Log dir: D:\Java\homework(3)\homework\logs
+2026-06-23 20:50:50.833 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ==========================================
+2026-06-23 20:50:50.833 [Login.Main.Main.main()] INFO  Utils.ConfigManager - CONFIG: 远程模式 -> Redis=192.168.3.69:6379  RabbitMQ=192.168.3.69:5672
+2026-06-23 20:50:50.954 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-23 20:50:51.078 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:50:51.201 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: 192.168.3.69:6379/9
+2026-06-23 20:50:51.496 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:50:51.502 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-23 20:51:16.406 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-23 20:51:16.407 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-23 20:51:20.836 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400 (只读加载)
+2026-06-23 20:51:20.851 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 20x20 定时器=500ms
+2026-06-23 20:51:21.049 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到19条记录
+2026-06-23 20:51:21.078 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=73
+2026-06-23 20:51:21.078 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-23 20:51:21.102 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - Playback UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:51:21.104 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-23 20:51:21.116 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:51:21.117 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-23 20:51:23.748 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=73
+2026-06-23 20:51:28.842 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:51:28.847 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=73
+2026-06-23 20:51:28.850 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 19:13:52) (fileNo=1)
+2026-06-23 20:51:32.373 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 10 辆小车, 地图=20x20, tileSize=35, 耗时=15ms, 速度=1.0x
+2026-06-23 20:51:32.377 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=7 result=true
+2026-06-23 20:51:33.038 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-23 20:51:33.041 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:51:33.058 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:51:37.614 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:51:41.315 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:51:41.368 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放暂停
+2026-06-23 20:51:46.579 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 10 辆小车, 地图=20x20, tileSize=35, 耗时=8ms, 速度=1.0x
+2026-06-23 20:51:46.582 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=35 result=true
+2026-06-23 20:51:49.523 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=35 result=true
+2026-06-23 20:51:52.558 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=42 result=true
+2026-06-23 20:51:55.412 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=35 result=true
+2026-06-23 20:51:58.648 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=28 result=true
+2026-06-23 20:52:01.483 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=28 result=true
+2026-06-23 20:52:03.373 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=21 result=true
+2026-06-23 20:52:06.902 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #40: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:52:06.904 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=14 result=true
+2026-06-23 20:52:11.253 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #50: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:52:16.530 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #60: 10 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:52:19.306 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=7 result=true
+2026-06-23 20:52:22.387 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-23 20:52:24.621 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:52:24.652 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:52:24.705 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #70: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:52:29.785 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #80: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:52:34.714 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #90: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:52:35.738 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:52:35.775 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放暂停
+2026-06-23 20:52:39.843 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #100: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:52:41.113 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-23 20:57:47.997 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-23 20:57:48.000 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-23 20:57:48.000 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Redis  : 192.168.3.69:6379/9
+2026-06-23 20:57:48.000 [Login.Main.Main.main()] INFO  Utils.ConfigManager - RabbitMQ: 192.168.3.69:5672/ (user=remote)
+2026-06-23 20:57:48.000 [Login.Main.Main.main()] INFO  Utils.ConfigManager - Log dir: D:\Java\homework(3)\homework\logs
+2026-06-23 20:57:48.000 [Login.Main.Main.main()] INFO  Utils.ConfigManager - ==========================================
+2026-06-23 20:57:48.001 [Login.Main.Main.main()] INFO  Utils.ConfigManager - CONFIG: 远程模式 -> Redis=192.168.3.69:6379  RabbitMQ=192.168.3.69:5672
+2026-06-23 20:57:48.117 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-23 20:57:48.248 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-23 20:57:48.359 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: 192.168.3.69:6379/9
+2026-06-23 20:57:48.652 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-23 20:57:48.655 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-23 20:57:58.304 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-23 20:57:58.305 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-23 20:58:01.427 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400 (只读加载)
+2026-06-23 20:58:01.439 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 20x20 定时器=500ms
+2026-06-23 20:58:01.485 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到0条记录
+2026-06-23 20:58:01.498 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=0
+2026-06-23 20:58:01.500 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-23 20:58:01.534 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - Playback UI同步定时器已启动 (500ms间隔)
+2026-06-23 20:58:01.535 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-23 20:58:01.544 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-23 20:58:01.544 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-23 20:58:06.052 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:58:11.171 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:58:16.298 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 0 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:58:21.429 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #40: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:58:26.548 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #50: 0 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:58:31.646 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #60: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:58:36.759 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #70: 0 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:58:41.877 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #80: 0 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:58:47.005 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #90: 0 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:58:52.100 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #100: 0 辆小车, 地图=20x20, tileSize=35, 耗时=6ms, 速度=1.0x
+2026-06-23 20:58:54.164 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录刷新: 记录数 0 -> 1
+2026-06-23 20:58:54.194 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=96
+2026-06-23 20:58:57.161 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=96
+2026-06-23 20:58:57.161 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 20:58:02) (fileNo=1)
+2026-06-23 20:58:57.162 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放记录列表已刷新
+2026-06-23 20:58:57.411 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=96
+2026-06-23 20:58:59.517 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=96
+2026-06-23 20:58:59.518 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 20:58:02) (fileNo=1)
+2026-06-23 20:58:59.564 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 记录1 总帧数已更新 -> last_view=96
+2026-06-23 20:59:02.340 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=96
+2026-06-23 20:59:02.341 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-23 20:58:02) (fileNo=1)
+2026-06-23 20:59:02.342 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放记录列表已刷新
+2026-06-23 20:59:02.742 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-23 20:59:02.745 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-23 20:59:02.791 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-23 20:59:03.060 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #110: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:59:08.196 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #120: 10 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:59:13.233 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #130: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:59:18.406 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #140: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:59:23.523 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #150: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:59:28.678 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #160: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:59:33.757 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #170: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:59:38.885 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #180: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-23 20:59:43.970 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #190: 10 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:59:49.074 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #200: 10 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x
+2026-06-23 20:59:54.286 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #210: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 20:59:59.405 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #220: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-23 21:00:04.424 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #230: 10 辆小车, 地图=20x20, tileSize=35, 耗时=2ms, 速度=1.0x

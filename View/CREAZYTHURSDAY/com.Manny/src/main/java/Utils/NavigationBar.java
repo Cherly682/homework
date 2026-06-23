@@ -37,6 +37,15 @@ public class NavigationBar {
 
 
     public static JMenuBar create(JFrame parentFrame) {
+        return create(parentFrame, false);
+    }
+
+    /**
+     * 创建导航菜单栏。
+     * @param parentFrame 父窗口
+     * @param isAnalyst 是否为分析员界面（分析员退出时仅停止回放，不影响配置员）
+     */
+    public static JMenuBar create(JFrame parentFrame, boolean isAnalyst) {
         // 创建菜单栏容器
         JMenuBar menuBar = new JMenuBar();
 
@@ -72,9 +81,13 @@ public class NavigationBar {
                     JOptionPane.YES_NO_OPTION,
                     JOptionPane.QUESTION_MESSAGE);
             if (choice == JOptionPane.YES_OPTION) {
-                log.info("用户确认退出系统");
+                log.info("用户确认退出系统 (isAnalyst={})", isAnalyst);
                 try {
-                    StartProducer.sendStopMessage();  // 通知后端停止
+                    if (isAnalyst) {
+                        StartProducer.sendPlaybackStop();  // 分析员：仅停止回放
+                    } else {
+                        StartProducer.sendStopMessage();   // 配置员/管理员：停止一切
+                    }
                 } catch (Exception ex) {
                     log.error("发送停止消息失败: {}", ex.getMessage());
                 }

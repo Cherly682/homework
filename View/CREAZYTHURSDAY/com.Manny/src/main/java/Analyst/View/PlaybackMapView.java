@@ -177,8 +177,8 @@ public class PlaybackMapView extends JPanel {
             SwingUtilities.invokeLater(this::repaint);
         }
 
-        // 批量读取探索位图
-        byte[] mapViewBytes = jedis.get("MapView".getBytes());
+        // 批量读取探索位图（从回放独立命名空间读取，与配置员隔离）
+        byte[] mapViewBytes = jedis.get((PlaybackModel.PLAYBACK_PREFIX + "MapView").getBytes());
         if (mapViewBytes != null && mapViewBytes.length > 0) {
             for (int i = 0; i < modelSize; i++) {
                 for (int j = 0; j < modelSize; j++) {
@@ -192,8 +192,8 @@ public class PlaybackMapView extends JPanel {
             }
         }
 
-        // 批量读取障碍物位图
-        byte[] blockViewBytes = jedis.get("blockview".getBytes());
+        // 批量读取障碍物位图（回放独立命名空间）
+        byte[] blockViewBytes = jedis.get((PlaybackModel.PLAYBACK_PREFIX + "blockview").getBytes());
         if (blockViewBytes != null && blockViewBytes.length > 0) {
             for (int i = 0; i < modelSize; i++) {
                 for (int j = 0; j < modelSize; j++) {
@@ -213,7 +213,7 @@ public class PlaybackMapView extends JPanel {
 
         try {
             String cursor = "0";
-            ScanParams scanParams = new ScanParams().match("Cars:*");
+            ScanParams scanParams = new ScanParams().match(PlaybackModel.PLAYBACK_PREFIX + "Cars:*");
             do {
                 ScanResult<String> scanResult = jedis.scan(cursor, scanParams);
                 List<String> keys = scanResult.getResult();

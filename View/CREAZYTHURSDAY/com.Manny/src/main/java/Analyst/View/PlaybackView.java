@@ -30,6 +30,7 @@ public class PlaybackView extends JFrame {
     private Jedis jedis;
     private JComboBox<String> comboBox;
     private JPanel rightPanel;
+    private JButton refreshButton;
 
     JRadioButton halfSpeedButton;
     JRadioButton normalSpeedButton;
@@ -57,13 +58,13 @@ public class PlaybackView extends JFrame {
         } catch (Exception e) {
             log.warn("加载图标失败: {}", e.getMessage());
         }
-        setSize(980, 880);
+        setSize(1000, 880);
         setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
                 try {
-                    StartProducer.sendStopMessage();
+                    StartProducer.sendPlaybackStop();
                 } catch (Exception ex) {
                     log.error("关闭窗口时发送停止消息失败: {}", ex.getMessage());
                 }
@@ -73,7 +74,7 @@ public class PlaybackView extends JFrame {
         setLocationRelativeTo(null);
 
         // 设置
-        setJMenuBar(NavigationBar.create(this));
+        setJMenuBar(NavigationBar.create(this, true));
 
         // 按钮
         playButton = new JButton("开始回放");
@@ -199,9 +200,17 @@ public class PlaybackView extends JFrame {
         resetButton.setFocusPainted(false);
         resetButton.setPreferredSize(new Dimension(130, 42));
 
+        refreshButton = new JButton("刷新记录");
+        refreshButton.setFont(new Font("Microsoft YaHei", Font.BOLD, 16));
+        refreshButton.setBackground(new Color(120, 120, 120));
+        refreshButton.setForeground(Color.WHITE);
+        refreshButton.setFocusPainted(false);
+        refreshButton.setPreferredSize(new Dimension(130, 42));
+
         buttonPanel.add(playButton);
         buttonPanel.add(pauseButton);
         buttonPanel.add(resetButton);
+        buttonPanel.add(refreshButton);
         add(buttonPanel, BorderLayout.SOUTH);
     }
 
@@ -240,10 +249,7 @@ public class PlaybackView extends JFrame {
         comboBox = new JComboBox<>();
         comboBox.setFont(new Font("Microsoft YaHei", Font.PLAIN, 14));
 
-        for (int i = 1; i <= fileCount; i++) {
-            String ts = playbackModel.getRecordTimestamp(i);
-            comboBox.addItem("记录 " + i + " (" + ts + ")");
-        }
+        populateComboBox();
 
         comboBox.setPreferredSize(new Dimension(220, 34));
         comboBox.setMaximumSize(new Dimension(220, 34));
@@ -252,6 +258,31 @@ public class PlaybackView extends JFrame {
         recordPanel.add(comboBox);
         rightPanel.add(recordPanel);
         log.info("回放记录面板: 找到{}条记录", fileCount);
+    }
+
+    /** 重新从 Redis 拉取记录列表并刷新下拉框 */
+    public void refreshRecordList() {
+        String fileNumStr = jedis.hget(SAVE_KEY, FILE_NUM_KEY);
+        int newFileCount = fileNumStr != null ? Integer.parseInt(fileNumStr) : 0;
+        if (newFileCount != fileCount) {
+            fileCount = newFileCount;
+            log.info("回放记录刷新: 记录数 {} -> {}", comboBox.getItemCount(), fileCount);
+        }
+        int previousSelection = comboBox.getSelectedIndex();
+        comboBox.removeAllItems();
+        populateComboBox();
+        // 尝试恢复之前的选择
+        if (previousSelection >= 0 && previousSelection < comboBox.getItemCount()) {
+            comboBox.setSelectedIndex(previousSelection);
+        }
+    }
+
+    /** 填充下拉框列表项 */
+    private void populateComboBox() {
+        for (int i = 1; i <= fileCount; i++) {
+            String ts = playbackModel.getRecordTimestamp(i);
+            comboBox.addItem("记录 " + i + " (" + ts + ")");
+        }
     }
 
 
@@ -357,6 +388,7 @@ public class PlaybackView extends JFrame {
     public PlaybackModel getPlaybackModel() { return playbackModel; }
     public JFrame getFrame() { return this; }
     public JComboBox<String> getComboBox() { return comboBox; }
+    public JButton getRefreshButton() { return refreshButton; }
     public JRadioButton getHalfSpeedButton() { return halfSpeedButton; }
     public JRadioButton getNormalSpeedButton() { return normalSpeedButton; }
     public JRadioButton getDoubleSpeedButton() { return doubleSpeedButton; }

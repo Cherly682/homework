@@ -13,6 +13,10 @@ import java.util.*;
 public class PlaybackModel {
     private static final Logger log = LoggerFactory.getLogger(PlaybackModel.class);
     private Jedis jedis;
+
+    /** 分析员回放专用前缀，隔离配置员的实时地图数据 */
+    public static final String PLAYBACK_PREFIX = "playback:";
+
     private final String BLOCKVIEW = "blockview";
     private final String CARS_KEY = "Cars:";
     private int mapSize;
@@ -25,49 +29,51 @@ public class PlaybackModel {
     private final String SPEED_KEY = "triple_speed";
     private final ObjectMapper objectMapper = new ObjectMapper();  // JSON 解析器
 
+    /** 获取当前应使用的 Redis key（回放模式下自动加前缀） */
+    private String pk(String baseKey) {
+        return playbackMode ? PLAYBACK_PREFIX + baseKey : baseKey;
+    }
+
 
     public PlaybackModel(Jedis jedis) {
         this.jedis = jedis;
-        // 从 Redis 加载当前地图状态（只读，不删除任何数据）
-        // 这样分析员登录时不会破坏配置员正在进行的巡检
-
-        // 确保地图尺寸存在（没有则设默认值 20）
-        String widthStr = jedis.get("map_width");
-        if (widthStr == null || widthStr.trim().isEmpty()) {
-            jedis.set("map_width", "20");
-            jedis.set("map_height", "20");
-        }
+        // 从 Redis 加载当前地图尺寸（只读，不写入任何数据）
+        // 分析员使用独立的 playback: 命名空间，不会影响配置员的实时数据
         initFromRedis();
     }
 
 
     private void initFromRedis() {
+        // 只读：不向共享 Redis 写入默认值，避免覆盖配置员的地图设置
         String widthStr = jedis.get("map_width");
         if (widthStr == null || widthStr.trim().isEmpty()) {
             widthStr = "20";
-            jedis.set("map_width", "20");
-            jedis.set("map_height", "20");
         }
-        this.mapSize = Integer.parseInt(widthStr);
+        this.mapSize = Integer.parseInt(widthStr.trim());
         this.area = mapSize * mapSize;
         this.tileSize = 700 / mapSize;
         blocks = new boolean[mapSize][mapSize];
-        // 只从 Redis 加载障碍物，不删除小车和地图数据
+        // 初始化时从共享 Redis 加载障碍物（回放开始后会切换到 playback: 命名空间）
         getBlocks();
-        log.info("PlaybackModel初始化: {}x{} area={} (从Redis加载已有数据)", mapSize, mapSize, area);
+        log.info("PlaybackModel初始化: {}x{} area={} (只读加载)", mapSize, mapSize, area);
     }
 
 
     public void resetMap() {
         // 退出播放模式，PlaybackMapView 停止读取 Redis
         playbackMode = false;
-        jedis.del("MapView");
-        jedis.del("blockview");
-        resetCars();
+        // 清理回放命名空间的残留数据（不影响配置员的实时数据）
+        jedis.del(PLAYBACK_PREFIX + "MapView");
+        jedis.del(PLAYBACK_PREFIX + "blockview");
+        jedis.del(PLAYBACK_PREFIX + "map_width");
+        jedis.del(PLAYBACK_PREFIX + "map_height");
+        for (String key : scanKeys(PLAYBACK_PREFIX + CARS_KEY + "*")) {
+            jedis.del(key);
+        }
         // 重置当前帧标记，但保留 last_view
         jedis.hdel(SAVE_KEY, ORDER_FILE_NUM_KEY, "order_view", "start_view");
         initFromRedis();
-        log.info("PlaybackModel: 地图已重置");
+        log.info("PlaybackModel: 地图已重置（已清理回放命名空间）");
     }
 
     public int getMapSize() { return mapSize; }
@@ -81,35 +87,40 @@ public class PlaybackModel {
      * 返回 true 表示尺寸发生了变化。
      */
     public boolean syncMapSizeFromRedis() {
-        String widthStr = jedis.get("map_width");
-        if (widthStr != null && !widthStr.trim().isEmpty()) {
-            int newSize = Integer.parseInt(widthStr.trim());
-            if (newSize != this.mapSize) {
-                log.info("PlaybackModel: 地图尺寸从 {} 变更为 {}", this.mapSize, newSize);
-                this.mapSize = newSize;
-                this.area = mapSize * mapSize;
-                this.tileSize = 700 / mapSize;
-                this.blocks = new boolean[mapSize][mapSize];
-                getBlocks();
-                return true;
-            }
+        // 回放模式下读取独立的 playback: 命名空间，避免受配置员改地图影响
+        String widthStr = jedis.get(PLAYBACK_PREFIX + "map_width");
+        if (widthStr == null || widthStr.trim().isEmpty()) {
+            return false;
+        }
+        int newSize = Integer.parseInt(widthStr.trim());
+        if (newSize != this.mapSize) {
+            log.info("PlaybackModel: 地图尺寸从 {} 变更为 {} (回放命名空间)", this.mapSize, newSize);
+            this.mapSize = newSize;
+            this.area = mapSize * mapSize;
+            this.tileSize = 700 / mapSize;
+            this.blocks = new boolean[mapSize][mapSize];
+            getBlocks();
+            return true;
         }
         return false;
     }
 
 
     private void getBlocks() {
+        String blockKey = pk(BLOCKVIEW);
         for (int i = 0; i < mapSize; i++) {
             for (int j = 0; j < mapSize; j++) {
                 long index = (long) i * mapSize + j;
-                blocks[i][j] = jedis.getbit(BLOCKVIEW, index);
+                blocks[i][j] = jedis.getbit(blockKey, index);
             }
         }
     }
 
 
     private void resetCars() {
-        for (String key : scanKeys(CARS_KEY + "*")) {
+        // 回放时只清 playback: 命名空间的小车，不影响配置员的实时小车
+        String carPattern = pk(CARS_KEY) + "*";
+        for (String key : scanKeys(carPattern)) {
             jedis.del(key);
         }
     }
@@ -164,6 +175,32 @@ public class PlaybackModel {
         return val != null ? Integer.parseInt(val) : 0;
     }
 
+    /**
+     * 扫描 Redis 中指定记录的所有帧，更新 last_view 为该记录的总帧数 - 1。
+     * 帧键格式：Record:<fileNo>:<frameNo>
+     * 切换记录或刷新时调用，确保进度条范围正确。
+     */
+    public void updateLastViewForFile(int fileNo) {
+        int maxFrame = -1;
+        String pattern = "Record:" + fileNo + ":*";
+        for (String key : scanKeys(pattern)) {
+            try {
+                String[] parts = key.split(":");
+                if (parts.length >= 3) {
+                    int frame = Integer.parseInt(parts[2]);
+                    if (frame > maxFrame) maxFrame = frame;
+                }
+            } catch (NumberFormatException ignored) {}
+        }
+        if (maxFrame >= 0) {
+            jedis.hset(SAVE_KEY, "last_view", String.valueOf(maxFrame));
+            log.info("PlaybackModel: 记录{} 总帧数已更新 -> last_view={}", fileNo, maxFrame);
+        } else {
+            jedis.hset(SAVE_KEY, "last_view", "0");
+            log.warn("PlaybackModel: 记录{} 无帧数据，last_view 设为 0", fileNo);
+        }
+    }
+
     public double getSpeed() {
         String val = jedis.hget(SAVE_KEY, SPEED_KEY);
         if (val == null || val.trim().isEmpty()) return 1.0;
@@ -208,9 +245,9 @@ public class PlaybackModel {
                     ? ((Number) heightObj).intValue()
                     : Integer.parseInt(String.valueOf(heightObj));
 
-            //更新 Redis 地图尺寸
-            jedis.set("map_width", String.valueOf(recordedWidth));
-            jedis.set("map_height", String.valueOf(recordedHeight));
+            //更新 Redis 地图尺寸（写入回放独立命名空间，不影响配置员）
+            jedis.set(PLAYBACK_PREFIX + "map_width", String.valueOf(recordedWidth));
+            jedis.set(PLAYBACK_PREFIX + "map_height", String.valueOf(recordedHeight));
 
             // 同步本地缓存（尺寸变化时重新分配数组）
             boolean sizeChanged = (recordedWidth != this.mapSize || recordedHeight != this.mapSize);
@@ -221,19 +258,21 @@ public class PlaybackModel {
                 blocks = new boolean[this.mapSize][this.mapSize];
             }
 
-            //写入探索位图（Base64 编码 → 解码 → 二进制写入 Redis）
+            //写入探索位图（Base64 编码 → 解码 → 二进制写入 Redis 回放命名空间）
             String mapViewB64 = (String) snapshot.get("mapViewBase64");
             if (mapViewB64 != null && !mapViewB64.isEmpty()) {
-                jedis.set("MapView".getBytes(), Base64.getDecoder().decode(mapViewB64));
+                jedis.set((PLAYBACK_PREFIX + "MapView").getBytes(),
+                        Base64.getDecoder().decode(mapViewB64));
             }
 
-            // 写入障碍物位图
+            // 写入障碍物位图（回放命名空间）
             String blockViewB64 = (String) snapshot.get("blockViewBase64");
             if (blockViewB64 != null && !blockViewB64.isEmpty()) {
-                jedis.set("blockview".getBytes(), Base64.getDecoder().decode(blockViewB64));
+                jedis.set((PLAYBACK_PREFIX + "blockview").getBytes(),
+                        Base64.getDecoder().decode(blockViewB64));
             }
 
-            // 恢复小车数据
+            // 恢复小车数据（写入回放命名空间，原键名 Cars:N 改为 playback:Cars:N）
             resetCars();
             List<Map<String, Object>> cars = (List<Map<String, Object>>) snapshot.get("cars");
             if (cars != null) {
@@ -245,7 +284,8 @@ public class PlaybackModel {
                         for (Map.Entry<String, Object> entry : fields.entrySet()) {
                             strFields.put(entry.getKey(), String.valueOf(entry.getValue()));
                         }
-                        jedis.hmset(key, strFields);
+                        // 加前缀写入：Cars:1 → playback:Cars:1
+                        jedis.hmset(PLAYBACK_PREFIX + key, strFields);
                     }
                 }
             }

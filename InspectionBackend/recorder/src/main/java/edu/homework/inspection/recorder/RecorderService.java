@@ -470,23 +470,28 @@ public class RecorderService {
         // 2. JSON → FrameSnapshot 对象
         FrameSnapshot snapshot = JsonSupport.fromJson(json, FrameSnapshot.class);
 
-        // 3. 恢复地图尺寸
-        jedis.set(Keys.MAP_WIDTH, String.valueOf(snapshot.getWidth()));
-        jedis.set(Keys.MAP_HEIGHT, String.valueOf(snapshot.getHeight()));
+        // 3. 恢复地图尺寸（写入回放独立命名空间，不影响配置员实时数据）
+        jedis.set(Keys.PLAYBACK_PREFIX + Keys.MAP_WIDTH,
+                String.valueOf(snapshot.getWidth()));
+        jedis.set(Keys.PLAYBACK_PREFIX + Keys.MAP_HEIGHT,
+                String.valueOf(snapshot.getHeight()));
 
-        // 4. 恢复探索位图（Base64 解码 → 二进制写入）
-        restoreBytes(jedis, Keys.MAP_VIEW, snapshot.getMapViewBase64());
+        // 4. 恢复探索位图（Base64 解码 → 二进制写入回放命名空间）
+        restoreBytes(jedis, Keys.PLAYBACK_PREFIX + Keys.MAP_VIEW,
+                snapshot.getMapViewBase64());
 
-        // 5. 恢复障碍物位图
-        restoreBytes(jedis, Keys.BLOCK_VIEW, snapshot.getBlockViewBase64());
+        // 5. 恢复障碍物位图（回放命名空间）
+        restoreBytes(jedis, Keys.PLAYBACK_PREFIX + Keys.BLOCK_VIEW,
+                snapshot.getBlockViewBase64());
 
-        // 6. 恢复小车数据：先清空所有现有小车，再写入快照中的小车
-        for (String carKey : scan(jedis, Keys.CARS_PREFIX + "*")) {
+        // 6. 恢复小车数据：先清空回放命名空间的小车，再写入快照中的小车
+        for (String carKey : scan(jedis, Keys.PLAYBACK_PREFIX + Keys.CARS_PREFIX + "*")) {
             jedis.del(carKey);
         }
         for (CarSnapshot car : snapshot.getCars()) {
             if (car.getFields() != null && !car.getFields().isEmpty()) {
-                jedis.hmset(car.getKey(), car.getFields());
+                // 加前缀写入：Cars:1 → playback:Cars:1
+                jedis.hmset(Keys.PLAYBACK_PREFIX + car.getKey(), car.getFields());
             }
         }
 

@@ -435,6 +435,11 @@ public class MainController {
                     StartProducer.sendStopMessage();
                     mainView.stopTimer();
                     mapView.setIsStart(false);
+                    // 删除 Redis 中的计时标记，防止 UI 同步定时器重新启动计时器
+                    try (Jedis j = RedisConnect.getConnected()) {
+                        j.del("inspection_start_time");
+                        log.info("Redis: inspection_start_time 已删除（探索自动完成）");
+                    }
                     if (mapView.hasUnreachableFreeCells()) {
                         JOptionPane.showMessageDialog(mainView.getFrame(),
                                 "巡检完成！\n可探索区域已全部巡检完毕，"

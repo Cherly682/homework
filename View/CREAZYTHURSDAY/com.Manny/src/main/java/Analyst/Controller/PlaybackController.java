@@ -67,8 +67,8 @@ public class PlaybackController {
                     isPaused = false;
                     playbackView.getPauseButton().setText("暂停");
 
-                    // 发送停止命令，并禁用按钮防止重复点击
-                    StartProducer.sendStopMessage();
+                    // 发送停止命令（仅停止回放，不影响配置员的录制）
+                    StartProducer.sendPlaybackStop();
                     // 清除回放状态标记（其他客户端检测到后同步按钮文字）
                     try (Jedis j = RedisConnect.getConnected()) {
                         j.hdel("Save", "playback_state");
@@ -122,7 +122,7 @@ public class PlaybackController {
                     }
                 } else {
                     try {
-                        StartProducer.sendStopMessage();
+                        StartProducer.sendPlaybackStop();
                         playbackView.getPauseButton().setText("继续");
                         isPaused = true;
                         try (Jedis j = RedisConnect.getConnected()) {
@@ -149,6 +149,9 @@ public class PlaybackController {
 
                 int fileNo = selectedIndex + 1;
                 playbackModel.setExplorationChoice(String.valueOf(fileNo));
+
+                // 更新该记录的总帧数（修复切换记录时 last_view 未更新的问题）
+                playbackModel.updateLastViewForFile(fileNo);
 
                 // 加载该记录的第一帧，让用户看到初始画面
                 playbackModel.restoreFrame(fileNo, 0);
@@ -181,6 +184,22 @@ public class PlaybackController {
         playbackView.getHalfSpeedButton().addActionListener(speedListener);
         playbackView.getNormalSpeedButton().addActionListener(speedListener);
         playbackView.getDoubleSpeedButton().addActionListener(speedListener);
+
+        // ==================== 刷新记录按钮 ====================
+        playbackView.getRefreshButton().addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                try {
+                    playbackView.refreshRecordList();
+                    log.info("回放记录列表已刷新");
+                } catch (Exception e) {
+                    log.error("刷新记录列表失败: {}", e.getMessage(), e);
+                    JOptionPane.showMessageDialog(playbackView.getFrame(),
+                            "刷新记录列表失败: " + e.getMessage(),
+                            "错误", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        });
 
         // ==================== 进度滑块拖动 ====================
         playbackView.getProgressSlider().addChangeListener(e -> {
@@ -257,7 +276,7 @@ public class PlaybackController {
         explorationMonitor = new javax.swing.Timer(500, e -> {
             if (playbackView.getPlaybackMapView().isFallExplored() == 1) {
                 try {
-                    StartProducer.sendStopMessage();
+                    StartProducer.sendPlaybackStop();
                     log.info("回放: 地图已完全探索，自动停止");
                     JOptionPane.showMessageDialog(playbackView.getFrame(), "地图已完全探索！");
                 } catch (Exception ex) {

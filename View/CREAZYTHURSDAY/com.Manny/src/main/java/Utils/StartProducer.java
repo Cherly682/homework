@@ -91,4 +91,12 @@ public class StartProducer {
         channel.basicPublish(EXCHANGE_SAVE, "", null, stop.getBytes());
         log.info("StartProducer: SENT STOP command (controller.start=0 + save.start=0)");
     }
+
+    /** 仅停止回放，不影响正在进行的录制（分析员专用） */
+    public static void sendPlaybackStop() throws Exception {
+        ensureConnected();
+        String stopPlayback = "3";
+        channel.basicPublish(EXCHANGE_SAVE, "", null, stopPlayback.getBytes());
+        log.info("StartProducer: SENT PLAYBACK-STOP command (save.start=3)");
+    }
 }

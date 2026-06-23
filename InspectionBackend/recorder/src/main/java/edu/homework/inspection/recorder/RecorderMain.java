@@ -125,6 +125,9 @@ public class RecorderMain {
             } else if ("2".equals(message)) {
                 // 指令 "2" = 开始回放
                 recorder.startPlayback();
+            } else if ("3".equals(message)) {
+                // 指令 "3" = 仅停止回放（不影响正在进行的录制，分析员专用）
+                recorder.stopPlayback();
             } else {
                 log.warn("Recorder ignored unknown command: {}", message);
             }
