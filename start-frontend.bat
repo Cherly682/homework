@@ -1,5 +1,5 @@
 @echo off
-title View - 前端界面
+title View Frontend
 setlocal
 
 set "ROOT=%~dp0"
@@ -9,55 +9,48 @@ set "LOG_DIR=%ROOT%logs"
 if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
 
 echo ============================================
-echo   View - 前端界面
+echo   View - Frontend
 echo ============================================
 echo.
-echo   日志: logs\frontend.log
-echo   关闭此窗口即退出程序
+echo   Log: logs\frontend.log
 echo.
 
-:: ---- Check Java ----
 where java >nul 2>&1
 if errorlevel 1 (
-    echo [ERROR] 未找到 Java，请安装 JDK 19+
-    pause
-    exit /b 1
+    echo [ERROR] Java not found (JDK 19+ required)
+    goto :end
 )
 
-:: ---- Check Maven ----
 where mvn >nul 2>&1
 if errorlevel 1 (
-    echo [ERROR] 未找到 Maven
-    pause
-    exit /b 1
+    echo [ERROR] Maven not found
+    goto :end
 )
 
-:: ---- Check project ----
 if not exist "%VIEW_DIR%\pom.xml" (
-    echo [ERROR] 项目未找到: %VIEW_DIR%
-    pause
-    exit /b 1
+    echo [ERROR] Project not found
+    goto :end
 )
 
-echo [BUILD] 编译前端...
+echo [BUILD] Compiling...
 cd /d "%VIEW_DIR%"
 call mvn compile -q
 if errorlevel 1 (
-    echo [ERROR] 编译失败，重试详细信息:
+    echo [ERROR] Compile failed:
     call mvn compile
-    pause
-    exit /b 1
+    goto :end
 )
-echo [OK] 编译完成
+echo [OK] Compile complete
 echo.
 
-echo [START] 启动前端...
-echo   登录: config / config123 (配置员^)
-echo         analyst / analyst123 (分析员^)
-echo         admin / admin123 (管理员^)
+echo [START] Launching View...
+echo   Login: config / config123 (Configurator)
+echo          analyst / analyst123 (Analyst)
+echo          admin / admin123 (Admin)
 echo.
 call mvn exec:java -Dexec.mainClass=Login.Main.Main "-Dlog.dir=%LOG_DIR%"
-
 echo.
-echo [STOP] 前端已退出
+echo [STOP] View stopped
+
+:end
 pause

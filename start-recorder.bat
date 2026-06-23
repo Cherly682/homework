@@ -1,5 +1,5 @@
 @echo off
-title Recorder - 录制回放器
+title Recorder
 setlocal
 
 set "ROOT=%~dp0"
@@ -9,31 +9,29 @@ set "LOG_DIR=%ROOT%logs"
 if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
 
 echo ============================================
-echo   Recorder - 录制回放器
+echo   Recorder - Record/Playback
 echo ============================================
 echo.
-echo   日志: logs\backend.log
-echo   关闭此窗口即停止 Recorder
+echo   Log: logs\backend.log
 echo.
 
-:: ---- Find JAR ----
 set "JAR=%BACKEND%\recorder\target\recorder.jar"
 if not exist "%JAR%" (
-    echo [BUILD] JAR 不存在，正在构建...
+    echo [BUILD] Building...
     cd /d "%BACKEND%"
     call mvn package -DskipTests -pl recorder -am -q
     if errorlevel 1 (
-        echo [ERROR] 构建失败
-        pause
-        exit /b 1
+        echo [ERROR] Build failed
+        goto :end
     )
-    echo [OK] 构建完成
+    echo [OK] Build complete
     echo.
 )
 
-echo [START] 启动 Recorder...
+echo [START] Starting Recorder...
 java "-Dlog.dir=%LOG_DIR%" -jar "%JAR%"
-
 echo.
-echo [STOP] Recorder 已退出
+echo [STOP] Recorder stopped
+
+:end
 pause

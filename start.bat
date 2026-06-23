@@ -5,20 +5,16 @@ echo ============================================
 echo   Inspection Simulation - Launcher
 echo ============================================
 echo.
-echo   [1] 一键启动（构建 + 全部模块）
-echo   [2] 前端 View（连接远程服务器）
-echo   [3] 仅后端（不含前端）
-echo   [4] 全部模块独立窗口
-echo   [5] 保留录制数据启动
+echo   [1] Full start (build + all services)
+echo   [2] View frontend only (remote server)
+echo   [3] Backend only (no frontend)
+echo   [4] All modules separate windows
+echo   [5] Full start, keep recording data
 echo.
-echo   --- 独立模块 ---
-echo   [C] Controller  节拍调度器
-echo   [N] Navigator   路径规划器
-echo   [A] Car         小车知识源
-echo   [R] Recorder    录制回放器
-echo   [F] Frontend    前端界面
-echo   [I] Init        初始化
-echo   [X] Clean       清理运行时
+echo   --- Standalone Modules ---
+echo   [C] Controller   [N] Navigator   [A] Car
+echo   [R] Recorder     [F] Frontend
+echo   [I] Init         [X] Clean runtime
 echo.
 set /p choice="Select option: "
 
