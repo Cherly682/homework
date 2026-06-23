@@ -151,10 +151,14 @@ public class PlaybackMapView extends JPanel {
 
 
     private void updateCacheFromRedis() {
+        // 非播放模式下不读取 Redis 实时数据
+        // 这样分析员登录时不会看到配置员正在进行的巡检画面
+        if (!playbackModel.isPlaybackMode()) {
+            return;
+        }
         long t0 = System.nanoTime();
 
-        // 第一件事：从 Redis 同步最新地图尺寸
-        // 这是修复的核心——不再依赖 PlaybackModel 构造时缓存的旧值
+        // 从 Redis 同步最新地图尺寸
         boolean sizeChanged = playbackModel.syncMapSizeFromRedis();
         int modelSize = playbackModel.getMapSize();
         int cacheSize = exploredCache != null ? exploredCache.length : 0;

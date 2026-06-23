@@ -84,13 +84,28 @@ public class MainController {
 
         // 随机生成小车
         mainView.getAutoAddCarBtn().addActionListener(e -> {
+            int remaining = mapModel.getMaxCars() - mapModel.getCarCount();
+            if (remaining <= 0) {
+                JOptionPane.showMessageDialog(mainView.getFrame(), "已达到最大小车数量！");
+                return;
+            }
             String numsStr = JOptionPane.showInputDialog(mainView.getFrame(),
-                    "请输入随机小车数量（最多 " + mapModel.getMaxCars() + "):");
+                    "请输入随机小车数量（剩余容量: " + remaining + "):");
             if (numsStr != null && !numsStr.isEmpty()) {
                 try {
                     int nums = Integer.parseInt(numsStr);
+                    if (nums <= 0) return;
+                    // 限制不超过剩余容量
+                    if (nums > remaining) {
+                        JOptionPane.showMessageDialog(mainView.getFrame(),
+                                "输入数量超过剩余容量，实际生成 " + remaining + " 辆");
+                        nums = remaining;
+                    }
+                    int beforeCount = mapModel.getCarCount();
                     mapModel.autoAddCar(nums);
-                    log.info("Cars auto-added: {} cars, total carCount={}", nums, mapModel.getCarCount());
+                    int actualGenerated = mapModel.getCarCount() - beforeCount;
+                    log.info("Cars auto-added: requested={} actual={} total={}",
+                            nums, actualGenerated, mapModel.getCarCount());
                     mapView.repaint();
                     updateStatusLabels();
                 } catch (NumberFormatException ex) {
@@ -302,15 +317,29 @@ public class MainController {
             timer.stop();
             timer = null;
         }
-        // 删除 Redis 中的巡检时间标记（其他客户端检测到后停止计时器）
-        try (Jedis j = RedisConnect.getConnected()) {
-            j.del("inspection_start_time");
-        }
         mainView.resetTimer();
         mainView.getCarPlacementToggle().setSelected(false);
         mainView.getBlockPlacementToggle().setSelected(false);
         mainView.getDefaultMapRadio().setSelected(true);
         mainView.getAStarRadio().setSelected(true);
+
+        // 清空 Redis 中的地图状态（重置操作应当清除所有运行数据）
+        try (Jedis j = RedisConnect.getConnected()) {
+            j.del("inspection_start_time");
+            j.del("MapView");
+            j.del("blockview");
+            j.del("navigator_status");
+            // 删除所有小车数据
+            for (String key : mapModel.scanKeys("Cars:*")) {
+                j.del(key);
+            }
+            // 删除所有任务队列
+            for (String key : mapModel.scanKeys("*_task_queue")) {
+                j.del(key);
+            }
+            log.info("Redis地图状态已清空（重置）");
+        }
+
         mapModel = new MapModel(DEFAULT_MAPSIZE);
         mapModel.setAStarAlgorithm();
         mapView.setModel(mapModel);

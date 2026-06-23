@@ -19,6 +19,7 @@ public class PlaybackModel {
     private int tileSize;
     private int area;
     private boolean[][] blocks;   // 本地障碍物缓存
+    private boolean playbackMode = false; // 播放模式守卫：true=正在回放，false=不读取实时 Redis 数据
     private final String SAVE_KEY = "Save";
     private final String ORDER_FILE_NUM_KEY = "order_file_num";
     private final String SPEED_KEY = "triple_speed";
@@ -58,6 +59,8 @@ public class PlaybackModel {
 
 
     public void resetMap() {
+        // 退出播放模式，PlaybackMapView 停止读取 Redis
+        playbackMode = false;
         jedis.del("MapView");
         jedis.del("blockview");
         resetCars();
@@ -176,6 +179,8 @@ public class PlaybackModel {
 
 
     public boolean restoreFrame(int fileNo, int frame) {
+        // 进入播放模式：告诉 PlaybackMapView 可以开始从 Redis 读取帧数据
+        playbackMode = true;
         try {
             //读取帧数据
             String frameKey = "Record:" + fileNo + ":" + frame;
@@ -270,4 +275,7 @@ public class PlaybackModel {
         if (x < 0 || x >= mapSize || y < 0 || y >= mapSize) return true;
         return blocks[x][y];
     }
+
+    /** 分析员是否处于播放模式。非播放模式时 PlaybackMapView 不读取 Redis 实时数据。 */
+    public boolean isPlaybackMode() { return playbackMode; }
 }

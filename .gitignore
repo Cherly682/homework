@@ -1,0 +1,44 @@
+# ========================================
+# .gitignore — 分布式变电站多车巡检仿真系统
+# ========================================
+
+# --- 日志文件 ---
+logs/
+*.log
+*.log.*
+
+# --- Maven 构建产物 ---
+target/
+*.jar
+!src/**/*.jar
+
+# --- IDE 和编辑器 ---
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+*~
+
+# --- 操作系统生成文件 ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# --- Claude Code ---
+.claude/
+CLAUDE.md
+
+# --- 环境变量 / 敏感配置（实际部署时使用环境变量覆盖）---
+# config.properties 和 application.properties 作为模板可以提交
+# 但如果你在其中填写了真实密码，请取消下面的注释：
+# src/main/resources/config.properties
+# src/main/resources/application.properties
+
+# --- 临时文件 ---
+*.tmp
+*.bak
+*.orig

@@ -65,18 +65,21 @@ public class MapModel {
 
         // 从 Redis 加载当前已有的障碍物数据（如果有的话）
         getBlocksFromRedis();
-        // 从 Redis 扫描当前已有的小车数量
-        int existingCars = 0;
+        // 用最大 key ID（非 key 数量）初始化 carCount，避免覆盖已有小车
+        int maxId = 0;
         for (String key : scanKeys(CARS_KEY_PREFIX + "*")) {
-            existingCars++;
+            try {
+                int id = Integer.parseInt(key.substring(CARS_KEY_PREFIX.length()));
+                if (id > maxId) maxId = id;
+            } catch (NumberFormatException ignored) {}
         }
-        this.carCount = existingCars;
+        this.carCount = maxId;
         log.info("MapModel initialized: {}x{}, loaded {} existing cars, {} existing blocks",
                 mapSize, mapSize, carCount, blockCount);
     }
 
 
-    private List<String> scanKeys(String pattern) {
+    public List<String> scanKeys(String pattern) {
         List<String> keys = new ArrayList<>();
         String cursor = "0";
         ScanParams params = new ScanParams().match(pattern).count(100);
@@ -140,14 +143,16 @@ public class MapModel {
 
 
     public void addCar(int x, int y) {
-        carCount++;
-        if (carCount > area) { return; }
+        // 先检查上限（carCount 还未递增）
+        if (carCount >= area) {
+            log.warn("Max car count reached: {}", carCount);
+            return;
+        }
 
         // 不能放在障碍物上
         long index = (long) x * mapSize + y;
         if (jedis.getbit(ALL_BLOCKVIEW_KEY, index)) {
             log.warn("Car cannot be placed on blocked cell ({},{})", x, y);
-            carCount--;
             return;
         }
 
@@ -157,35 +162,44 @@ public class MapModel {
             String cy = jedis.hget(key, "y");
             if (cx != null && cy != null && Integer.parseInt(cx) == x && Integer.parseInt(cy) == y) {
                 log.warn("Car cannot be placed at occupied cell ({},{})", x, y);
-                carCount--;
                 return;
             }
         }
 
+        // 所有检查通过后才递增 carCount
+        carCount++;
         // 写入 Redis
         Map<String, String> car = new HashMap<>();
-        long posIndex = (long) x * mapSize + y;
-        jedis.setbit(MAPVIEW_KEY, posIndex, true);  // 标记该格为"已探索"
+        jedis.setbit(MAPVIEW_KEY, index, true);  // 标记该格为"已探索"
         car.put("x", String.valueOf(x));
         car.put("y", String.valueOf(y));
-        car.put("endx", String.valueOf(-1));   // -1 表示没有目标
+        car.put("endx", String.valueOf(-1));
         car.put("endy", String.valueOf(-1));
-        car.put("state", String.valueOf(0));    // 0 = 空闲状态
-        car.put("direction", "U");              // 默认朝上
+        car.put("state", String.valueOf(0));
+        car.put("direction", "U");
         jedis.hmset(CARS_KEY_PREFIX + carCount, car);
         log.info("Car {} added at ({},{})", carCount, x, y);
     }
 
 
     public void autoAddCar(int nums) {
+        int maxTries = area * 10; // 最大尝试次数，防止极端情况下无限循环
+        int totalTries = 0;
         while (nums > 0) {
             if (carCount >= area) { return; }
             int x = random.nextInt(mapSize);
             int y = random.nextInt(mapSize);
-            // 跳过障碍物和已探索的位置
-            while (isPositionBlocked(x, y) || isPositionExplored(x, y)) {
+            int tries = 0;
+            while (tries < maxTries
+                    && (isPositionBlocked(x, y) || isPositionExplored(x, y))) {
                 x = random.nextInt(mapSize);
                 y = random.nextInt(mapSize);
+                tries++;
+                totalTries++;
+            }
+            if (tries >= maxTries) {
+                log.warn("Cannot find free position for car after {} tries, stopping", maxTries);
+                return;
             }
             addCar(x, y);
             nums--;
