@@ -74,10 +74,10 @@ if ($redisOk -eq "PONG") {
 }
 
 # ---- Build frontend ----
-Write-Host "[BUILD] 编译前端..." -ForegroundColor Cyan
+Write-Host "[BUILD] 构建前端..." -ForegroundColor Cyan
 Push-Location $ViewDir
 try {
-    mvn clean compile -q 2>&1
+    mvn package -DskipTests -q 2>&1
     if ($LASTEXITCODE -ne 0) {
         Write-Host "[ERROR] 前端构建失败。" -ForegroundColor Red
         Pop-Location; Pause; exit 1
@@ -95,14 +95,10 @@ Write-Host "           analyst / analyst123 (分析员)" -ForegroundColor White
 Write-Host "           admin / admin123 (管理员)" -ForegroundColor White
 Write-Host ""
 
+$viewJar = Join-Path $ViewDir "target\com.Manny-1.0-SNAPSHOT.jar"
 Push-Location $ViewDir
 try {
-    $mvnArgs = @(
-        "exec:java",
-        "-Dexec.mainClass=Login.Main.Main",
-        "-Dlog.dir=$LogDir"
-    )
-    mvn @mvnArgs
+    & java "-Dlog.dir=$LogDir" -jar $viewJar
 } finally {
     Pop-Location
 }

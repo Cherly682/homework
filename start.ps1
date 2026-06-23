@@ -89,7 +89,7 @@ try {
 Write-Host "[2/4] 构建 View 前端..." -ForegroundColor Cyan
 Push-Location $ViewDir
 try {
-    mvn clean compile -q 2>&1
+    mvn package -DskipTests -q 2>&1
     if ($LASTEXITCODE -ne 0) {
         Write-Host "[ERROR] 前端构建失败。" -ForegroundColor Red
         Pop-Location; Pause; exit 1
@@ -147,16 +147,11 @@ if (-not $backendStarted) {
 }
 
 # Start frontend
+$viewJar = Join-Path $ViewDir "target\com.Manny-1.0-SNAPSHOT.jar"
 $frontendJob = Start-Job -Name "frontend" -ScriptBlock {
-    param($dir, $logDirArg)
-    Set-Location $dir
-    $args = @(
-        "exec:java",
-        "-Dexec.mainClass=Login.Main.Main",
-        "-Dlog.dir=$logDirArg"
-    )
-    mvn @args 2>&1 | Out-Null
-} -ArgumentList $ViewDir, $LogDir
+    param($jarPath, $logDirArg)
+    & java "-Dlog.dir=$logDirArg" -jar $jarPath 2>&1 | Out-Null
+} -ArgumentList $viewJar, $LogDir
 
 Write-Host "[OK] 后端 + 前端已启动" -ForegroundColor Green
 Write-Host ""

@@ -2,36 +2,35 @@
 title Recorder
 setlocal
 
-set "ROOT=%~dp0"
-set "BACKEND=%ROOT%InspectionBackend"
-set "LOG_DIR=%ROOT%logs"
-
+set "LOG_DIR=%~dp0logs"
 if not exist "%LOG_DIR%" mkdir "%LOG_DIR%"
 
 echo ============================================
 echo   Recorder - Record/Playback
 echo ============================================
-echo.
+echo/
 echo   Log: logs\backend.log
-echo.
+echo/
 
-set "JAR=%BACKEND%\recorder\target\recorder.jar"
-if not exist "%JAR%" (
+cd /d "%~dp0InspectionBackend\recorder" 2>nul
+if errorlevel 1 (
+    echo [ERROR] Cannot access recorder dir
+    pause
+    exit /b
+)
+
+if not exist target\recorder.jar (
     echo [BUILD] Building...
-    cd /d "%BACKEND%"
+    cd /d "%~dp0InspectionBackend"
     call mvn package -DskipTests -pl recorder -am -q
-    if errorlevel 1 (
-        echo [ERROR] Build failed
-        goto :end
-    )
+    if errorlevel 1 (echo [ERROR] Build failed & pause & exit /b)
+    cd /d "%~dp0InspectionBackend\recorder"
     echo [OK] Build complete
-    echo.
+    echo/
 )
 
 echo [START] Starting Recorder...
-java "-Dlog.dir=%LOG_DIR%" -jar "%JAR%"
-echo.
+java "-Dlog.dir=%LOG_DIR%" -jar target\recorder.jar
+echo/
 echo [STOP] Recorder stopped
-
-:end
 pause
