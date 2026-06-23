@@ -1,0 +1,1179 @@
+2026-06-19 13:13:51.175 [main] INFO  e.h.inspection.common.RedisProvider - Redis pool created: localhost:6379/9
+2026-06-19 13:13:51.318 [main] INFO  e.h.i.controller.ControllerMain - Controller instance lock acquired: c7f5efbb-5df3-40fd-a4a6-db6c520d1ae1
+2026-06-19 13:13:51.365 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 31ms
+2026-06-19 13:13:52.699 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1330ms
+2026-06-19 13:13:52.708 [main] INFO  e.h.i.controller.ControllerMain - Controller listening on controller.start
+2026-06-19 13:13:53.854 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 62ms
+2026-06-19 13:13:55.348 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1487ms
+2026-06-19 13:13:55.353 [main] INFO  e.h.i.navigator.NavigatorMain - NavigatorMain starting 8 workers
+2026-06-19 13:13:55.355 [main] INFO  e.h.i.navigator.NavigatorMain - NavigatorMain: all 8 workers started in 1580ms
+2026-06-19 13:13:55.736 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 73ms
+2026-06-19 13:13:57.277 [navigator-4] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1917ms
+2026-06-19 13:13:57.279 [navigator-4] INFO  e.h.inspection.common.RedisProvider - Redis pool created: localhost:6379/9
+2026-06-19 13:13:57.289 [navigator-2] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1931ms
+2026-06-19 13:13:57.298 [navigator-6] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1938ms
+2026-06-19 13:13:57.303 [navigator-1] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1946ms
+2026-06-19 13:13:57.313 [navigator-5] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1952ms
+2026-06-19 13:13:57.320 [navigator-3] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1960ms
+2026-06-19 13:13:57.323 [navigator-7] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1961ms
+2026-06-19 13:13:57.324 [navigator-8] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1962ms
+2026-06-19 13:13:57.448 [navigator-6] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 6 listening on navigator.no6 (startup=2092ms)
+2026-06-19 13:13:57.448 [navigator-5] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 5 listening on navigator.no5 (startup=2091ms)
+2026-06-19 13:13:57.448 [navigator-3] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 3 listening on navigator.no3 (startup=2092ms)
+2026-06-19 13:13:57.448 [navigator-8] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 8 listening on navigator.no8 (startup=2092ms)
+2026-06-19 13:13:57.448 [navigator-4] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 4 listening on navigator.no4 (startup=2092ms)
+2026-06-19 13:13:57.448 [navigator-1] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 1 listening on navigator.no1 (startup=2092ms)
+2026-06-19 13:13:57.449 [navigator-7] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 7 listening on navigator.no7 (startup=2092ms)
+2026-06-19 13:13:57.449 [navigator-2] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 2 listening on navigator.no2 (startup=2093ms)
+2026-06-19 13:13:57.537 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1791ms
+2026-06-19 13:13:57.542 [main] INFO  edu.homework.inspection.car.CarMain - CarMain starting CarManager
+2026-06-19 13:13:57.543 [main] INFO  e.homework.inspection.car.CarManager - CarManager scanning for cars (max 400)
+2026-06-19 13:13:57.544 [main] INFO  e.h.inspection.common.RedisProvider - Redis pool created: localhost:6379/9
+2026-06-19 13:13:57.641 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 78ms
+2026-06-19 13:13:57.698 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 1
+2026-06-19 13:13:57.699 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 2
+2026-06-19 13:13:57.700 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 3
+2026-06-19 13:13:57.701 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 4
+2026-06-19 13:13:57.701 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 5
+2026-06-19 13:13:57.702 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 6
+2026-06-19 13:13:57.702 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 7
+2026-06-19 13:13:57.703 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 8
+2026-06-19 13:13:57.703 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 9
+2026-06-19 13:13:57.704 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 10
+2026-06-19 13:13:57.704 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 11
+2026-06-19 13:13:57.705 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 12
+2026-06-19 13:13:57.705 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 13
+2026-06-19 13:13:57.706 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 14
+2026-06-19 13:13:57.706 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 15
+2026-06-19 13:13:57.707 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 16
+2026-06-19 13:13:57.707 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 17
+2026-06-19 13:13:57.708 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 18
+2026-06-19 13:13:57.708 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 19
+2026-06-19 13:13:57.709 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 20
+2026-06-19 13:13:57.710 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 21
+2026-06-19 13:13:57.710 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 22
+2026-06-19 13:13:57.711 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 23
+2026-06-19 13:13:57.711 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 24
+2026-06-19 13:13:57.712 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 25
+2026-06-19 13:13:57.712 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 26
+2026-06-19 13:13:57.713 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 27
+2026-06-19 13:13:57.713 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 28
+2026-06-19 13:13:57.714 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 29
+2026-06-19 13:13:57.714 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 30
+2026-06-19 13:13:57.715 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 31
+2026-06-19 13:13:57.715 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 32
+2026-06-19 13:13:57.716 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 33
+2026-06-19 13:13:57.721 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 34
+2026-06-19 13:13:57.722 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 35
+2026-06-19 13:13:57.723 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 36
+2026-06-19 13:13:57.724 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 37
+2026-06-19 13:13:57.725 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 38
+2026-06-19 13:13:57.725 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 39
+2026-06-19 13:13:57.726 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 40
+2026-06-19 13:13:57.727 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 41
+2026-06-19 13:13:57.727 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 42
+2026-06-19 13:13:57.727 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 43
+2026-06-19 13:13:57.728 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 44
+2026-06-19 13:13:57.728 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 45
+2026-06-19 13:13:57.729 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 46
+2026-06-19 13:13:57.730 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 47
+2026-06-19 13:13:57.730 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 48
+2026-06-19 13:13:57.731 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 49
+2026-06-19 13:13:57.731 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 50
+2026-06-19 13:13:57.732 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 51
+2026-06-19 13:13:57.732 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 52
+2026-06-19 13:13:57.733 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 53
+2026-06-19 13:13:57.733 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 54
+2026-06-19 13:13:57.734 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 55
+2026-06-19 13:13:57.734 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 56
+2026-06-19 13:13:57.734 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 57
+2026-06-19 13:13:57.735 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 58
+2026-06-19 13:13:57.736 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 59
+2026-06-19 13:13:57.737 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 60
+2026-06-19 13:13:57.737 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 61
+2026-06-19 13:13:57.738 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 62
+2026-06-19 13:13:57.738 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 63
+2026-06-19 13:13:57.739 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 64
+2026-06-19 13:13:57.739 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 65
+2026-06-19 13:13:57.740 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 66
+2026-06-19 13:13:57.740 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 67
+2026-06-19 13:13:57.741 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 68
+2026-06-19 13:13:57.741 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 69
+2026-06-19 13:13:57.742 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 70
+2026-06-19 13:13:57.742 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 71
+2026-06-19 13:13:57.743 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 72
+2026-06-19 13:13:57.743 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 73
+2026-06-19 13:13:57.744 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 74
+2026-06-19 13:13:57.744 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 75
+2026-06-19 13:13:57.745 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 76
+2026-06-19 13:13:57.745 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 77
+2026-06-19 13:13:57.746 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 78
+2026-06-19 13:13:57.746 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 79
+2026-06-19 13:13:57.747 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 80
+2026-06-19 13:13:57.748 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 81
+2026-06-19 13:13:57.748 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 82
+2026-06-19 13:13:57.749 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 83
+2026-06-19 13:13:57.749 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 84
+2026-06-19 13:13:57.750 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 85
+2026-06-19 13:13:57.750 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 86
+2026-06-19 13:13:57.751 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 87
+2026-06-19 13:13:57.751 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 88
+2026-06-19 13:13:57.752 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 89
+2026-06-19 13:13:57.752 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 90
+2026-06-19 13:13:57.752 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 91
+2026-06-19 13:13:57.753 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 92
+2026-06-19 13:13:57.753 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 93
+2026-06-19 13:13:57.753 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 94
+2026-06-19 13:13:57.754 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 95
+2026-06-19 13:13:57.754 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 96
+2026-06-19 13:13:57.755 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 97
+2026-06-19 13:13:57.755 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 98
+2026-06-19 13:13:57.756 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 99
+2026-06-19 13:13:57.756 [main] INFO  e.homework.inspection.car.CarManager - CarManager started car 100
+2026-06-19 13:13:57.812 [main] INFO  e.homework.inspection.car.CarManager - CarManager scan: 100 new cars started in 268ms, total active=100
+2026-06-19 13:13:59.900 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 2250ms
+2026-06-19 13:13:59.904 [main] INFO  e.h.inspection.recorder.RecorderMain - Recorder listening on save.start
+2026-06-19 13:14:03.641 [car-16] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5931ms
+2026-06-19 13:14:03.654 [car-45] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5923ms
+2026-06-19 13:14:03.654 [car-16] INFO  edu.homework.inspection.car.CarAgent - Car 16 listening on car.no16
+2026-06-19 13:14:03.666 [car-45] INFO  edu.homework.inspection.car.CarAgent - Car 45 listening on car.no45
+2026-06-19 13:14:03.689 [car-7] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5984ms
+2026-06-19 13:14:03.689 [car-9] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5981ms
+2026-06-19 13:14:03.695 [car-7] INFO  edu.homework.inspection.car.CarAgent - Car 7 listening on car.no7
+2026-06-19 13:14:03.695 [car-93] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5918ms
+2026-06-19 13:14:03.695 [car-9] INFO  edu.homework.inspection.car.CarAgent - Car 9 listening on car.no9
+2026-06-19 13:14:03.695 [car-12] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5990ms
+2026-06-19 13:14:03.695 [car-14] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5990ms
+2026-06-19 13:14:03.695 [car-14] INFO  edu.homework.inspection.car.CarAgent - Car 14 listening on car.no14
+2026-06-19 13:14:03.705 [car-83] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5932ms
+2026-06-19 13:14:03.705 [car-93] INFO  edu.homework.inspection.car.CarAgent - Car 93 listening on car.no93
+2026-06-19 13:14:03.705 [car-83] INFO  edu.homework.inspection.car.CarAgent - Car 83 listening on car.no83
+2026-06-19 13:14:03.705 [car-12] INFO  edu.homework.inspection.car.CarAgent - Car 12 listening on car.no12
+2026-06-19 13:14:03.705 [car-27] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5990ms
+2026-06-19 13:14:03.705 [car-27] INFO  edu.homework.inspection.car.CarAgent - Car 27 listening on car.no27
+2026-06-19 13:14:03.717 [car-34] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5993ms
+2026-06-19 13:14:03.721 [car-99] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5940ms
+2026-06-19 13:14:03.723 [car-99] INFO  edu.homework.inspection.car.CarAgent - Car 99 listening on car.no99
+2026-06-19 13:14:03.723 [car-34] INFO  edu.homework.inspection.car.CarAgent - Car 34 listening on car.no34
+2026-06-19 13:14:03.723 [car-48] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5989ms
+2026-06-19 13:14:03.726 [car-68] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5968ms
+2026-06-19 13:14:03.726 [car-29] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6009ms
+2026-06-19 13:14:03.726 [car-29] INFO  edu.homework.inspection.car.CarAgent - Car 29 listening on car.no29
+2026-06-19 13:14:03.726 [car-48] INFO  edu.homework.inspection.car.CarAgent - Car 48 listening on car.no48
+2026-06-19 13:14:03.737 [car-68] INFO  edu.homework.inspection.car.CarAgent - Car 68 listening on car.no68
+2026-06-19 13:14:03.737 [car-33] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6023ms
+2026-06-19 13:14:03.737 [car-33] INFO  edu.homework.inspection.car.CarAgent - Car 33 listening on car.no33
+2026-06-19 13:14:03.737 [car-42] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6014ms
+2026-06-19 13:14:03.737 [car-42] INFO  edu.homework.inspection.car.CarAgent - Car 42 listening on car.no42
+2026-06-19 13:14:03.751 [car-76] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5984ms
+2026-06-19 13:14:03.751 [car-25] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6036ms
+2026-06-19 13:14:03.753 [car-51] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6012ms
+2026-06-19 13:14:03.755 [car-25] INFO  edu.homework.inspection.car.CarAgent - Car 25 listening on car.no25
+2026-06-19 13:14:03.755 [car-76] INFO  edu.homework.inspection.car.CarAgent - Car 76 listening on car.no76
+2026-06-19 13:14:03.755 [car-51] INFO  edu.homework.inspection.car.CarAgent - Car 51 listening on car.no51
+2026-06-19 13:14:03.755 [car-31] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6037ms
+2026-06-19 13:14:03.755 [car-31] INFO  edu.homework.inspection.car.CarAgent - Car 31 listening on car.no31
+2026-06-19 13:14:03.767 [car-13] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6056ms
+2026-06-19 13:14:03.767 [car-92] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5989ms
+2026-06-19 13:14:03.769 [car-13] INFO  edu.homework.inspection.car.CarAgent - Car 13 listening on car.no13
+2026-06-19 13:14:03.769 [car-19] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6056ms
+2026-06-19 13:14:03.769 [car-11] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6059ms
+2026-06-19 13:14:03.769 [car-79] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6000ms
+2026-06-19 13:14:03.769 [car-4] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6069ms
+2026-06-19 13:14:03.769 [car-79] INFO  edu.homework.inspection.car.CarAgent - Car 79 listening on car.no79
+2026-06-19 13:14:03.769 [car-1] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6073ms
+2026-06-19 13:14:03.769 [car-4] INFO  edu.homework.inspection.car.CarAgent - Car 4 listening on car.no4
+2026-06-19 13:14:03.769 [car-92] INFO  edu.homework.inspection.car.CarAgent - Car 92 listening on car.no92
+2026-06-19 13:14:03.769 [car-1] INFO  edu.homework.inspection.car.CarAgent - Car 1 listening on car.no1
+2026-06-19 13:14:03.769 [car-19] INFO  edu.homework.inspection.car.CarAgent - Car 19 listening on car.no19
+2026-06-19 13:14:03.769 [car-86] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 5999ms
+2026-06-19 13:14:03.769 [car-11] INFO  edu.homework.inspection.car.CarAgent - Car 11 listening on car.no11
+2026-06-19 13:14:03.769 [car-86] INFO  edu.homework.inspection.car.CarAgent - Car 86 listening on car.no86
+2026-06-19 13:14:03.769 [car-57] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6034ms
+2026-06-19 13:14:03.769 [car-80] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6011ms
+2026-06-19 13:14:03.785 [car-60] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6038ms
+2026-06-19 13:14:03.785 [car-60] INFO  edu.homework.inspection.car.CarAgent - Car 60 listening on car.no60
+2026-06-19 13:14:03.785 [car-57] INFO  edu.homework.inspection.car.CarAgent - Car 57 listening on car.no57
+2026-06-19 13:14:03.785 [car-44] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6053ms
+2026-06-19 13:14:03.789 [car-80] INFO  edu.homework.inspection.car.CarAgent - Car 80 listening on car.no80
+2026-06-19 13:14:03.789 [car-20] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6077ms
+2026-06-19 13:14:03.789 [car-24] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6076ms
+2026-06-19 13:14:03.793 [car-44] INFO  edu.homework.inspection.car.CarAgent - Car 44 listening on car.no44
+2026-06-19 13:14:03.793 [car-20] INFO  edu.homework.inspection.car.CarAgent - Car 20 listening on car.no20
+2026-06-19 13:14:03.793 [car-24] INFO  edu.homework.inspection.car.CarAgent - Car 24 listening on car.no24
+2026-06-19 13:14:03.793 [car-88] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6020ms
+2026-06-19 13:14:03.793 [car-54] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6056ms
+2026-06-19 13:14:03.793 [car-15] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6086ms
+2026-06-19 13:14:03.793 [car-15] INFO  edu.homework.inspection.car.CarAgent - Car 15 listening on car.no15
+2026-06-19 13:14:03.793 [car-88] INFO  edu.homework.inspection.car.CarAgent - Car 88 listening on car.no88
+2026-06-19 13:14:03.793 [car-54] INFO  edu.homework.inspection.car.CarAgent - Car 54 listening on car.no54
+2026-06-19 13:14:03.804 [car-70] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6041ms
+2026-06-19 13:14:03.804 [car-73] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6039ms
+2026-06-19 13:14:03.804 [car-43] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6072ms
+2026-06-19 13:14:03.804 [car-38] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6076ms
+2026-06-19 13:14:03.804 [car-90] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6028ms
+2026-06-19 13:14:03.807 [car-30] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6084ms
+2026-06-19 13:14:03.807 [car-28] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6085ms
+2026-06-19 13:14:03.807 [car-59] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6061ms
+2026-06-19 13:14:03.807 [car-87] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6031ms
+2026-06-19 13:14:03.807 [car-73] INFO  edu.homework.inspection.car.CarAgent - Car 73 listening on car.no73
+2026-06-19 13:14:03.810 [car-90] INFO  edu.homework.inspection.car.CarAgent - Car 90 listening on car.no90
+2026-06-19 13:14:03.810 [car-87] INFO  edu.homework.inspection.car.CarAgent - Car 87 listening on car.no87
+2026-06-19 13:14:03.810 [car-43] INFO  edu.homework.inspection.car.CarAgent - Car 43 listening on car.no43
+2026-06-19 13:14:03.810 [car-70] INFO  edu.homework.inspection.car.CarAgent - Car 70 listening on car.no70
+2026-06-19 13:14:03.810 [car-38] INFO  edu.homework.inspection.car.CarAgent - Car 38 listening on car.no38
+2026-06-19 13:14:03.810 [car-30] INFO  edu.homework.inspection.car.CarAgent - Car 30 listening on car.no30
+2026-06-19 13:14:03.810 [car-28] INFO  edu.homework.inspection.car.CarAgent - Car 28 listening on car.no28
+2026-06-19 13:14:03.810 [car-59] INFO  edu.homework.inspection.car.CarAgent - Car 59 listening on car.no59
+2026-06-19 13:14:03.810 [car-69] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6049ms
+2026-06-19 13:14:03.810 [car-37] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6087ms
+2026-06-19 13:14:03.810 [car-81] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6044ms
+2026-06-19 13:14:03.810 [car-77] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6047ms
+2026-06-19 13:14:03.810 [car-69] INFO  edu.homework.inspection.car.CarAgent - Car 69 listening on car.no69
+2026-06-19 13:14:03.810 [car-37] INFO  edu.homework.inspection.car.CarAgent - Car 37 listening on car.no37
+2026-06-19 13:14:03.810 [car-82] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6042ms
+2026-06-19 13:14:03.810 [car-46] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6080ms
+2026-06-19 13:14:03.810 [car-98] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6036ms
+2026-06-19 13:14:03.818 [car-81] INFO  edu.homework.inspection.car.CarAgent - Car 81 listening on car.no81
+2026-06-19 13:14:03.818 [car-82] INFO  edu.homework.inspection.car.CarAgent - Car 82 listening on car.no82
+2026-06-19 13:14:03.818 [car-77] INFO  edu.homework.inspection.car.CarAgent - Car 77 listening on car.no77
+2026-06-19 13:14:03.818 [car-46] INFO  edu.homework.inspection.car.CarAgent - Car 46 listening on car.no46
+2026-06-19 13:14:03.818 [car-98] INFO  edu.homework.inspection.car.CarAgent - Car 98 listening on car.no98
+2026-06-19 13:14:03.818 [car-100] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6037ms
+2026-06-19 13:14:03.818 [car-100] INFO  edu.homework.inspection.car.CarAgent - Car 100 listening on car.no100
+2026-06-19 13:14:03.818 [car-18] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6108ms
+2026-06-19 13:14:03.818 [car-17] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6108ms
+2026-06-19 13:14:03.818 [car-18] INFO  edu.homework.inspection.car.CarAgent - Car 18 listening on car.no18
+2026-06-19 13:14:03.818 [car-40] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6096ms
+2026-06-19 13:14:03.818 [car-17] INFO  edu.homework.inspection.car.CarAgent - Car 17 listening on car.no17
+2026-06-19 13:14:03.818 [car-63] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6067ms
+2026-06-19 13:14:03.826 [car-40] INFO  edu.homework.inspection.car.CarAgent - Car 40 listening on car.no40
+2026-06-19 13:14:03.826 [car-63] INFO  edu.homework.inspection.car.CarAgent - Car 63 listening on car.no63
+2026-06-19 13:14:03.829 [car-58] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6083ms
+2026-06-19 13:14:03.829 [car-5] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6126ms
+2026-06-19 13:14:03.829 [car-91] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6051ms
+2026-06-19 13:14:03.830 [car-58] INFO  edu.homework.inspection.car.CarAgent - Car 58 listening on car.no58
+2026-06-19 13:14:03.830 [car-5] INFO  edu.homework.inspection.car.CarAgent - Car 5 listening on car.no5
+2026-06-19 13:14:03.830 [car-75] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6064ms
+2026-06-19 13:14:03.830 [car-10] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6122ms
+2026-06-19 13:14:03.830 [car-49] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6093ms
+2026-06-19 13:14:03.830 [car-26] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6110ms
+2026-06-19 13:14:03.830 [car-8] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6126ms
+2026-06-19 13:14:03.830 [car-91] INFO  edu.homework.inspection.car.CarAgent - Car 91 listening on car.no91
+2026-06-19 13:14:03.830 [car-94] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6053ms
+2026-06-19 13:14:03.830 [car-21] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6119ms
+2026-06-19 13:14:03.830 [car-72] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6068ms
+2026-06-19 13:14:03.830 [car-75] INFO  edu.homework.inspection.car.CarAgent - Car 75 listening on car.no75
+2026-06-19 13:14:03.830 [car-49] INFO  edu.homework.inspection.car.CarAgent - Car 49 listening on car.no49
+2026-06-19 13:14:03.830 [car-10] INFO  edu.homework.inspection.car.CarAgent - Car 10 listening on car.no10
+2026-06-19 13:14:03.830 [car-26] INFO  edu.homework.inspection.car.CarAgent - Car 26 listening on car.no26
+2026-06-19 13:14:03.830 [car-8] INFO  edu.homework.inspection.car.CarAgent - Car 8 listening on car.no8
+2026-06-19 13:14:03.830 [car-72] INFO  edu.homework.inspection.car.CarAgent - Car 72 listening on car.no72
+2026-06-19 13:14:03.830 [car-94] INFO  edu.homework.inspection.car.CarAgent - Car 94 listening on car.no94
+2026-06-19 13:14:03.830 [car-21] INFO  edu.homework.inspection.car.CarAgent - Car 21 listening on car.no21
+2026-06-19 13:14:03.830 [car-61] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6089ms
+2026-06-19 13:14:03.830 [car-61] INFO  edu.homework.inspection.car.CarAgent - Car 61 listening on car.no61
+2026-06-19 13:14:03.830 [car-96] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6058ms
+2026-06-19 13:14:03.830 [car-66] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6077ms
+2026-06-19 13:14:03.830 [car-32] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6116ms
+2026-06-19 13:14:03.830 [car-53] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6098ms
+2026-06-19 13:14:03.840 [car-89] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6062ms
+2026-06-19 13:14:03.840 [car-96] INFO  edu.homework.inspection.car.CarAgent - Car 96 listening on car.no96
+2026-06-19 13:14:03.840 [car-66] INFO  edu.homework.inspection.car.CarAgent - Car 66 listening on car.no66
+2026-06-19 13:14:03.840 [car-32] INFO  edu.homework.inspection.car.CarAgent - Car 32 listening on car.no32
+2026-06-19 13:14:03.840 [car-53] INFO  edu.homework.inspection.car.CarAgent - Car 53 listening on car.no53
+2026-06-19 13:14:03.841 [car-62] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6093ms
+2026-06-19 13:14:03.841 [car-89] INFO  edu.homework.inspection.car.CarAgent - Car 89 listening on car.no89
+2026-06-19 13:14:03.841 [car-74] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6078ms
+2026-06-19 13:14:03.841 [car-62] INFO  edu.homework.inspection.car.CarAgent - Car 62 listening on car.no62
+2026-06-19 13:14:03.841 [car-3] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6143ms
+2026-06-19 13:14:03.841 [car-41] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6112ms
+2026-06-19 13:14:03.841 [car-36] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6116ms
+2026-06-19 13:14:03.841 [car-6] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6141ms
+2026-06-19 13:14:03.841 [car-55] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6102ms
+2026-06-19 13:14:03.841 [car-74] INFO  edu.homework.inspection.car.CarAgent - Car 74 listening on car.no74
+2026-06-19 13:14:03.846 [car-2] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6146ms
+2026-06-19 13:14:03.846 [car-41] INFO  edu.homework.inspection.car.CarAgent - Car 41 listening on car.no41
+2026-06-19 13:14:03.846 [car-36] INFO  edu.homework.inspection.car.CarAgent - Car 36 listening on car.no36
+2026-06-19 13:14:03.846 [car-3] INFO  edu.homework.inspection.car.CarAgent - Car 3 listening on car.no3
+2026-06-19 13:14:03.846 [car-6] INFO  edu.homework.inspection.car.CarAgent - Car 6 listening on car.no6
+2026-06-19 13:14:03.846 [car-55] INFO  edu.homework.inspection.car.CarAgent - Car 55 listening on car.no55
+2026-06-19 13:14:03.846 [car-67] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6085ms
+2026-06-19 13:14:03.846 [car-52] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6107ms
+2026-06-19 13:14:03.848 [car-2] INFO  edu.homework.inspection.car.CarAgent - Car 2 listening on car.no2
+2026-06-19 13:14:03.848 [car-67] INFO  edu.homework.inspection.car.CarAgent - Car 67 listening on car.no67
+2026-06-19 13:14:03.848 [car-52] INFO  edu.homework.inspection.car.CarAgent - Car 52 listening on car.no52
+2026-06-19 13:14:03.848 [car-64] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6091ms
+2026-06-19 13:14:03.848 [car-97] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6070ms
+2026-06-19 13:14:03.848 [car-23] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6136ms
+2026-06-19 13:14:03.848 [car-64] INFO  edu.homework.inspection.car.CarAgent - Car 64 listening on car.no64
+2026-06-19 13:14:03.848 [car-97] INFO  edu.homework.inspection.car.CarAgent - Car 97 listening on car.no97
+2026-06-19 13:14:03.848 [car-85] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6077ms
+2026-06-19 13:14:03.848 [car-23] INFO  edu.homework.inspection.car.CarAgent - Car 23 listening on car.no23
+2026-06-19 13:14:03.848 [car-85] INFO  edu.homework.inspection.car.CarAgent - Car 85 listening on car.no85
+2026-06-19 13:14:03.848 [car-35] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6130ms
+2026-06-19 13:14:03.848 [car-95] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6075ms
+2026-06-19 13:14:03.848 [car-50] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6116ms
+2026-06-19 13:14:03.848 [car-78] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6087ms
+2026-06-19 13:14:03.848 [car-95] INFO  edu.homework.inspection.car.CarAgent - Car 95 listening on car.no95
+2026-06-19 13:14:03.848 [car-50] INFO  edu.homework.inspection.car.CarAgent - Car 50 listening on car.no50
+2026-06-19 13:14:03.848 [car-35] INFO  edu.homework.inspection.car.CarAgent - Car 35 listening on car.no35
+2026-06-19 13:14:03.848 [car-78] INFO  edu.homework.inspection.car.CarAgent - Car 78 listening on car.no78
+2026-06-19 13:14:03.848 [car-84] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6084ms
+2026-06-19 13:14:03.848 [car-65] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6099ms
+2026-06-19 13:14:03.848 [car-22] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6144ms
+2026-06-19 13:14:03.848 [car-47] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6122ms
+2026-06-19 13:14:03.848 [car-65] INFO  edu.homework.inspection.car.CarAgent - Car 65 listening on car.no65
+2026-06-19 13:14:03.848 [car-22] INFO  edu.homework.inspection.car.CarAgent - Car 22 listening on car.no22
+2026-06-19 13:14:03.848 [car-84] INFO  edu.homework.inspection.car.CarAgent - Car 84 listening on car.no84
+2026-06-19 13:14:03.848 [car-47] INFO  edu.homework.inspection.car.CarAgent - Car 47 listening on car.no47
+2026-06-19 13:14:03.848 [car-56] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6116ms
+2026-06-19 13:14:03.848 [car-56] INFO  edu.homework.inspection.car.CarAgent - Car 56 listening on car.no56
+2026-06-19 13:14:03.862 [car-71] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6098ms
+2026-06-19 13:14:03.864 [car-71] INFO  edu.homework.inspection.car.CarAgent - Car 71 listening on car.no71
+2026-06-19 13:14:03.864 [car-39] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 6138ms
+2026-06-19 13:14:03.866 [car-39] INFO  edu.homework.inspection.car.CarAgent - Car 39 listening on car.no39
+2026-06-19 13:15:21.003 [pool-1-thread-4] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 1
+2026-06-19 13:15:21.003 [pool-2-thread-4] INFO  e.h.i.controller.ControllerMain - Controller received command: 1
+2026-06-19 13:15:21.006 [pool-1-thread-4] INFO  e.h.inspection.common.RedisProvider - Redis pool created: localhost:6379/9
+2026-06-19 13:15:21.018 [pool-2-thread-4] INFO  e.h.i.controller.ControllerAgent - Controller started (tickInterval=500ms, init cost=14ms)
+2026-06-19 13:15:21.251 [pool-1-thread-4] INFO  e.h.i.recorder.RecorderService - Recorder started file 1
+2026-06-19 13:15:21.251 [recorder-record] INFO  e.h.i.recorder.RecorderService - Record loop started for file 1
+2026-06-19 13:15:22.662 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1641ms
+2026-06-19 13:15:22.965 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 1: car 1 at (8,8) dispatched to navigator 1
+2026-06-19 13:15:22.969 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 1: 1 cars, explored=0.3%, idle=1, assigned=1, cost=1948ms
+2026-06-19 13:15:22.979 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 1 took 1960ms (exceeded interval)
+2026-06-19 13:15:23.203 [pool-1-thread-12] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (8,8) map=20x20
+2026-06-19 13:15:23.210 [pool-1-thread-12] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (7,8) at distance 1
+2026-06-19 13:15:23.227 [pool-1-thread-12] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 1 steps, algo=ASTAR, searchCost=7ms, total=26ms, (8,8) -> (7,8)
+2026-06-19 13:15:24.355 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1354ms
+2026-06-19 13:15:24.363 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 2: 1 cars, explored=0.3%, idle=0, assigned=0, cost=1381ms
+2026-06-19 13:15:24.377 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 2 took 1395ms (exceeded interval)
+2026-06-19 13:15:24.436 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:24.436 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (8,8)->(7,8) | timing: total=60ms check=1060us queuePop=631us getPos=1910us validate=1384us posUpdate=2276us illuminate=11456us routeCheck=296us stateTrans=1101us remainingSteps=0
+2026-06-19 13:15:25.739 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1341ms
+2026-06-19 13:15:25.751 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 3: car 1 at (7,8) dispatched to navigator 1
+2026-06-19 13:15:25.751 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 3: 1 cars, explored=2.3%, idle=1, assigned=1, cost=1373ms
+2026-06-19 13:15:25.753 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (7,8) map=20x20
+2026-06-19 13:15:25.763 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 3 took 1385ms (exceeded interval)
+2026-06-19 13:15:25.782 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (5,8) at distance 2
+2026-06-19 13:15:25.788 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=36ms, (7,8) -> (5,8)
+2026-06-19 13:15:27.031 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1247ms
+2026-06-19 13:15:27.038 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 4: 1 cars, explored=2.3%, idle=0, assigned=0, cost=1274ms
+2026-06-19 13:15:27.046 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 4 took 1283ms (exceeded interval)
+2026-06-19 13:15:27.093 [pool-1-thread-4] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (7,8)->(6,8) | timing: total=42ms check=1200us queuePop=412us getPos=790us validate=944us posUpdate=1205us illuminate=4163us routeCheck=209us stateTrans=329us remainingSteps=1
+2026-06-19 13:15:28.320 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1250ms
+2026-06-19 13:15:28.332 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 5: 1 cars, explored=3.0%, idle=0, assigned=0, cost=1283ms
+2026-06-19 13:15:28.339 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 5 took 1291ms (exceeded interval)
+2026-06-19 13:15:28.379 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:28.379 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (6,8)->(5,8) | timing: total=41ms check=494us queuePop=223us getPos=454us validate=23519us posUpdate=1647us illuminate=10470us routeCheck=520us stateTrans=1494us remainingSteps=0
+2026-06-19 13:15:29.624 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1259ms
+2026-06-19 13:15:29.633 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 6: car 1 at (5,8) dispatched to navigator 1
+2026-06-19 13:15:29.634 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 6: 1 cars, explored=3.8%, idle=1, assigned=1, cost=1293ms
+2026-06-19 13:15:29.636 [pool-1-thread-14] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (5,8) map=20x20
+2026-06-19 13:15:29.638 [pool-1-thread-14] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (3,8) at distance 2
+2026-06-19 13:15:29.649 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 6 took 1309ms (exceeded interval)
+2026-06-19 13:15:29.665 [pool-1-thread-14] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=30ms, (5,8) -> (3,8)
+2026-06-19 13:15:29.707 [pool-1-thread-21] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (5,8)->(4,8) | timing: total=66ms check=1053us queuePop=570us getPos=2500us validate=23282us posUpdate=1904us illuminate=7135us routeCheck=172us stateTrans=432us remainingSteps=1
+2026-06-19 13:15:30.857 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1190ms
+2026-06-19 13:15:30.865 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 7: 1 cars, explored=4.5%, idle=0, assigned=0, cost=1216ms
+2026-06-19 13:15:30.878 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 7 took 1229ms (exceeded interval)
+2026-06-19 13:15:30.915 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:30.916 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (4,8)->(3,8) | timing: total=45ms check=1244us queuePop=291us getPos=1559us validate=2056us posUpdate=2690us illuminate=6238us routeCheck=136us stateTrans=917us remainingSteps=0
+2026-06-19 13:15:32.040 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1143ms
+2026-06-19 13:15:32.050 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 8: car 1 at (3,8) dispatched to navigator 1
+2026-06-19 13:15:32.051 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 8: 1 cars, explored=5.3%, idle=1, assigned=1, cost=1171ms
+2026-06-19 13:15:32.053 [pool-1-thread-15] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (3,8) map=20x20
+2026-06-19 13:15:32.057 [pool-1-thread-15] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (1,8) at distance 2
+2026-06-19 13:15:32.068 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 8 took 1189ms (exceeded interval)
+2026-06-19 13:15:32.083 [pool-1-thread-15] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=30ms, (3,8) -> (1,8)
+2026-06-19 13:15:32.113 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (3,8)->(2,8) | timing: total=54ms check=10486us queuePop=662us getPos=864us validate=1648us posUpdate=5262us illuminate=6691us routeCheck=105us stateTrans=383us remainingSteps=1
+2026-06-19 13:15:33.291 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1206ms
+2026-06-19 13:15:33.304 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 9: 1 cars, explored=6.0%, idle=0, assigned=0, cost=1233ms
+2026-06-19 13:15:33.320 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 9 took 1250ms (exceeded interval)
+2026-06-19 13:15:33.353 [pool-1-thread-5] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:33.353 [pool-1-thread-5] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (2,8)->(1,8) | timing: total=44ms check=24085us queuePop=1383us getPos=3004us validate=1916us posUpdate=1702us illuminate=7767us routeCheck=286us stateTrans=877us remainingSteps=0
+2026-06-19 13:15:34.363 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1024ms
+2026-06-19 13:15:34.370 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 10: car 1 at (1,8) dispatched to navigator 1
+2026-06-19 13:15:34.370 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 10: 1 cars, explored=6.8%, idle=1, assigned=1, cost=1049ms
+2026-06-19 13:15:34.371 [pool-1-thread-16] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (1,8) map=20x20
+2026-06-19 13:15:34.378 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 10 took 1056ms (exceeded interval)
+2026-06-19 13:15:34.398 [pool-1-thread-16] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (1,6) at distance 2
+2026-06-19 13:15:34.404 [pool-1-thread-16] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=33ms, (1,8) -> (1,6)
+2026-06-19 13:15:34.427 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (1,8)->(1,7) | timing: total=28ms check=2204us queuePop=708us getPos=1967us validate=3734us posUpdate=4595us illuminate=9112us routeCheck=230us stateTrans=533us remainingSteps=1
+2026-06-19 13:15:35.250 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 833ms
+2026-06-19 13:15:35.257 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 11: 1 cars, explored=7.5%, idle=0, assigned=0, cost=874ms
+2026-06-19 13:15:35.267 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 11 took 884ms (exceeded interval)
+2026-06-19 13:15:35.297 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:35.298 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (1,7)->(1,6) | timing: total=33ms check=624us queuePop=379us getPos=612us validate=1605us posUpdate=3800us illuminate=9317us routeCheck=199us stateTrans=1253us remainingSteps=0
+2026-06-19 13:15:36.111 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 832ms
+2026-06-19 13:15:36.119 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 12: car 1 at (1,6) dispatched to navigator 1
+2026-06-19 13:15:36.120 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 12: 1 cars, explored=8.3%, idle=1, assigned=1, cost=851ms
+2026-06-19 13:15:36.124 [pool-1-thread-17] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (1,6) map=20x20
+2026-06-19 13:15:36.128 [pool-1-thread-17] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (3,6) at distance 2
+2026-06-19 13:15:36.130 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 12 took 861ms (exceeded interval)
+2026-06-19 13:15:36.140 [pool-1-thread-17] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=16ms, (1,6) -> (3,6)
+2026-06-19 13:15:36.156 [pool-1-thread-52] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (1,6)->(2,6) | timing: total=26ms check=2077us queuePop=1053us getPos=1958us validate=1343us posUpdate=2210us illuminate=9382us routeCheck=171us stateTrans=352us remainingSteps=1
+2026-06-19 13:15:37.142 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1001ms
+2026-06-19 13:15:37.160 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 13: 1 cars, explored=8.8%, idle=0, assigned=0, cost=1028ms
+2026-06-19 13:15:37.168 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 13 took 1037ms (exceeded interval)
+2026-06-19 13:15:37.211 [pool-1-thread-64] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:37.212 [pool-1-thread-64] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (2,6)->(3,6) | timing: total=46ms check=2171us queuePop=646us getPos=1417us validate=1866us posUpdate=1337us illuminate=8528us routeCheck=120us stateTrans=897us remainingSteps=0
+2026-06-19 13:15:38.283 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1089ms
+2026-06-19 13:15:38.295 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 14: car 1 at (3,6) dispatched to navigator 1
+2026-06-19 13:15:38.295 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 14: 1 cars, explored=9.3%, idle=1, assigned=1, cost=1126ms
+2026-06-19 13:15:38.297 [pool-1-thread-18] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (3,6) map=20x20
+2026-06-19 13:15:38.303 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 14 took 1134ms (exceeded interval)
+2026-06-19 13:15:38.332 [pool-1-thread-18] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (5,6) at distance 2
+2026-06-19 13:15:38.338 [pool-1-thread-18] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=42ms, (3,6) -> (5,6)
+2026-06-19 13:15:39.594 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1265ms
+2026-06-19 13:15:39.602 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 15: 1 cars, explored=9.3%, idle=0, assigned=0, cost=1299ms
+2026-06-19 13:15:39.608 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 15 took 1306ms (exceeded interval)
+2026-06-19 13:15:39.652 [pool-1-thread-30] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (3,6)->(4,6) | timing: total=19ms check=1198us queuePop=298us getPos=657us validate=1533us posUpdate=3176us illuminate=10200us routeCheck=101us stateTrans=509us remainingSteps=1
+2026-06-19 13:15:40.850 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1210ms
+2026-06-19 13:15:40.861 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 16: 1 cars, explored=9.8%, idle=0, assigned=0, cost=1252ms
+2026-06-19 13:15:40.870 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 16 took 1260ms (exceeded interval)
+2026-06-19 13:15:40.920 [pool-1-thread-50] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:40.920 [pool-1-thread-50] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (4,6)->(5,6) | timing: total=49ms check=2184us queuePop=187us getPos=911us validate=919us posUpdate=2027us illuminate=13501us routeCheck=197us stateTrans=1105us remainingSteps=0
+2026-06-19 13:15:42.116 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1205ms
+2026-06-19 13:15:42.128 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 17: car 1 at (5,6) dispatched to navigator 1
+2026-06-19 13:15:42.128 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 17: 1 cars, explored=10.3%, idle=1, assigned=1, cost=1258ms
+2026-06-19 13:15:42.130 [pool-1-thread-19] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (5,6) map=20x20
+2026-06-19 13:15:42.135 [pool-1-thread-19] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (7,6) at distance 2
+2026-06-19 13:15:42.136 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 17 took 1265ms (exceeded interval)
+2026-06-19 13:15:42.163 [pool-1-thread-19] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=33ms, (5,6) -> (7,6)
+2026-06-19 13:15:42.180 [pool-1-thread-32] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (5,6)->(6,6) | timing: total=44ms check=24269us queuePop=954us getPos=1663us validate=1969us posUpdate=2528us illuminate=8739us routeCheck=113us stateTrans=328us remainingSteps=1
+2026-06-19 13:15:43.409 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1245ms
+2026-06-19 13:15:43.417 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 18: 1 cars, explored=10.8%, idle=0, assigned=0, cost=1280ms
+2026-06-19 13:15:43.425 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 18 took 1287ms (exceeded interval)
+2026-06-19 13:15:43.467 [pool-1-thread-18] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:43.468 [pool-1-thread-18] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (6,6)->(7,6) | timing: total=45ms check=22030us queuePop=675us getPos=2376us validate=2251us posUpdate=2324us illuminate=9554us routeCheck=256us stateTrans=1824us remainingSteps=0
+2026-06-19 13:15:44.682 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1232ms
+2026-06-19 13:15:44.691 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 19: car 1 at (7,6) dispatched to navigator 1
+2026-06-19 13:15:44.692 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 19: 1 cars, explored=11.3%, idle=1, assigned=1, cost=1265ms
+2026-06-19 13:15:44.694 [pool-1-thread-20] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (7,6) map=20x20
+2026-06-19 13:15:44.696 [pool-1-thread-20] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (9,6) at distance 2
+2026-06-19 13:15:44.700 [pool-1-thread-20] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=7ms, (7,6) -> (9,6)
+2026-06-19 13:15:44.702 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 19 took 1275ms (exceeded interval)
+2026-06-19 13:15:44.757 [pool-1-thread-60] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (7,6)->(8,6) | timing: total=55ms check=2961us queuePop=631us getPos=11661us validate=1715us posUpdate=1928us illuminate=8256us routeCheck=165us stateTrans=392us remainingSteps=1
+2026-06-19 13:15:45.368 [pool-2-thread-24] INFO  e.h.i.controller.ControllerMain - Controller received command: 0
+2026-06-19 13:15:45.369 [pool-2-thread-24] INFO  e.h.i.controller.ControllerAgent - Controller stopped at tick 20
+2026-06-19 13:15:45.368 [pool-1-thread-5] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 0
+2026-06-19 13:15:45.370 [pool-1-thread-5] INFO  e.h.i.recorder.RecorderService - Recorder stopped
+2026-06-19 13:15:45.371 [recorder-record] INFO  e.h.i.recorder.RecorderService - Record loop ended: 47 frames saved
+2026-06-19 13:15:45.867 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1137ms
+2026-06-19 13:15:45.875 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 20: 1 cars, explored=12.0%, idle=0, assigned=0, cost=1172ms
+2026-06-19 13:15:45.884 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 20 took 1181ms (exceeded interval)
+2026-06-19 13:15:45.934 [pool-1-thread-57] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:45.934 [pool-1-thread-57] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (8,6)->(9,6) | timing: total=50ms check=936us queuePop=340us getPos=535us validate=1810us posUpdate=1270us illuminate=6718us routeCheck=161us stateTrans=734us remainingSteps=0
+2026-06-19 13:15:46.153 [pool-1-thread-6] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 0
+2026-06-19 13:15:46.153 [pool-2-thread-26] INFO  e.h.i.controller.ControllerMain - Controller received command: 0
+2026-06-19 13:15:46.153 [pool-2-thread-26] INFO  e.h.i.controller.ControllerAgent - Controller stopped at tick 20
+2026-06-19 13:15:46.153 [pool-1-thread-6] INFO  e.h.i.recorder.RecorderService - Recorder stopped
+2026-06-19 13:15:54.402 [pool-2-thread-27] INFO  e.h.i.controller.ControllerMain - Controller received command: 1
+2026-06-19 13:15:54.403 [pool-1-thread-7] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 1
+2026-06-19 13:15:54.406 [pool-1-thread-7] INFO  e.h.i.recorder.RecorderService - Recorder started file 1
+2026-06-19 13:15:54.406 [recorder-record] INFO  e.h.i.recorder.RecorderService - Record loop started for file 1
+2026-06-19 13:15:54.411 [pool-2-thread-27] INFO  e.h.i.controller.ControllerAgent - Controller started (tickInterval=500ms, init cost=8ms)
+2026-06-19 13:15:55.575 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1160ms
+2026-06-19 13:15:55.584 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 1 at (19,12) dispatched to navigator 1
+2026-06-19 13:15:55.586 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 2 at (4,16) dispatched to navigator 1
+2026-06-19 13:15:55.587 [pool-1-thread-21] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (19,12) map=20x20
+2026-06-19 13:15:55.588 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 3 at (7,2) dispatched to navigator 2
+2026-06-19 13:15:55.593 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 4 at (1,17) dispatched to navigator 3
+2026-06-19 13:15:55.592 [pool-1-thread-22] INFO  e.h.i.navigator.NavigationService - Navigator processing car 3 at (7,2) map=20x20
+2026-06-19 13:15:55.595 [pool-1-thread-23] INFO  e.h.i.navigator.NavigationService - Navigator processing car 4 at (1,17) map=20x20
+2026-06-19 13:15:55.597 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 5 at (9,18) dispatched to navigator 4
+2026-06-19 13:15:55.597 [pool-1-thread-21] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (18,12) at distance 1
+2026-06-19 13:15:55.599 [pool-1-thread-24] INFO  e.h.i.navigator.NavigationService - Navigator processing car 5 at (9,18) map=20x20
+2026-06-19 13:15:55.599 [pool-1-thread-21] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=12ms, (19,12) -> (18,12)
+2026-06-19 13:15:55.601 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 6 at (9,7) dispatched to navigator 5
+2026-06-19 13:15:55.601 [pool-1-thread-22] INFO  e.h.i.navigator.NavigationService - Navigator car 3: target selected (6,2) at distance 1
+2026-06-19 13:15:55.602 [pool-1-thread-25] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (4,16) map=20x20
+2026-06-19 13:15:55.602 [pool-1-thread-22] INFO  e.h.i.navigator.NavigationService - Navigator car 3 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=11ms, (7,2) -> (6,2)
+2026-06-19 13:15:55.603 [pool-1-thread-23] INFO  e.h.i.navigator.NavigationService - Navigator car 4: target selected (0,17) at distance 1
+2026-06-19 13:15:55.604 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 7 at (11,18) dispatched to navigator 5
+2026-06-19 13:15:55.604 [pool-1-thread-23] INFO  e.h.i.navigator.NavigationService - Navigator car 4 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=10ms, (1,17) -> (0,17)
+2026-06-19 13:15:55.606 [pool-1-thread-24] INFO  e.h.i.navigator.NavigationService - Navigator car 5: target selected (8,18) at distance 1
+2026-06-19 13:15:55.606 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 8 at (5,0) dispatched to navigator 2
+2026-06-19 13:15:55.606 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (9,7) map=20x20
+2026-06-19 13:15:55.607 [pool-1-thread-24] INFO  e.h.i.navigator.NavigationService - Navigator car 5 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=8ms, (9,18) -> (8,18)
+2026-06-19 13:15:55.609 [pool-1-thread-27] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (5,0) map=20x20
+2026-06-19 13:15:55.611 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 9 at (7,4) dispatched to navigator 3
+2026-06-19 13:15:55.612 [pool-1-thread-25] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (3,16) at distance 1
+2026-06-19 13:15:55.613 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: car 10 at (4,11) dispatched to navigator 3
+2026-06-19 13:15:55.614 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21: 10 cars, explored=3.1%, idle=10, assigned=10, cost=1202ms
+2026-06-19 13:15:55.614 [pool-1-thread-25] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=12ms, (4,16) -> (3,16)
+2026-06-19 13:15:55.615 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (8,7) at distance 1
+2026-06-19 13:15:55.615 [pool-1-thread-28] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (7,4) map=20x20
+2026-06-19 13:15:55.615 [pool-1-thread-27] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (4,0) at distance 1
+2026-06-19 13:15:55.615 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=10ms, (9,7) -> (8,7)
+2026-06-19 13:15:55.618 [pool-1-thread-27] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=10ms, (5,0) -> (4,0)
+2026-06-19 13:15:55.621 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (11,18) map=20x20
+2026-06-19 13:15:55.630 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 21 took 1217ms (exceeded interval)
+2026-06-19 13:15:55.664 [pool-1-thread-28] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (6,4) at distance 1
+2026-06-19 13:15:55.671 [pool-1-thread-28] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=55ms, (7,4) -> (6,4)
+2026-06-19 13:15:55.673 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (10,18) at distance 1
+2026-06-19 13:15:55.675 [pool-1-thread-6] INFO  edu.homework.inspection.car.CarAgent - Car 4 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.676 [pool-1-thread-6] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (1,17)->(0,17) | timing: total=57ms check=2126us queuePop=4587us getPos=22060us validate=3283us posUpdate=7677us illuminate=11418us routeCheck=1514us stateTrans=2042us remainingSteps=0
+2026-06-19 13:15:55.677 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 8 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.677 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (5,0)->(4,0) | timing: total=57ms check=26131us queuePop=1542us getPos=1852us validate=2691us posUpdate=7310us illuminate=12503us routeCheck=494us stateTrans=1622us remainingSteps=0
+2026-06-19 13:15:55.678 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=58ms, (11,18) -> (10,18)
+2026-06-19 13:15:55.681 [pool-1-thread-29] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (4,11) map=20x20
+2026-06-19 13:15:55.681 [pool-1-thread-45] INFO  edu.homework.inspection.car.CarAgent - Car 3 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.682 [pool-1-thread-45] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (7,2)->(6,2) | timing: total=59ms check=1960us queuePop=433us getPos=2024us validate=3084us posUpdate=2489us illuminate=17116us routeCheck=403us stateTrans=1379us remainingSteps=0
+2026-06-19 13:15:55.683 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 5 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.683 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.683 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (9,18)->(8,18) | timing: total=64ms check=22659us queuePop=2055us getPos=7300us validate=1951us posUpdate=2753us illuminate=15018us routeCheck=648us stateTrans=1278us remainingSteps=0
+2026-06-19 13:15:55.683 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (19,12)->(18,12) | timing: total=63ms check=20754us queuePop=932us getPos=1885us validate=2640us posUpdate=3343us illuminate=17795us routeCheck=323us stateTrans=2380us remainingSteps=0
+2026-06-19 13:15:55.686 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.686 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (9,7)->(8,7) | timing: total=57ms check=3442us queuePop=5700us getPos=1901us validate=3800us posUpdate=2860us illuminate=15061us routeCheck=455us stateTrans=776us remainingSteps=0
+2026-06-19 13:15:55.690 [pool-1-thread-29] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (3,11) at distance 1
+2026-06-19 13:15:55.691 [pool-1-thread-33] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.692 [pool-1-thread-33] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (7,4)->(6,4) | timing: total=70ms check=2047us queuePop=986us getPos=852us validate=873us posUpdate=1125us illuminate=4498us routeCheck=126us stateTrans=648us remainingSteps=0
+2026-06-19 13:15:55.692 [pool-1-thread-29] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 1 steps, algo=ASTAR, searchCost=0ms, total=11ms, (4,11) -> (3,11)
+2026-06-19 13:15:55.693 [pool-1-thread-66] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:55.694 [pool-1-thread-66] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (4,16)->(3,16) | timing: total=73ms check=1050us queuePop=575us getPos=561us validate=1079us posUpdate=1276us illuminate=4728us routeCheck=226us stateTrans=1307us remainingSteps=0
+2026-06-19 13:15:56.883 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1230ms
+2026-06-19 13:15:56.895 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 1 at (18,12) dispatched to navigator 1
+2026-06-19 13:15:56.898 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 2 at (3,16) dispatched to navigator 2
+2026-06-19 13:15:56.898 [pool-1-thread-30] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (18,12) map=20x20
+2026-06-19 13:15:56.901 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 3 at (6,2) dispatched to navigator 2
+2026-06-19 13:15:56.901 [pool-1-thread-31] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (3,16) map=20x20
+2026-06-19 13:15:56.905 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 4 at (0,17) dispatched to navigator 3
+2026-06-19 13:15:56.906 [pool-1-thread-32] INFO  e.h.i.navigator.NavigationService - Navigator processing car 4 at (0,17) map=20x20
+2026-06-19 13:15:56.907 [pool-1-thread-30] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (18,14) at distance 2
+2026-06-19 13:15:56.907 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 5 at (8,18) dispatched to navigator 4
+2026-06-19 13:15:56.909 [pool-1-thread-31] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (5,16) at distance 2
+2026-06-19 13:15:56.909 [pool-1-thread-30] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=11ms, (18,12) -> (18,14)
+2026-06-19 13:15:56.909 [pool-1-thread-33] INFO  e.h.i.navigator.NavigationService - Navigator processing car 5 at (8,18) map=20x20
+2026-06-19 13:15:56.910 [pool-1-thread-31] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=9ms, (3,16) -> (5,16)
+2026-06-19 13:15:56.912 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 6 at (8,7) dispatched to navigator 5
+2026-06-19 13:15:56.914 [pool-1-thread-35] INFO  e.h.i.navigator.NavigationService - Navigator processing car 3 at (6,2) map=20x20
+2026-06-19 13:15:56.914 [pool-1-thread-34] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (8,7) map=20x20
+2026-06-19 13:15:56.915 [pool-1-thread-32] INFO  e.h.i.navigator.NavigationService - Navigator car 4: target selected (0,15) at distance 2
+2026-06-19 13:15:56.915 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 8 at (4,0) dispatched to navigator 1
+2026-06-19 13:15:56.917 [pool-1-thread-32] INFO  e.h.i.navigator.NavigationService - Navigator car 4 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=11ms, (0,17) -> (0,15)
+2026-06-19 13:15:56.919 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: car 9 at (6,4) dispatched to navigator 1
+2026-06-19 13:15:56.920 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22: 10 cars, explored=17.2%, idle=8, assigned=8, cost=1288ms
+2026-06-19 13:15:56.920 [pool-1-thread-36] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (4,0) map=20x20
+2026-06-19 13:15:56.921 [pool-1-thread-33] INFO  e.h.i.navigator.NavigationService - Navigator car 5: target selected (6,18) at distance 2
+2026-06-19 13:15:56.923 [pool-1-thread-33] INFO  e.h.i.navigator.NavigationService - Navigator car 5 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=13ms, (8,18) -> (6,18)
+2026-06-19 13:15:56.925 [pool-1-thread-34] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (6,7) at distance 2
+2026-06-19 13:15:56.933 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 22 took 1302ms (exceeded interval)
+2026-06-19 13:15:56.952 [pool-1-thread-35] INFO  e.h.i.navigator.NavigationService - Navigator car 3: target selected (8,4) at distance 4
+2026-06-19 13:15:56.955 [pool-1-thread-34] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=41ms, (8,7) -> (6,7)
+2026-06-19 13:15:56.958 [pool-1-thread-35] INFO  e.h.i.navigator.NavigationService - Navigator car 3 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=44ms, (6,2) -> (8,4)
+2026-06-19 13:15:56.962 [pool-1-thread-36] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (2,0) at distance 2
+2026-06-19 13:15:56.971 [pool-1-thread-36] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=52ms, (4,0) -> (2,0)
+2026-06-19 13:15:56.975 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (0,17)->(0,16) | timing: total=49ms check=23113us queuePop=1736us getPos=2490us validate=2098us posUpdate=2201us illuminate=12300us routeCheck=395us stateTrans=1394us remainingSteps=1
+2026-06-19 13:15:56.978 [pool-1-thread-63] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (8,18)->(7,18) | timing: total=49ms check=1217us queuePop=1276us getPos=1956us validate=2729us posUpdate=2338us illuminate=14203us routeCheck=685us stateTrans=1139us remainingSteps=1
+2026-06-19 13:15:56.978 [pool-1-thread-12] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (3,16)->(4,16) | timing: total=53ms check=1996us queuePop=1616us getPos=1427us validate=1895us posUpdate=2285us illuminate=15506us routeCheck=652us stateTrans=1326us remainingSteps=1
+2026-06-19 13:15:56.982 [pool-1-thread-37] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (6,4) map=20x20
+2026-06-19 13:15:56.984 [pool-1-thread-65] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:56.984 [pool-1-thread-65] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (11,18)->(10,18) | timing: total=34ms check=1849us queuePop=635us getPos=1707us validate=2131us posUpdate=4099us illuminate=19743us routeCheck=631us stateTrans=1239us remainingSteps=0
+2026-06-19 13:15:56.984 [pool-1-thread-21] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (8,7)->(7,7) | timing: total=33ms check=1963us queuePop=580us getPos=1438us validate=1824us posUpdate=2461us illuminate=20927us routeCheck=632us stateTrans=571us remainingSteps=1
+2026-06-19 13:15:57.001 [pool-1-thread-4] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (18,12)->(18,13) | timing: total=72ms check=1531us queuePop=525us getPos=2225us validate=3567us posUpdate=1657us illuminate=12619us routeCheck=469us stateTrans=1132us remainingSteps=1
+2026-06-19 13:15:57.001 [pool-1-thread-37] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (8,4) at distance 2
+2026-06-19 13:15:57.002 [pool-1-thread-14] INFO  edu.homework.inspection.car.CarAgent - Car 10 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:57.002 [pool-1-thread-14] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (4,11)->(3,11) | timing: total=74ms check=2409us queuePop=2894us getPos=1295us validate=1039us posUpdate=2709us illuminate=13187us routeCheck=221us stateTrans=800us remainingSteps=0
+2026-06-19 13:15:57.003 [pool-1-thread-37] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=24ms, (6,4) -> (8,4)
+2026-06-19 13:15:58.246 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1292ms
+2026-06-19 13:15:58.262 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 23: car 7 at (10,18) dispatched to navigator 1
+2026-06-19 13:15:58.264 [pool-1-thread-38] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (10,18) map=20x20
+2026-06-19 13:15:58.265 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 23: car 10 at (3,11) dispatched to navigator 2
+2026-06-19 13:15:58.266 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 23: 10 cars, explored=24.1%, idle=2, assigned=2, cost=1332ms
+2026-06-19 13:15:58.267 [pool-1-thread-39] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (3,11) map=20x20
+2026-06-19 13:15:58.276 [pool-1-thread-38] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (12,18) at distance 2
+2026-06-19 13:15:58.284 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 23 took 1351ms (exceeded interval)
+2026-06-19 13:15:58.302 [pool-1-thread-38] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=38ms, (10,18) -> (12,18)
+2026-06-19 13:15:58.302 [pool-1-thread-39] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (1,11) at distance 2
+2026-06-19 13:15:58.307 [pool-1-thread-39] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=41ms, (3,11) -> (1,11)
+2026-06-19 13:15:58.308 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 4 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:58.308 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (4,0)->(3,0) | timing: total=37ms check=1334us queuePop=428us getPos=806us validate=933us posUpdate=1733us illuminate=29997us routeCheck=455us stateTrans=1112us remainingSteps=1
+2026-06-19 13:15:58.309 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (0,16)->(0,15) | timing: total=38ms check=1278us queuePop=354us getPos=818us validate=968us posUpdate=1736us illuminate=29874us routeCheck=581us stateTrans=1633us remainingSteps=0
+2026-06-19 13:15:58.312 [pool-1-thread-19] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (6,4)->(7,4) | timing: total=41ms check=1156us queuePop=265us getPos=1387us validate=1255us posUpdate=2674us illuminate=32007us routeCheck=426us stateTrans=820us remainingSteps=1
+2026-06-19 13:15:58.314 [pool-1-thread-31] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:58.314 [pool-1-thread-31] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (7,7)->(6,7) | timing: total=41ms check=859us queuePop=301us getPos=430us validate=1400us posUpdate=23766us illuminate=11797us routeCheck=429us stateTrans=1292us remainingSteps=0
+2026-06-19 13:15:58.318 [pool-1-thread-11] INFO  edu.homework.inspection.car.CarAgent - Car 5 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:58.320 [pool-1-thread-11] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (7,18)->(6,18) | timing: total=49ms check=1185us queuePop=683us getPos=931us validate=1168us posUpdate=2172us illuminate=39605us routeCheck=635us stateTrans=2046us remainingSteps=0
+2026-06-19 13:15:58.320 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:58.320 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (4,16)->(5,16) | timing: total=40ms check=1752us queuePop=781us getPos=907us validate=1188us posUpdate=2107us illuminate=9935us routeCheck=843us stateTrans=775us remainingSteps=0
+2026-06-19 13:15:58.322 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (6,2)->(7,2) | timing: total=43ms check=1303us queuePop=954us getPos=1105us validate=1693us posUpdate=2235us illuminate=10875us routeCheck=227us stateTrans=448us remainingSteps=3
+2026-06-19 13:15:58.327 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:58.327 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (18,13)->(18,14) | timing: total=47ms check=900us queuePop=513us getPos=744us validate=2047us posUpdate=1043us illuminate=3600us routeCheck=192us stateTrans=773us remainingSteps=0
+2026-06-19 13:15:59.605 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1301ms
+2026-06-19 13:15:59.615 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24: car 1 at (18,14) dispatched to navigator 1
+2026-06-19 13:15:59.619 [pool-1-thread-40] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (18,14) map=20x20
+2026-06-19 13:15:59.620 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24: car 2 at (5,16) dispatched to navigator 2
+2026-06-19 13:15:59.621 [pool-1-thread-41] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (5,16) map=20x20
+2026-06-19 13:15:59.621 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24: car 4 at (0,15) dispatched to navigator 3
+2026-06-19 13:15:59.623 [pool-1-thread-42] INFO  e.h.i.navigator.NavigationService - Navigator processing car 4 at (0,15) map=20x20
+2026-06-19 13:15:59.624 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24: car 5 at (6,18) dispatched to navigator 4
+2026-06-19 13:15:59.626 [pool-1-thread-40] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (16,14) at distance 2
+2026-06-19 13:15:59.626 [pool-1-thread-43] INFO  e.h.i.navigator.NavigationService - Navigator processing car 5 at (6,18) map=20x20
+2026-06-19 13:15:59.628 [pool-1-thread-41] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (5,14) at distance 2
+2026-06-19 13:15:59.628 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24: car 6 at (6,7) dispatched to navigator 5
+2026-06-19 13:15:59.628 [pool-1-thread-40] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=10ms, (18,14) -> (16,14)
+2026-06-19 13:15:59.630 [pool-1-thread-41] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=8ms, (5,16) -> (5,14)
+2026-06-19 13:15:59.630 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24: 10 cars, explored=28.4%, idle=5, assigned=5, cost=1344ms
+2026-06-19 13:15:59.630 [pool-1-thread-44] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (6,7) map=20x20
+2026-06-19 13:15:59.630 [pool-1-thread-42] INFO  e.h.i.navigator.NavigationService - Navigator car 4: target selected (0,13) at distance 2
+2026-06-19 13:15:59.632 [pool-1-thread-42] INFO  e.h.i.navigator.NavigationService - Navigator car 4 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=9ms, (0,15) -> (0,13)
+2026-06-19 13:15:59.633 [pool-1-thread-43] INFO  e.h.i.navigator.NavigationService - Navigator car 5: target selected (4,18) at distance 2
+2026-06-19 13:15:59.635 [pool-1-thread-43] INFO  e.h.i.navigator.NavigationService - Navigator car 5 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=9ms, (6,18) -> (4,18)
+2026-06-19 13:15:59.640 [pool-1-thread-44] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (4,7) at distance 2
+2026-06-19 13:15:59.647 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 24 took 1361ms (exceeded interval)
+2026-06-19 13:15:59.666 [pool-1-thread-44] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=37ms, (6,7) -> (4,7)
+2026-06-19 13:15:59.684 [pool-1-thread-66] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (6,18)->(5,18) | timing: total=48ms check=1614us queuePop=1377us getPos=21732us validate=4829us posUpdate=2534us illuminate=12324us routeCheck=766us stateTrans=1064us remainingSteps=1
+2026-06-19 13:15:59.686 [pool-1-thread-18] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (3,11)->(2,11) | timing: total=50ms check=1275us queuePop=568us getPos=22334us validate=3941us posUpdate=2259us illuminate=14772us routeCheck=882us stateTrans=1248us remainingSteps=1
+2026-06-19 13:15:59.687 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (0,15)->(0,14) | timing: total=52ms check=2866us queuePop=619us getPos=23889us validate=5764us posUpdate=2761us illuminate=11202us routeCheck=639us stateTrans=1291us remainingSteps=1
+2026-06-19 13:15:59.690 [pool-1-thread-24] INFO  edu.homework.inspection.car.CarAgent - Car 8 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:59.690 [pool-1-thread-24] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (3,0)->(2,0) | timing: total=52ms check=3865us queuePop=1109us getPos=1381us validate=3574us posUpdate=4008us illuminate=10779us routeCheck=392us stateTrans=1316us remainingSteps=0
+2026-06-19 13:15:59.693 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (6,7)->(5,7) | timing: total=54ms check=1072us queuePop=226us getPos=867us validate=1778us posUpdate=3680us illuminate=12442us routeCheck=159us stateTrans=617us remainingSteps=1
+2026-06-19 13:15:59.694 [pool-1-thread-15] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (7,2)->(7,3) | timing: total=54ms check=938us queuePop=586us getPos=1177us validate=2104us posUpdate=3278us illuminate=10545us routeCheck=361us stateTrans=678us remainingSteps=2
+2026-06-19 13:15:59.695 [pool-1-thread-13] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:15:59.695 [pool-1-thread-13] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (7,4)->(8,4) | timing: total=56ms check=1165us queuePop=507us getPos=1234us validate=2493us posUpdate=2692us illuminate=10827us routeCheck=397us stateTrans=1337us remainingSteps=0
+2026-06-19 13:15:59.696 [pool-1-thread-52] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (18,14)->(17,14) | timing: total=59ms check=2189us queuePop=1349us getPos=1536us validate=3705us posUpdate=4069us illuminate=10732us routeCheck=247us stateTrans=1419us remainingSteps=1
+2026-06-19 13:15:59.698 [pool-1-thread-44] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,18)->(11,18) | timing: total=57ms check=2520us queuePop=1652us getPos=3449us validate=2452us posUpdate=2399us illuminate=8707us routeCheck=377us stateTrans=1315us remainingSteps=1
+2026-06-19 13:15:59.702 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (5,16)->(5,15) | timing: total=62ms check=2141us queuePop=1266us getPos=1371us validate=1479us posUpdate=2178us illuminate=6206us routeCheck=183us stateTrans=477us remainingSteps=1
+2026-06-19 13:16:00.853 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1186ms
+2026-06-19 13:16:00.868 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 25: car 8 at (2,0) dispatched to navigator 1
+2026-06-19 13:16:00.870 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 25: car 9 at (8,4) dispatched to navigator 1
+2026-06-19 13:16:00.872 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 25: 10 cars, explored=33.4%, idle=2, assigned=2, cost=1224ms
+2026-06-19 13:16:00.871 [pool-1-thread-45] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (2,0) map=20x20
+2026-06-19 13:16:00.883 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 25 took 1235ms (exceeded interval)
+2026-06-19 13:16:00.924 [pool-1-thread-45] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (0,0) at distance 2
+2026-06-19 13:16:00.932 [pool-1-thread-45] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=60ms, (2,0) -> (0,0)
+2026-06-19 13:16:00.935 [pool-1-thread-55] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.936 [pool-1-thread-55] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (17,14)->(16,14) | timing: total=59ms check=2003us queuePop=1175us getPos=1976us validate=3947us posUpdate=2062us illuminate=20275us routeCheck=742us stateTrans=1914us remainingSteps=0
+2026-06-19 13:16:00.937 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 4 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.937 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (0,14)->(0,13) | timing: total=61ms check=3867us queuePop=2627us getPos=3716us validate=2015us posUpdate=2459us illuminate=18675us routeCheck=761us stateTrans=1623us remainingSteps=0
+2026-06-19 13:16:00.939 [pool-1-thread-57] INFO  edu.homework.inspection.car.CarAgent - Car 10 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.939 [pool-1-thread-46] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (8,4) map=20x20
+2026-06-19 13:16:00.940 [pool-1-thread-57] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (2,11)->(1,11) | timing: total=38ms check=1824us queuePop=1286us getPos=2811us validate=2670us posUpdate=4652us illuminate=20304us routeCheck=840us stateTrans=1782us remainingSteps=0
+2026-06-19 13:16:00.943 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 5 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.943 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (5,18)->(4,18) | timing: total=66ms check=2053us queuePop=1333us getPos=2018us validate=3844us posUpdate=4073us illuminate=26468us routeCheck=381us stateTrans=938us remainingSteps=0
+2026-06-19 13:16:00.944 [pool-1-thread-21] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.944 [pool-1-thread-21] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (11,18)->(12,18) | timing: total=66ms check=1118us queuePop=390us getPos=1525us validate=4979us posUpdate=4496us illuminate=10658us routeCheck=334us stateTrans=780us remainingSteps=0
+2026-06-19 13:16:00.944 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.944 [pool-1-thread-51] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:00.945 [pool-1-thread-51] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (5,15)->(5,14) | timing: total=67ms check=2471us queuePop=1137us getPos=2971us validate=5870us posUpdate=2854us illuminate=11401us routeCheck=389us stateTrans=1091us remainingSteps=0
+2026-06-19 13:16:00.945 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (5,7)->(4,7) | timing: total=38ms check=1570us queuePop=658us getPos=1010us validate=2517us posUpdate=9105us illuminate=17218us routeCheck=386us stateTrans=786us remainingSteps=0
+2026-06-19 13:16:00.946 [pool-1-thread-15] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (2,0)->(1,0) | timing: total=67ms check=1151us queuePop=472us getPos=1402us validate=2058us posUpdate=3143us illuminate=6914us routeCheck=132us stateTrans=313us remainingSteps=1
+2026-06-19 13:16:00.946 [pool-1-thread-66] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (7,3)->(7,4) | timing: total=68ms check=1536us queuePop=390us getPos=1237us validate=2179us posUpdate=2990us illuminate=7828us routeCheck=272us stateTrans=480us remainingSteps=1
+2026-06-19 13:16:00.949 [pool-1-thread-46] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (10,5) at distance 3
+2026-06-19 13:16:00.951 [pool-1-thread-46] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 3 steps, algo=ASTAR, searchCost=0ms, total=13ms, (8,4) -> (10,5)
+2026-06-19 13:16:02.159 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1253ms
+2026-06-19 13:16:02.174 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 1 at (16,14) dispatched to navigator 1
+2026-06-19 13:16:02.176 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 2 at (5,14) dispatched to navigator 1
+2026-06-19 13:16:02.176 [pool-1-thread-47] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (16,14) map=20x20
+2026-06-19 13:16:02.178 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 4 at (0,13) dispatched to navigator 2
+2026-06-19 13:16:02.180 [pool-1-thread-48] INFO  e.h.i.navigator.NavigationService - Navigator processing car 4 at (0,13) map=20x20
+2026-06-19 13:16:02.180 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 5 at (4,18) dispatched to navigator 3
+2026-06-19 13:16:02.182 [pool-1-thread-49] INFO  e.h.i.navigator.NavigationService - Navigator processing car 5 at (4,18) map=20x20
+2026-06-19 13:16:02.184 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 6 at (4,7) dispatched to navigator 4
+2026-06-19 13:16:02.187 [pool-1-thread-47] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (14,14) at distance 2
+2026-06-19 13:16:02.189 [pool-1-thread-50] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (4,7) map=20x20
+2026-06-19 13:16:02.189 [pool-1-thread-47] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=13ms, (16,14) -> (14,14)
+2026-06-19 13:16:02.190 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 7 at (12,18) dispatched to navigator 5
+2026-06-19 13:16:02.190 [pool-1-thread-48] INFO  e.h.i.navigator.NavigationService - Navigator car 4: target selected (2,14) at distance 3
+2026-06-19 13:16:02.192 [pool-1-thread-49] INFO  e.h.i.navigator.NavigationService - Navigator car 5: target selected (2,18) at distance 2
+2026-06-19 13:16:02.192 [pool-1-thread-48] INFO  e.h.i.navigator.NavigationService - Navigator car 4 PLANNED: 3 steps, algo=ASTAR, searchCost=0ms, total=12ms, (0,13) -> (2,14)
+2026-06-19 13:16:02.192 [pool-1-thread-52] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (12,18) map=20x20
+2026-06-19 13:16:02.192 [pool-1-thread-51] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (5,14) map=20x20
+2026-06-19 13:16:02.194 [pool-1-thread-49] INFO  e.h.i.navigator.NavigationService - Navigator car 5 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=11ms, (4,18) -> (2,18)
+2026-06-19 13:16:02.194 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: car 10 at (1,11) dispatched to navigator 6
+2026-06-19 13:16:02.194 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26: 10 cars, explored=39.4%, idle=7, assigned=7, cost=1311ms
+2026-06-19 13:16:02.196 [pool-1-thread-53] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (1,11) map=20x20
+2026-06-19 13:16:02.197 [pool-1-thread-50] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (2,7) at distance 2
+2026-06-19 13:16:02.198 [pool-1-thread-50] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=9ms, (4,7) -> (2,7)
+2026-06-19 13:16:02.198 [pool-1-thread-52] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (12,16) at distance 2
+2026-06-19 13:16:02.199 [pool-1-thread-51] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (5,12) at distance 2
+2026-06-19 13:16:02.214 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 26 took 1330ms (exceeded interval)
+2026-06-19 13:16:02.229 [pool-1-thread-52] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=37ms, (12,18) -> (12,16)
+2026-06-19 13:16:02.233 [pool-1-thread-51] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=40ms, (5,14) -> (5,12)
+2026-06-19 13:16:02.243 [pool-1-thread-53] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (5,11) at distance 4
+2026-06-19 13:16:02.248 [pool-1-thread-53] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=51ms, (1,11) -> (5,11)
+2026-06-19 13:16:02.252 [pool-1-thread-12] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (4,18)->(3,18) | timing: total=51ms check=2142us queuePop=876us getPos=2056us validate=2923us posUpdate=2675us illuminate=13893us routeCheck=568us stateTrans=1786us remainingSteps=1
+2026-06-19 13:16:02.255 [pool-1-thread-58] INFO  edu.homework.inspection.car.CarAgent - Car 8 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:02.255 [pool-1-thread-58] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (1,0)->(0,0) | timing: total=54ms check=809us queuePop=380us getPos=2134us validate=3032us posUpdate=3329us illuminate=7338us routeCheck=934us stateTrans=2059us remainingSteps=0
+2026-06-19 13:16:02.258 [pool-1-thread-47] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (0,13)->(1,13) | timing: total=57ms check=2178us queuePop=1005us getPos=2110us validate=2877us posUpdate=2551us illuminate=16139us routeCheck=1261us stateTrans=4350us remainingSteps=2
+2026-06-19 13:16:02.260 [pool-1-thread-61] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (12,18)->(12,17) | timing: total=34ms check=2118us queuePop=877us getPos=2057us validate=1903us posUpdate=5757us illuminate=17606us routeCheck=567us stateTrans=662us remainingSteps=1
+2026-06-19 13:16:02.260 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (8,4)->(8,5) | timing: total=57ms check=2107us queuePop=311us getPos=1002us validate=1420us posUpdate=4639us illuminate=17839us routeCheck=460us stateTrans=676us remainingSteps=2
+2026-06-19 13:16:02.263 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (5,14)->(5,13) | timing: total=61ms check=2035us queuePop=1042us getPos=1520us validate=1520us posUpdate=2306us illuminate=10050us routeCheck=122us stateTrans=329us remainingSteps=1
+2026-06-19 13:16:02.264 [pool-1-thread-38] INFO  edu.homework.inspection.car.CarAgent - Car 3 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:02.264 [pool-1-thread-38] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (7,4)->(8,4) | timing: total=60ms check=1042us queuePop=412us getPos=1270us validate=3002us posUpdate=6629us illuminate=4398us routeCheck=153us stateTrans=505us remainingSteps=0
+2026-06-19 13:16:02.264 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (16,14)->(15,14) | timing: total=61ms check=887us queuePop=577us getPos=1803us validate=4408us posUpdate=1330us illuminate=3112us routeCheck=198us stateTrans=348us remainingSteps=1
+2026-06-19 13:16:02.265 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (4,7)->(3,7) | timing: total=62ms check=1684us queuePop=1007us getPos=3593us validate=1993us posUpdate=1028us illuminate=3537us routeCheck=154us stateTrans=301us remainingSteps=1
+2026-06-19 13:16:03.459 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1230ms
+2026-06-19 13:16:03.470 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 27: car 3 at (8,4) dispatched to navigator 1
+2026-06-19 13:16:03.472 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 27: car 8 at (0,0) dispatched to navigator 1
+2026-06-19 13:16:03.473 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 27: 10 cars, explored=43.1%, idle=2, assigned=2, cost=1258ms
+2026-06-19 13:16:03.472 [pool-1-thread-54] INFO  e.h.i.navigator.NavigationService - Navigator processing car 3 at (8,4) map=20x20
+2026-06-19 13:16:03.480 [pool-1-thread-54] INFO  e.h.i.navigator.NavigationService - Navigator car 3: target selected (4,5) at distance 5
+2026-06-19 13:16:03.489 [pool-1-thread-54] INFO  e.h.i.navigator.NavigationService - Navigator car 3 PLANNED: 5 steps, algo=ASTAR, searchCost=0ms, total=16ms, (8,4) -> (4,5)
+2026-06-19 13:16:03.494 [pool-1-thread-55] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (0,0) map=20x20
+2026-06-19 13:16:03.499 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (1,13)->(1,14) | timing: total=16ms check=2911us queuePop=438us getPos=776us validate=1755us posUpdate=1518us illuminate=5689us routeCheck=161us stateTrans=287us remainingSteps=1
+2026-06-19 13:16:03.500 [pool-1-thread-22] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:03.500 [pool-1-thread-22] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (5,13)->(5,12) | timing: total=17ms check=3212us queuePop=498us getPos=857us validate=1712us posUpdate=1387us illuminate=5942us routeCheck=367us stateTrans=738us remainingSteps=0
+2026-06-19 13:16:03.501 [pool-1-thread-32] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (1,11)->(2,11) | timing: total=17ms check=1575us queuePop=404us getPos=765us validate=1183us posUpdate=891us illuminate=4990us routeCheck=521us stateTrans=725us remainingSteps=3
+2026-06-19 13:16:03.501 [pool-1-thread-25] INFO  edu.homework.inspection.car.CarAgent - Car 5 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:03.501 [pool-1-thread-25] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (3,18)->(2,18) | timing: total=18ms check=2748us queuePop=354us getPos=844us validate=1637us posUpdate=1682us illuminate=7087us routeCheck=200us stateTrans=806us remainingSteps=0
+2026-06-19 13:16:03.501 [pool-1-thread-27] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (8,5)->(9,5) | timing: total=17ms check=1069us queuePop=388us getPos=1764us validate=1014us posUpdate=887us illuminate=6657us routeCheck=178us stateTrans=738us remainingSteps=1
+2026-06-19 13:16:03.514 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 27 took 1299ms (exceeded interval)
+2026-06-19 13:16:03.522 [pool-1-thread-55] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (2,2) at distance 4
+2026-06-19 13:16:03.524 [pool-1-thread-55] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=31ms, (0,0) -> (2,2)
+2026-06-19 13:16:03.539 [pool-1-thread-28] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:03.539 [pool-1-thread-28] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (12,17)->(12,16) | timing: total=39ms check=424us queuePop=843us getPos=18694us validate=2421us posUpdate=2588us illuminate=12256us routeCheck=219us stateTrans=783us remainingSteps=0
+2026-06-19 13:16:03.541 [pool-1-thread-8] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:03.541 [pool-1-thread-8] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (15,14)->(14,14) | timing: total=39ms check=2167us queuePop=401us getPos=972us validate=1932us posUpdate=3069us illuminate=10404us routeCheck=148us stateTrans=593us remainingSteps=0
+2026-06-19 13:16:03.541 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (8,4)->(7,4) | timing: total=39ms check=1609us queuePop=991us getPos=1810us validate=2442us posUpdate=3328us illuminate=8435us routeCheck=164us stateTrans=290us remainingSteps=4
+2026-06-19 13:16:03.543 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:03.543 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (3,7)->(2,7) | timing: total=41ms check=1681us queuePop=678us getPos=933us validate=2446us posUpdate=2168us illuminate=4049us routeCheck=161us stateTrans=375us remainingSteps=0
+2026-06-19 13:16:04.831 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1308ms
+2026-06-19 13:16:04.844 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28: car 1 at (14,14) dispatched to navigator 1
+2026-06-19 13:16:04.847 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28: car 2 at (5,12) dispatched to navigator 1
+2026-06-19 13:16:04.848 [pool-1-thread-56] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (14,14) map=20x20
+2026-06-19 13:16:04.851 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28: car 5 at (2,18) dispatched to navigator 2
+2026-06-19 13:16:04.853 [pool-1-thread-57] INFO  e.h.i.navigator.NavigationService - Navigator processing car 5 at (2,18) map=20x20
+2026-06-19 13:16:04.854 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28: car 6 at (2,7) dispatched to navigator 3
+2026-06-19 13:16:04.857 [pool-1-thread-58] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (2,7) map=20x20
+2026-06-19 13:16:04.858 [pool-1-thread-56] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (12,14) at distance 2
+2026-06-19 13:16:04.859 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28: car 7 at (12,16) dispatched to navigator 4
+2026-06-19 13:16:04.861 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28: 10 cars, explored=46.6%, idle=5, assigned=5, cost=1346ms
+2026-06-19 13:16:04.861 [pool-1-thread-56] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=12ms, (14,14) -> (12,14)
+2026-06-19 13:16:04.861 [pool-1-thread-59] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (12,16) map=20x20
+2026-06-19 13:16:04.863 [pool-1-thread-57] INFO  e.h.i.navigator.NavigationService - Navigator car 5: target selected (0,19) at distance 3
+2026-06-19 13:16:04.864 [pool-1-thread-60] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (5,12) map=20x20
+2026-06-19 13:16:04.865 [pool-1-thread-57] INFO  e.h.i.navigator.NavigationService - Navigator car 5 PLANNED: 3 steps, algo=ASTAR, searchCost=0ms, total=11ms, (2,18) -> (0,19)
+2026-06-19 13:16:04.868 [pool-1-thread-58] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (2,5) at distance 2
+2026-06-19 13:16:04.869 [pool-1-thread-58] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=13ms, (2,7) -> (2,5)
+2026-06-19 13:16:04.870 [pool-1-thread-59] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (10,16) at distance 2
+2026-06-19 13:16:04.871 [pool-1-thread-60] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (7,12) at distance 2
+2026-06-19 13:16:04.871 [pool-1-thread-59] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=10ms, (12,16) -> (10,16)
+2026-06-19 13:16:04.873 [pool-1-thread-60] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=9ms, (5,12) -> (7,12)
+2026-06-19 13:16:04.875 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 4 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:04.876 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (1,14)->(2,14) | timing: total=11ms check=1014us queuePop=261us getPos=480us validate=459us posUpdate=781us illuminate=3895us routeCheck=679us stateTrans=1916us remainingSteps=0
+2026-06-19 13:16:04.884 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 28 took 1369ms (exceeded interval)
+2026-06-19 13:16:04.910 [pool-1-thread-15] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (2,18)->(1,18) | timing: total=39ms check=492us queuePop=178us getPos=277us validate=532us posUpdate=754us illuminate=33843us routeCheck=373us stateTrans=2188us remainingSteps=2
+2026-06-19 13:16:04.916 [pool-1-thread-54] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (0,0)->(1,0) | timing: total=42ms check=19866us queuePop=882us getPos=1345us validate=1188us posUpdate=1746us illuminate=11210us routeCheck=1013us stateTrans=728us remainingSteps=3
+2026-06-19 13:16:04.920 [pool-1-thread-33] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (5,12)->(6,12) | timing: total=45ms check=20226us queuePop=1514us getPos=1101us validate=1203us posUpdate=1720us illuminate=14953us routeCheck=592us stateTrans=396us remainingSteps=1
+2026-06-19 13:16:04.921 [pool-1-thread-6] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,14)->(13,14) | timing: total=44ms check=982us queuePop=650us getPos=873us validate=1436us posUpdate=3697us illuminate=9662us routeCheck=153us stateTrans=351us remainingSteps=1
+2026-06-19 13:16:04.921 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (7,4)->(6,4) | timing: total=45ms check=906us queuePop=397us getPos=934us validate=1547us posUpdate=3851us illuminate=9433us routeCheck=133us stateTrans=496us remainingSteps=3
+2026-06-19 13:16:04.922 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:04.922 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (9,5)->(10,5) | timing: total=46ms check=979us queuePop=387us getPos=1247us validate=1655us posUpdate=2286us illuminate=8660us routeCheck=386us stateTrans=662us remainingSteps=0
+2026-06-19 13:16:04.924 [pool-1-thread-3] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (2,11)->(3,11) | timing: total=50ms check=1243us queuePop=1085us getPos=2261us validate=3080us posUpdate=3139us illuminate=4959us routeCheck=297us stateTrans=701us remainingSteps=2
+2026-06-19 13:16:06.155 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1254ms
+2026-06-19 13:16:06.166 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 29: car 4 at (2,14) dispatched to navigator 1
+2026-06-19 13:16:06.169 [pool-1-thread-61] INFO  e.h.i.navigator.NavigationService - Navigator processing car 4 at (2,14) map=20x20
+2026-06-19 13:16:06.170 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 29: car 9 at (10,5) dispatched to navigator 2
+2026-06-19 13:16:06.170 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 29: 10 cars, explored=49.4%, idle=2, assigned=2, cost=1285ms
+2026-06-19 13:16:06.172 [pool-1-thread-62] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (10,5) map=20x20
+2026-06-19 13:16:06.175 [pool-1-thread-61] INFO  e.h.i.navigator.NavigationService - Navigator car 4: target selected (8,13) at distance 7
+2026-06-19 13:16:06.178 [pool-1-thread-61] INFO  e.h.i.navigator.NavigationService - Navigator car 4 PLANNED: 7 steps, algo=ASTAR, searchCost=0ms, total=8ms, (2,14) -> (8,13)
+2026-06-19 13:16:06.178 [pool-1-thread-62] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (12,5) at distance 2
+2026-06-19 13:16:06.180 [pool-1-thread-62] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=8ms, (10,5) -> (12,5)
+2026-06-19 13:16:06.183 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 29 took 1298ms (exceeded interval)
+2026-06-19 13:16:06.229 [pool-1-thread-37] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (2,14)->(3,14) | timing: total=48ms check=22583us queuePop=449us getPos=1937us validate=4110us posUpdate=2455us illuminate=10490us routeCheck=918us stateTrans=1431us remainingSteps=6
+2026-06-19 13:16:06.231 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (1,18)->(0,18) | timing: total=50ms check=1211us queuePop=2133us getPos=22303us validate=6613us posUpdate=3844us illuminate=9387us routeCheck=1099us stateTrans=1242us remainingSteps=1
+2026-06-19 13:16:06.233 [pool-1-thread-12] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:06.234 [pool-1-thread-12] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (13,14)->(12,14) | timing: total=50ms check=1947us queuePop=707us getPos=2653us validate=1954us posUpdate=1880us illuminate=13257us routeCheck=663us stateTrans=2337us remainingSteps=0
+2026-06-19 13:16:06.235 [pool-1-thread-62] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (10,5)->(11,5) | timing: total=52ms check=3743us queuePop=316us getPos=912us validate=1544us posUpdate=1449us illuminate=13955us routeCheck=623us stateTrans=1076us remainingSteps=1
+2026-06-19 13:16:06.236 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (6,4)->(6,5) | timing: total=29ms check=2124us queuePop=993us getPos=2179us validate=1513us posUpdate=4029us illuminate=13633us routeCheck=587us stateTrans=675us remainingSteps=2
+2026-06-19 13:16:06.236 [pool-1-thread-32] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (12,16)->(11,16) | timing: total=54ms check=3106us queuePop=20720us getPos=2067us validate=3144us posUpdate=2694us illuminate=18139us routeCheck=708us stateTrans=1000us remainingSteps=1
+2026-06-19 13:16:06.237 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:06.237 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (6,12)->(7,12) | timing: total=53ms check=2098us queuePop=700us getPos=2331us validate=3362us posUpdate=1903us illuminate=17936us routeCheck=464us stateTrans=792us remainingSteps=0
+2026-06-19 13:16:06.240 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,7)->(2,6) | timing: total=53ms check=966us queuePop=665us getPos=2355us validate=2801us posUpdate=4226us illuminate=7992us routeCheck=285us stateTrans=506us remainingSteps=1
+2026-06-19 13:16:06.241 [pool-1-thread-10] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (1,0)->(2,0) | timing: total=56ms check=1314us queuePop=1417us getPos=2976us validate=3347us posUpdate=1234us illuminate=3264us routeCheck=83us stateTrans=200us remainingSteps=2
+2026-06-19 13:16:06.243 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (3,11)->(4,11) | timing: total=58ms check=1411us queuePop=373us getPos=934us validate=867us posUpdate=848us illuminate=3264us routeCheck=120us stateTrans=339us remainingSteps=1
+2026-06-19 13:16:07.440 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1232ms
+2026-06-19 13:16:07.452 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 30: car 1 at (12,14) dispatched to navigator 1
+2026-06-19 13:16:07.455 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 30: car 2 at (7,12) dispatched to navigator 1
+2026-06-19 13:16:07.456 [pool-1-thread-63] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (12,14) map=20x20
+2026-06-19 13:16:07.457 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 30: 10 cars, explored=52.2%, idle=2, assigned=2, cost=1273ms
+2026-06-19 13:16:07.464 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 30 took 1282ms (exceeded interval)
+2026-06-19 13:16:07.495 [pool-1-thread-63] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (14,12) at distance 4
+2026-06-19 13:16:07.500 [pool-1-thread-63] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=44ms, (12,14) -> (14,12)
+2026-06-19 13:16:07.505 [pool-1-thread-11] INFO  edu.homework.inspection.car.CarAgent - Car 5 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:07.505 [pool-1-thread-11] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (0,18)->(0,19) | timing: total=44ms check=23094us queuePop=432us getPos=2269us validate=2790us posUpdate=2706us illuminate=6928us routeCheck=756us stateTrans=1327us remainingSteps=0
+2026-06-19 13:16:07.507 [pool-1-thread-64] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (7,12) map=20x20
+2026-06-19 13:16:07.508 [pool-1-thread-51] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (2,0)->(2,1) | timing: total=46ms check=1335us queuePop=5395us getPos=17456us validate=3679us posUpdate=2681us illuminate=11414us routeCheck=417us stateTrans=1985us remainingSteps=1
+2026-06-19 13:16:07.512 [pool-1-thread-5] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (3,14)->(3,13) | timing: total=51ms check=1279us queuePop=547us getPos=1457us validate=21692us posUpdate=3851us illuminate=18258us routeCheck=375us stateTrans=1149us remainingSteps=5
+2026-06-19 13:16:07.512 [pool-1-thread-7] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (6,5)->(5,5) | timing: total=25ms check=2391us queuePop=500us getPos=1075us validate=3070us posUpdate=2165us illuminate=11954us routeCheck=677us stateTrans=661us remainingSteps=1
+2026-06-19 13:16:07.513 [pool-1-thread-22] INFO  edu.homework.inspection.car.CarAgent - Car 10 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:07.513 [pool-1-thread-22] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (4,11)->(5,11) | timing: total=52ms check=1197us queuePop=916us getPos=20896us validate=2976us posUpdate=4969us illuminate=16448us routeCheck=474us stateTrans=970us remainingSteps=0
+2026-06-19 13:16:07.516 [pool-1-thread-54] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:07.516 [pool-1-thread-54] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (11,5)->(12,5) | timing: total=51ms check=2511us queuePop=379us getPos=1424us validate=2528us posUpdate=4481us illuminate=9971us routeCheck=152us stateTrans=669us remainingSteps=0
+2026-06-19 13:16:07.517 [pool-1-thread-59] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:07.517 [pool-1-thread-59] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (11,16)->(10,16) | timing: total=51ms check=1118us queuePop=559us getPos=1142us validate=1789us posUpdate=4336us illuminate=9888us routeCheck=145us stateTrans=385us remainingSteps=0
+2026-06-19 13:16:07.518 [pool-1-thread-64] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (9,12) at distance 2
+2026-06-19 13:16:07.519 [pool-1-thread-3] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:07.519 [pool-1-thread-3] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,6)->(2,5) | timing: total=54ms check=1142us queuePop=591us getPos=990us validate=1344us posUpdate=1022us illuminate=4200us routeCheck=145us stateTrans=504us remainingSteps=0
+2026-06-19 13:16:07.519 [pool-1-thread-64] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=13ms, (7,12) -> (9,12)
+2026-06-19 13:16:08.768 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1278ms
+2026-06-19 13:16:08.780 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31: car 5 at (0,19) dispatched to navigator 1
+2026-06-19 13:16:08.782 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31: car 6 at (2,5) dispatched to navigator 1
+2026-06-19 13:16:08.783 [pool-1-thread-65] INFO  e.h.i.navigator.NavigationService - Navigator processing car 5 at (0,19) map=20x20
+2026-06-19 13:16:08.786 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31: car 7 at (10,16) dispatched to navigator 2
+2026-06-19 13:16:08.788 [pool-1-thread-66] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (10,16) map=20x20
+2026-06-19 13:16:08.788 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31: car 9 at (12,5) dispatched to navigator 3
+2026-06-19 13:16:08.790 [pool-1-thread-3] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (12,5) map=20x20
+2026-06-19 13:16:08.790 [pool-1-thread-65] INFO  e.h.i.navigator.NavigationService - Navigator car 5: target selected (8,16) at distance 11
+2026-06-19 13:16:08.791 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31: car 10 at (5,11) dispatched to navigator 4
+2026-06-19 13:16:08.791 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31: 10 cars, explored=56.3%, idle=5, assigned=5, cost=1325ms
+2026-06-19 13:16:08.792 [pool-1-thread-65] INFO  e.h.i.navigator.NavigationService - Navigator car 5 PLANNED: 11 steps, algo=ASTAR, searchCost=0ms, total=9ms, (0,19) -> (8,16)
+2026-06-19 13:16:08.793 [pool-1-thread-4] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (5,11) map=20x20
+2026-06-19 13:16:08.794 [pool-1-thread-66] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (8,16) at distance 2
+2026-06-19 13:16:08.794 [pool-1-thread-65] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (2,5) map=20x20
+2026-06-19 13:16:08.796 [pool-1-thread-66] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=9ms, (10,16) -> (8,16)
+2026-06-19 13:16:08.801 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 31 took 1335ms (exceeded interval)
+2026-06-19 13:16:08.823 [pool-1-thread-3] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (14,5) at distance 2
+2026-06-19 13:16:08.828 [pool-1-thread-3] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=39ms, (12,5) -> (14,5)
+2026-06-19 13:16:08.835 [pool-1-thread-4] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (5,9) at distance 2
+2026-06-19 13:16:08.840 [pool-1-thread-4] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=47ms, (5,11) -> (5,9)
+2026-06-19 13:16:08.846 [pool-1-thread-38] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (0,19)->(1,19) | timing: total=49ms check=22427us queuePop=529us getPos=2086us validate=3240us posUpdate=2941us illuminate=12507us routeCheck=551us stateTrans=1382us remainingSteps=10
+2026-06-19 13:16:08.850 [pool-1-thread-65] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (2,3) at distance 2
+2026-06-19 13:16:08.855 [pool-1-thread-65] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=60ms, (2,5) -> (2,3)
+2026-06-19 13:16:08.855 [pool-1-thread-58] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (3,13)->(4,13) | timing: total=58ms check=23541us queuePop=1249us getPos=1982us validate=2742us posUpdate=3578us illuminate=20339us routeCheck=924us stateTrans=1154us remainingSteps=4
+2026-06-19 13:16:08.856 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (12,14)->(13,14) | timing: total=57ms check=3401us queuePop=1223us getPos=1024us validate=1658us posUpdate=2586us illuminate=14663us routeCheck=405us stateTrans=719us remainingSteps=3
+2026-06-19 13:16:08.857 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 8 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:08.857 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (2,1)->(2,2) | timing: total=59ms check=1010us queuePop=512us getPos=1208us validate=1735us posUpdate=2796us illuminate=13687us routeCheck=352us stateTrans=948us remainingSteps=0
+2026-06-19 13:16:08.858 [pool-1-thread-40] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (12,5)->(13,5) | timing: total=60ms check=1195us queuePop=1065us getPos=1278us validate=1840us posUpdate=2249us illuminate=13783us routeCheck=260us stateTrans=672us remainingSteps=1
+2026-06-19 13:16:08.861 [pool-1-thread-60] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (7,12)->(8,12) | timing: total=61ms check=1064us queuePop=924us getPos=1304us validate=3075us posUpdate=2710us illuminate=6673us routeCheck=236us stateTrans=586us remainingSteps=1
+2026-06-19 13:16:08.863 [pool-1-thread-10] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,16)->(9,16) | timing: total=62ms check=2099us queuePop=1425us getPos=1349us validate=1949us posUpdate=1643us illuminate=6295us routeCheck=464us stateTrans=405us remainingSteps=1
+2026-06-19 13:16:08.863 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 3 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:08.864 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (5,5)->(4,5) | timing: total=61ms check=1628us queuePop=1827us getPos=1487us validate=1846us posUpdate=1923us illuminate=7267us routeCheck=194us stateTrans=508us remainingSteps=0
+2026-06-19 13:16:08.865 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,5)->(2,4) | timing: total=63ms check=1514us queuePop=726us getPos=1437us validate=1401us posUpdate=1500us illuminate=4896us routeCheck=155us stateTrans=355us remainingSteps=1
+2026-06-19 13:16:10.212 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1387ms
+2026-06-19 13:16:10.225 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 32: car 3 at (4,5) dispatched to navigator 1
+2026-06-19 13:16:10.229 [pool-1-thread-6] INFO  e.h.i.navigator.NavigationService - Navigator processing car 3 at (4,5) map=20x20
+2026-06-19 13:16:10.232 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 32: car 8 at (2,2) dispatched to navigator 2
+2026-06-19 13:16:10.233 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 32: 10 cars, explored=59.4%, idle=2, assigned=2, cost=1431ms
+2026-06-19 13:16:10.234 [pool-1-thread-7] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (2,2) map=20x20
+2026-06-19 13:16:10.236 [pool-1-thread-6] INFO  e.h.i.navigator.NavigationService - Navigator car 3: target selected (4,3) at distance 2
+2026-06-19 13:16:10.238 [pool-1-thread-6] INFO  e.h.i.navigator.NavigationService - Navigator car 3 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=10ms, (4,5) -> (4,3)
+2026-06-19 13:16:10.246 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 32 took 1444ms (exceeded interval)
+2026-06-19 13:16:10.270 [pool-1-thread-7] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (4,2) at distance 2
+2026-06-19 13:16:10.276 [pool-1-thread-7] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=42ms, (2,2) -> (4,2)
+2026-06-19 13:16:10.288 [pool-1-thread-20] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (13,14)->(14,14) | timing: total=46ms check=2253us queuePop=473us getPos=2412us validate=2294us posUpdate=2691us illuminate=11183us routeCheck=857us stateTrans=1256us remainingSteps=2
+2026-06-19 13:16:10.289 [pool-1-thread-56] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:10.290 [pool-1-thread-56] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (8,12)->(9,12) | timing: total=49ms check=20766us queuePop=1037us getPos=2221us validate=3292us posUpdate=4150us illuminate=12804us routeCheck=411us stateTrans=1883us remainingSteps=0
+2026-06-19 13:16:10.294 [pool-1-thread-50] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:10.294 [pool-1-thread-50] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,4)->(2,3) | timing: total=52ms check=5079us queuePop=859us getPos=1298us validate=1924us posUpdate=3827us illuminate=13023us routeCheck=321us stateTrans=1234us remainingSteps=0
+2026-06-19 13:16:10.294 [pool-1-thread-8] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (1,19)->(2,19) | timing: total=52ms check=2693us queuePop=933us getPos=1663us validate=1481us posUpdate=3374us illuminate=10036us routeCheck=148us stateTrans=809us remainingSteps=9
+2026-06-19 13:16:10.297 [pool-1-thread-19] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:10.297 [pool-1-thread-19] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (9,16)->(8,16) | timing: total=55ms check=1318us queuePop=430us getPos=1063us validate=1859us posUpdate=2925us illuminate=10397us routeCheck=155us stateTrans=798us remainingSteps=0
+2026-06-19 13:16:10.298 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (4,5)->(3,5) | timing: total=56ms check=1748us queuePop=1098us getPos=2194us validate=3258us posUpdate=4746us illuminate=7583us routeCheck=352us stateTrans=744us remainingSteps=3
+2026-06-19 13:16:10.300 [pool-1-thread-53] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (4,13)->(5,13) | timing: total=55ms check=1342us queuePop=1164us getPos=1265us validate=1220us posUpdate=1347us illuminate=5948us routeCheck=302us stateTrans=378us remainingSteps=3
+2026-06-19 13:16:10.300 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:10.300 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (13,5)->(14,5) | timing: total=55ms check=1182us queuePop=734us getPos=1456us validate=1295us posUpdate=1804us illuminate=6002us routeCheck=131us stateTrans=557us remainingSteps=0
+2026-06-19 13:16:10.300 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (5,11)->(5,10) | timing: total=55ms check=1021us queuePop=832us getPos=1135us validate=808us posUpdate=1151us illuminate=4991us routeCheck=252us stateTrans=426us remainingSteps=1
+2026-06-19 13:16:11.497 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1229ms
+2026-06-19 13:16:11.511 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 33: car 2 at (9,12) dispatched to navigator 1
+2026-06-19 13:16:11.513 [pool-1-thread-9] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (9,12) map=20x20
+2026-06-19 13:16:11.514 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 33: car 6 at (2,3) dispatched to navigator 2
+2026-06-19 13:16:11.515 [pool-1-thread-8] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (2,3) map=20x20
+2026-06-19 13:16:11.516 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 33: car 7 at (8,16) dispatched to navigator 3
+2026-06-19 13:16:11.518 [pool-1-thread-10] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (8,16) map=20x20
+2026-06-19 13:16:11.519 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 33: car 9 at (14,5) dispatched to navigator 4
+2026-06-19 13:16:11.520 [pool-1-thread-9] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (11,12) at distance 2
+2026-06-19 13:16:11.520 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 33: 10 cars, explored=61.9%, idle=4, assigned=4, cost=1273ms
+2026-06-19 13:16:11.521 [pool-1-thread-11] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (14,5) map=20x20
+2026-06-19 13:16:11.523 [pool-1-thread-8] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (0,3) at distance 2
+2026-06-19 13:16:11.523 [pool-1-thread-9] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=11ms, (9,12) -> (11,12)
+2026-06-19 13:16:11.524 [pool-1-thread-10] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (8,14) at distance 2
+2026-06-19 13:16:11.526 [pool-1-thread-8] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=10ms, (2,3) -> (0,3)
+2026-06-19 13:16:11.530 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 33 took 1283ms (exceeded interval)
+2026-06-19 13:16:11.555 [pool-1-thread-10] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=37ms, (8,16) -> (8,14)
+2026-06-19 13:16:11.560 [pool-1-thread-11] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (16,5) at distance 2
+2026-06-19 13:16:11.565 [pool-1-thread-11] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=44ms, (14,5) -> (16,5)
+2026-06-19 13:16:11.583 [pool-1-thread-61] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (2,19)->(3,19) | timing: total=57ms check=23465us queuePop=1170us getPos=2652us validate=3472us posUpdate=1994us illuminate=16364us routeCheck=1156us stateTrans=3628us remainingSteps=8
+2026-06-19 13:16:11.587 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 10 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:11.587 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (5,10)->(5,9) | timing: total=62ms check=2764us queuePop=22769us getPos=2285us validate=3765us posUpdate=2307us illuminate=23013us routeCheck=1175us stateTrans=1570us remainingSteps=0
+2026-06-19 13:16:11.593 [pool-1-thread-63] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (9,12)->(10,12) | timing: total=39ms check=2322us queuePop=671us getPos=765us validate=1523us posUpdate=2308us illuminate=24189us routeCheck=770us stateTrans=3191us remainingSteps=1
+2026-06-19 13:16:11.599 [pool-1-thread-45] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (8,16)->(8,15) | timing: total=73ms check=2043us queuePop=723us getPos=1611us validate=3258us posUpdate=7076us illuminate=24059us routeCheck=1458us stateTrans=1682us remainingSteps=1
+2026-06-19 13:16:11.600 [pool-1-thread-65] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (2,2)->(3,2) | timing: total=73ms check=1946us queuePop=893us getPos=2333us validate=2100us posUpdate=7659us illuminate=21295us routeCheck=274us stateTrans=498us remainingSteps=1
+2026-06-19 13:16:11.600 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,14)->(14,13) | timing: total=48ms check=2340us queuePop=1300us getPos=1752us validate=2991us posUpdate=10036us illuminate=24394us routeCheck=180us stateTrans=366us remainingSteps=1
+2026-06-19 13:16:11.601 [pool-1-thread-37] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,3)->(1,3) | timing: total=74ms check=1616us queuePop=429us getPos=3978us validate=5652us posUpdate=4714us illuminate=15543us routeCheck=106us stateTrans=458us remainingSteps=1
+2026-06-19 13:16:11.604 [pool-1-thread-57] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (3,5)->(3,4) | timing: total=77ms check=1109us queuePop=2154us getPos=4060us validate=4944us posUpdate=4486us illuminate=17060us routeCheck=213us stateTrans=284us remainingSteps=2
+2026-06-19 13:16:11.604 [pool-1-thread-17] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (5,13)->(6,13) | timing: total=79ms check=1802us queuePop=343us getPos=1115us validate=1894us posUpdate=14364us illuminate=22930us routeCheck=355us stateTrans=542us remainingSteps=2
+2026-06-19 13:16:11.604 [pool-1-thread-58] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (14,5)->(15,5) | timing: total=78ms check=2907us queuePop=392us getPos=1704us validate=1782us posUpdate=2955us illuminate=12632us routeCheck=325us stateTrans=600us remainingSteps=1
+2026-06-19 13:16:12.920 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1365ms
+2026-06-19 13:16:12.934 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 34: car 10 at (5,9) dispatched to navigator 1
+2026-06-19 13:16:12.935 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 34: 10 cars, explored=66.3%, idle=1, assigned=1, cost=1403ms
+2026-06-19 13:16:12.936 [pool-1-thread-12] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (5,9) map=20x20
+2026-06-19 13:16:12.944 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 34 took 1413ms (exceeded interval)
+2026-06-19 13:16:12.975 [pool-1-thread-12] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (7,9) at distance 2
+2026-06-19 13:16:12.983 [pool-1-thread-12] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=47ms, (5,9) -> (7,9)
+2026-06-19 13:16:12.991 [pool-1-thread-3] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (3,19)->(3,18) | timing: total=51ms check=21619us queuePop=722us getPos=2252us validate=3071us posUpdate=1866us illuminate=12648us routeCheck=808us stateTrans=4069us remainingSteps=7
+2026-06-19 13:16:13.000 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (6,13)->(7,13) | timing: total=59ms check=21598us queuePop=945us getPos=2067us validate=3553us posUpdate=4841us illuminate=17983us routeCheck=1889us stateTrans=3380us remainingSteps=1
+2026-06-19 13:16:13.000 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 6 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:13.002 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (1,3)->(0,3) | timing: total=35ms check=3748us queuePop=951us getPos=1066us validate=2743us posUpdate=2114us illuminate=15149us routeCheck=2065us stateTrans=4364us remainingSteps=0
+2026-06-19 13:16:13.004 [pool-1-thread-25] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:13.004 [pool-1-thread-25] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (10,12)->(11,12) | timing: total=62ms check=21373us queuePop=1222us getPos=1875us validate=3237us posUpdate=3624us illuminate=22908us routeCheck=1268us stateTrans=3241us remainingSteps=0
+2026-06-19 13:16:13.005 [pool-1-thread-52] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:13.005 [pool-1-thread-52] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (15,5)->(16,5) | timing: total=39ms check=2149us queuePop=1196us getPos=1619us validate=3952us posUpdate=2327us illuminate=22637us routeCheck=746us stateTrans=978us remainingSteps=0
+2026-06-19 13:16:13.006 [pool-1-thread-40] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:13.006 [pool-1-thread-40] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,13)->(14,12) | timing: total=62ms check=2042us queuePop=922us getPos=2266us validate=2022us posUpdate=3046us illuminate=26928us routeCheck=661us stateTrans=752us remainingSteps=0
+2026-06-19 13:16:13.006 [pool-1-thread-6] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:13.007 [pool-1-thread-6] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (8,15)->(8,14) | timing: total=38ms check=1660us queuePop=594us getPos=1580us validate=2972us posUpdate=2022us illuminate=25073us routeCheck=432us stateTrans=987us remainingSteps=0
+2026-06-19 13:16:13.008 [pool-1-thread-19] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (3,4)->(3,3) | timing: total=66ms check=1176us queuePop=442us getPos=1127us validate=1949us posUpdate=8130us illuminate=13549us routeCheck=117us stateTrans=194us remainingSteps=1
+2026-06-19 13:16:13.012 [pool-1-thread-17] INFO  edu.homework.inspection.car.CarAgent - Car 8 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:13.012 [pool-1-thread-17] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (3,2)->(4,2) | timing: total=67ms check=3898us queuePop=1342us getPos=3850us validate=4838us posUpdate=1178us illuminate=4187us routeCheck=139us stateTrans=340us remainingSteps=0
+2026-06-19 13:16:14.286 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1316ms
+2026-06-19 13:16:14.308 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: car 1 at (14,12) dispatched to navigator 1
+2026-06-19 13:16:14.310 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: car 2 at (11,12) dispatched to navigator 1
+2026-06-19 13:16:14.311 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (14,12) map=20x20
+2026-06-19 13:16:14.313 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: car 6 at (0,3) dispatched to navigator 2
+2026-06-19 13:16:14.316 [pool-1-thread-14] INFO  e.h.i.navigator.NavigationService - Navigator processing car 6 at (0,3) map=20x20
+2026-06-19 13:16:14.317 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: car 7 at (8,14) dispatched to navigator 3
+2026-06-19 13:16:14.319 [pool-1-thread-15] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (8,14) map=20x20
+2026-06-19 13:16:14.320 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (14,10) at distance 2
+2026-06-19 13:16:14.320 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: car 8 at (4,2) dispatched to navigator 4
+2026-06-19 13:16:14.322 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=10ms, (14,12) -> (14,10)
+2026-06-19 13:16:14.322 [pool-1-thread-16] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (4,2) map=20x20
+2026-06-19 13:16:14.324 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: car 9 at (16,5) dispatched to navigator 5
+2026-06-19 13:16:14.324 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (11,12) map=20x20
+2026-06-19 13:16:14.324 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35: 10 cars, explored=68.4%, idle=6, assigned=6, cost=1379ms
+2026-06-19 13:16:14.324 [pool-1-thread-14] INFO  e.h.i.navigator.NavigationService - Navigator car 6: target selected (6,0) at distance 9
+2026-06-19 13:16:14.326 [pool-1-thread-14] INFO  e.h.i.navigator.NavigationService - Navigator car 6 PLANNED: 9 steps, algo=ASTAR, searchCost=0ms, total=10ms, (0,3) -> (6,0)
+2026-06-19 13:16:14.327 [pool-1-thread-18] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (16,5) map=20x20
+2026-06-19 13:16:14.327 [pool-1-thread-15] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (10,14) at distance 2
+2026-06-19 13:16:14.328 [pool-1-thread-15] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=10ms, (8,14) -> (10,14)
+2026-06-19 13:16:14.331 [pool-1-thread-16] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (6,0) at distance 4
+2026-06-19 13:16:14.333 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 35 took 1388ms (exceeded interval)
+2026-06-19 13:16:14.357 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (11,10) at distance 2
+2026-06-19 13:16:14.357 [pool-1-thread-16] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=35ms, (4,2) -> (6,0)
+2026-06-19 13:16:14.372 [pool-1-thread-13] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=47ms, (11,12) -> (11,10)
+2026-06-19 13:16:14.399 [pool-1-thread-18] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (16,3) at distance 2
+2026-06-19 13:16:14.405 [pool-1-thread-18] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=78ms, (16,5) -> (16,3)
+2026-06-19 13:16:14.413 [pool-1-thread-20] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,12)->(14,11) | timing: total=82ms check=2257us queuePop=819us getPos=2415us validate=3214us posUpdate=25080us illuminate=13748us routeCheck=1153us stateTrans=1337us remainingSteps=1
+2026-06-19 13:16:14.416 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (5,9)->(6,9) | timing: total=85ms check=22146us queuePop=1591us getPos=2336us validate=3328us posUpdate=25040us illuminate=16766us routeCheck=865us stateTrans=1650us remainingSteps=1
+2026-06-19 13:16:14.416 [pool-1-thread-48] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (3,18)->(4,18) | timing: total=86ms check=22420us queuePop=470us getPos=2334us validate=4302us posUpdate=33539us illuminate=16710us routeCheck=1055us stateTrans=1585us remainingSteps=6
+2026-06-19 13:16:14.416 [pool-1-thread-24] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (0,3)->(1,3) | timing: total=60ms check=2566us queuePop=1081us getPos=9470us validate=24143us posUpdate=3077us illuminate=14991us routeCheck=474us stateTrans=1015us remainingSteps=8
+2026-06-19 13:16:14.419 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 4 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:14.419 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (7,13)->(8,13) | timing: total=88ms check=22284us queuePop=1690us getPos=2361us validate=3270us posUpdate=24886us illuminate=20615us routeCheck=455us stateTrans=1555us remainingSteps=0
+2026-06-19 13:16:14.420 [pool-1-thread-33] INFO  edu.homework.inspection.car.CarAgent - Car 3 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:14.420 [pool-1-thread-33] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (3,3)->(4,3) | timing: total=60ms check=9664us queuePop=528us getPos=23585us validate=3366us posUpdate=2750us illuminate=14848us routeCheck=1108us stateTrans=1057us remainingSteps=0
+2026-06-19 13:16:14.420 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (11,12)->(11,11) | timing: total=87ms check=9883us queuePop=23091us getPos=1657us validate=2094us posUpdate=2770us illuminate=14514us routeCheck=488us stateTrans=1067us remainingSteps=1
+2026-06-19 13:16:14.421 [pool-1-thread-5] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (4,2)->(4,1) | timing: total=90ms check=4658us queuePop=2675us getPos=11022us validate=25508us posUpdate=3880us illuminate=14300us routeCheck=825us stateTrans=1356us remainingSteps=3
+2026-06-19 13:16:14.424 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (16,5)->(16,4) | timing: total=92ms check=1444us queuePop=443us getPos=1501us validate=2742us posUpdate=2625us illuminate=5448us routeCheck=229us stateTrans=403us remainingSteps=1
+2026-06-19 13:16:14.426 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (8,14)->(9,14) | timing: total=93ms check=2959us queuePop=1366us getPos=2796us validate=1872us posUpdate=2322us illuminate=5432us routeCheck=418us stateTrans=341us remainingSteps=1
+2026-06-19 13:16:15.749 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1356ms
+2026-06-19 13:16:15.757 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 36: car 3 at (4,3) dispatched to navigator 1
+2026-06-19 13:16:15.760 [pool-1-thread-19] INFO  e.h.i.navigator.NavigationService - Navigator processing car 3 at (4,3) map=20x20
+2026-06-19 13:16:15.760 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 36: car 4 at (8,13) dispatched to navigator 2
+2026-06-19 13:16:15.762 [pool-1-thread-20] INFO  e.h.i.navigator.NavigationService - Navigator processing car 4 at (8,13) map=20x20
+2026-06-19 13:16:15.762 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 36: 10 cars, explored=71.6%, idle=2, assigned=2, cost=1428ms
+2026-06-19 13:16:15.768 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 36 took 1434ms (exceeded interval)
+2026-06-19 13:16:15.768 [pool-1-thread-19] INFO  e.h.i.navigator.NavigationService - Navigator car 3: target selected (6,0) at distance 5
+2026-06-19 13:16:15.793 [pool-1-thread-20] INFO  e.h.i.navigator.NavigationService - Navigator car 4: target selected (9,10) at distance 4
+2026-06-19 13:16:15.796 [pool-1-thread-19] INFO  e.h.i.navigator.NavigationService - Navigator car 3 PLANNED: 7 steps, algo=ASTAR, searchCost=0ms, total=36ms, (4,3) -> (6,0)
+2026-06-19 13:16:15.798 [pool-1-thread-20] INFO  e.h.i.navigator.NavigationService - Navigator car 4 PLANNED: 6 steps, algo=ASTAR, searchCost=0ms, total=37ms, (8,13) -> (9,10)
+2026-06-19 13:16:15.815 [pool-1-thread-54] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:15.815 [pool-1-thread-54] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (16,4)->(16,3) | timing: total=50ms check=2146us queuePop=20015us getPos=6219us validate=3009us posUpdate=2334us illuminate=12615us routeCheck=508us stateTrans=1731us remainingSteps=0
+2026-06-19 13:16:15.816 [pool-1-thread-10] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (4,18)->(5,18) | timing: total=50ms check=1471us queuePop=433us getPos=20090us validate=5361us posUpdate=4100us illuminate=14618us routeCheck=530us stateTrans=1283us remainingSteps=5
+2026-06-19 13:16:15.817 [pool-1-thread-42] INFO  edu.homework.inspection.car.CarAgent - Car 10 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:15.817 [pool-1-thread-42] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (6,9)->(7,9) | timing: total=51ms check=2592us queuePop=701us getPos=5551us validate=2722us posUpdate=2072us illuminate=13389us routeCheck=746us stateTrans=1871us remainingSteps=0
+2026-06-19 13:16:15.821 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:15.821 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,11)->(14,10) | timing: total=53ms check=2297us queuePop=1180us getPos=2007us validate=1436us posUpdate=2518us illuminate=12531us routeCheck=485us stateTrans=778us remainingSteps=0
+2026-06-19 13:16:15.821 [pool-1-thread-21] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (1,3)->(2,3) | timing: total=31ms check=1462us queuePop=380us getPos=1083us validate=1835us posUpdate=2206us illuminate=17204us routeCheck=126us stateTrans=337us remainingSteps=7
+2026-06-19 13:16:15.823 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (4,3)->(4,2) | timing: total=53ms check=888us queuePop=400us getPos=1750us validate=3114us posUpdate=2385us illuminate=10776us routeCheck=210us stateTrans=132us remainingSteps=6
+2026-06-19 13:16:15.823 [pool-1-thread-20] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:15.824 [pool-1-thread-20] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (11,11)->(11,10) | timing: total=54ms check=1250us queuePop=644us getPos=2534us validate=2119us posUpdate=2652us illuminate=9503us routeCheck=135us stateTrans=934us remainingSteps=0
+2026-06-19 13:16:15.824 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (4,1)->(5,1) | timing: total=54ms check=1825us queuePop=374us getPos=1170us validate=2034us posUpdate=2495us illuminate=7159us routeCheck=150us stateTrans=543us remainingSteps=2
+2026-06-19 13:16:15.830 [pool-1-thread-65] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:15.830 [pool-1-thread-65] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (9,14)->(10,14) | timing: total=60ms check=2452us queuePop=1256us getPos=1040us validate=1463us posUpdate=1329us illuminate=7259us routeCheck=327us stateTrans=1345us remainingSteps=0
+2026-06-19 13:16:17.126 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1336ms
+2026-06-19 13:16:17.136 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37: car 1 at (14,10) dispatched to navigator 1
+2026-06-19 13:16:17.139 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37: car 2 at (11,10) dispatched to navigator 2
+2026-06-19 13:16:17.139 [pool-1-thread-21] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (14,10) map=20x20
+2026-06-19 13:16:17.140 [pool-1-thread-22] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (11,10) map=20x20
+2026-06-19 13:16:17.141 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37: car 7 at (10,14) dispatched to navigator 3
+2026-06-19 13:16:17.145 [pool-1-thread-23] INFO  e.h.i.navigator.NavigationService - Navigator processing car 7 at (10,14) map=20x20
+2026-06-19 13:16:17.147 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37: car 9 at (16,3) dispatched to navigator 4
+2026-06-19 13:16:17.148 [pool-1-thread-21] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (14,8) at distance 2
+2026-06-19 13:16:17.149 [pool-1-thread-24] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (16,3) map=20x20
+2026-06-19 13:16:17.150 [pool-1-thread-22] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (9,10) at distance 2
+2026-06-19 13:16:17.150 [pool-1-thread-21] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=11ms, (14,10) -> (14,8)
+2026-06-19 13:16:17.151 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37: car 10 at (7,9) dispatched to navigator 5
+2026-06-19 13:16:17.151 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37: 10 cars, explored=75.0%, idle=5, assigned=5, cost=1382ms
+2026-06-19 13:16:17.151 [pool-1-thread-22] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=11ms, (11,10) -> (9,10)
+2026-06-19 13:16:17.153 [pool-1-thread-25] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (7,9) map=20x20
+2026-06-19 13:16:17.153 [pool-1-thread-23] INFO  e.h.i.navigator.NavigationService - Navigator car 7: target selected (9,10) at distance 5
+2026-06-19 13:16:17.155 [pool-1-thread-23] INFO  e.h.i.navigator.NavigationService - Navigator car 7 PLANNED: 5 steps, algo=ASTAR, searchCost=0ms, total=12ms, (10,14) -> (9,10)
+2026-06-19 13:16:17.158 [pool-1-thread-24] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (18,3) at distance 2
+2026-06-19 13:16:17.161 [pool-1-thread-24] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=13ms, (16,3) -> (18,3)
+2026-06-19 13:16:17.165 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 37 took 1397ms (exceeded interval)
+2026-06-19 13:16:17.165 [pool-1-thread-25] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (9,9) at distance 2
+2026-06-19 13:16:17.186 [pool-1-thread-25] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=35ms, (7,9) -> (9,9)
+2026-06-19 13:16:17.205 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (5,18)->(6,18) | timing: total=41ms check=880us queuePop=963us getPos=1717us validate=13056us posUpdate=3718us illuminate=16604us routeCheck=699us stateTrans=1287us remainingSteps=4
+2026-06-19 13:16:17.205 [pool-1-thread-35] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (5,1)->(5,0) | timing: total=39ms check=12568us queuePop=1072us getPos=2238us validate=2525us posUpdate=2413us illuminate=13725us routeCheck=768us stateTrans=1078us remainingSteps=1
+2026-06-19 13:16:17.208 [pool-1-thread-17] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (11,10)->(10,10) | timing: total=45ms check=1531us queuePop=358us getPos=1880us validate=16757us posUpdate=4460us illuminate=14992us routeCheck=736us stateTrans=1441us remainingSteps=1
+2026-06-19 13:16:17.208 [pool-1-thread-56] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,3)->(2,2) | timing: total=44ms check=1094us queuePop=1124us getPos=5253us validate=10346us posUpdate=2241us illuminate=19199us routeCheck=860us stateTrans=1336us remainingSteps=6
+2026-06-19 13:16:17.209 [pool-1-thread-54] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,14)->(10,13) | timing: total=42ms check=2206us queuePop=289us getPos=1178us validate=1929us posUpdate=2385us illuminate=13508us routeCheck=758us stateTrans=1174us remainingSteps=4
+2026-06-19 13:16:17.210 [pool-1-thread-27] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,10)->(14,9) | timing: total=43ms check=1434us queuePop=341us getPos=1151us validate=1641us posUpdate=2749us illuminate=14440us routeCheck=995us stateTrans=1157us remainingSteps=1
+2026-06-19 13:16:17.210 [pool-1-thread-37] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (8,13)->(9,13) | timing: total=48ms check=985us queuePop=615us getPos=1604us validate=2792us posUpdate=4513us illuminate=23358us routeCheck=1001us stateTrans=590us remainingSteps=5
+2026-06-19 13:16:17.210 [pool-1-thread-19] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (16,3)->(17,3) | timing: total=44ms check=2319us queuePop=576us getPos=1990us validate=2375us posUpdate=2276us illuminate=17115us routeCheck=1069us stateTrans=674us remainingSteps=1
+2026-06-19 13:16:17.215 [pool-1-thread-61] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (4,2)->(3,2) | timing: total=48ms check=940us queuePop=1117us getPos=1212us validate=2110us posUpdate=2900us illuminate=14066us routeCheck=351us stateTrans=435us remainingSteps=5
+2026-06-19 13:16:18.471 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1302ms
+2026-06-19 13:16:18.484 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 38: 10 cars, explored=77.5%, idle=0, assigned=0, cost=1317ms
+2026-06-19 13:16:18.493 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 38 took 1326ms (exceeded interval)
+2026-06-19 13:16:18.534 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 9 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:18.534 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (17,3)->(18,3) | timing: total=46ms check=12981us queuePop=1438us getPos=2671us validate=3614us posUpdate=2656us illuminate=15121us routeCheck=484us stateTrans=1532us remainingSteps=0
+2026-06-19 13:16:18.535 [pool-1-thread-8] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (3,2)->(3,1) | timing: total=47ms check=2345us queuePop=567us getPos=2645us validate=6165us posUpdate=2438us illuminate=15312us routeCheck=676us stateTrans=1309us remainingSteps=4
+2026-06-19 13:16:18.537 [pool-1-thread-65] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (6,18)->(7,18) | timing: total=47ms check=2409us queuePop=661us getPos=4695us validate=2679us posUpdate=2771us illuminate=13834us routeCheck=781us stateTrans=1520us remainingSteps=3
+2026-06-19 13:16:18.537 [pool-1-thread-16] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (7,9)->(8,9) | timing: total=34ms check=2621us queuePop=638us getPos=2702us validate=5280us posUpdate=2528us illuminate=15205us routeCheck=776us stateTrans=1356us remainingSteps=1
+2026-06-19 13:16:18.537 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:18.537 [pool-1-thread-36] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,9)->(14,8) | timing: total=35ms check=2610us queuePop=1009us getPos=4570us validate=3273us posUpdate=2585us illuminate=15928us routeCheck=775us stateTrans=1264us remainingSteps=0
+2026-06-19 13:16:18.538 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (9,13)->(9,12) | timing: total=51ms check=1946us queuePop=679us getPos=13012us validate=3921us posUpdate=5867us illuminate=21371us routeCheck=341us stateTrans=1028us remainingSteps=4
+2026-06-19 13:16:18.539 [pool-1-thread-31] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,2)->(2,1) | timing: total=51ms check=5390us queuePop=4332us getPos=2791us validate=4158us posUpdate=3225us illuminate=13185us routeCheck=309us stateTrans=505us remainingSteps=5
+2026-06-19 13:16:18.539 [pool-1-thread-32] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,13)->(10,12) | timing: total=34ms check=4554us queuePop=1321us getPos=1782us validate=1850us posUpdate=4232us illuminate=15086us routeCheck=435us stateTrans=892us remainingSteps=3
+2026-06-19 13:16:18.545 [pool-1-thread-59] INFO  edu.homework.inspection.car.CarAgent - Car 2 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:18.545 [pool-1-thread-59] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (10,10)->(9,10) | timing: total=54ms check=3060us queuePop=1457us getPos=1739us validate=2288us posUpdate=2579us illuminate=8275us routeCheck=448us stateTrans=786us remainingSteps=0
+2026-06-19 13:16:18.546 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 8 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:18.546 [pool-1-thread-39] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (5,0)->(6,0) | timing: total=55ms check=2421us queuePop=1318us getPos=2355us validate=1403us posUpdate=1173us illuminate=4844us routeCheck=123us stateTrans=486us remainingSteps=0
+2026-06-19 13:16:19.694 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1188ms
+2026-06-19 13:16:19.719 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 39: car 1 at (14,8) dispatched to navigator 1
+2026-06-19 13:16:19.722 [pool-1-thread-27] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (14,8) map=20x20
+2026-06-19 13:16:19.725 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 39: car 2 at (9,10) dispatched to navigator 2
+2026-06-19 13:16:19.727 [pool-1-thread-28] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (9,10) map=20x20
+2026-06-19 13:16:19.731 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 39: car 8 at (6,0) dispatched to navigator 3
+2026-06-19 13:16:19.734 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator processing car 8 at (6,0) map=20x20
+2026-06-19 13:16:19.735 [pool-1-thread-27] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (16,8) at distance 2
+2026-06-19 13:16:19.735 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 39: car 9 at (18,3) dispatched to navigator 4
+2026-06-19 13:16:19.736 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 39: 10 cars, explored=79.1%, idle=4, assigned=4, cost=1242ms
+2026-06-19 13:16:19.736 [pool-1-thread-27] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 2 steps, algo=ASTAR, searchCost=0ms, total=14ms, (14,8) -> (16,8)
+2026-06-19 13:16:19.736 [pool-1-thread-29] INFO  e.h.i.navigator.NavigationService - Navigator processing car 9 at (18,3) map=20x20
+2026-06-19 13:16:19.736 [pool-1-thread-28] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (10,7) at distance 4
+2026-06-19 13:16:19.738 [pool-1-thread-28] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 4 steps, algo=ASTAR, searchCost=0ms, total=11ms, (9,10) -> (10,7)
+2026-06-19 13:16:19.741 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 39 took 1248ms (exceeded interval)
+2026-06-19 13:16:19.754 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator car 8: target selected (10,7) at distance 11
+2026-06-19 13:16:19.763 [pool-1-thread-62] WARN  edu.homework.inspection.car.CarAgent - Car 2 COLLISION_AVOIDED: target (9,9) already reserved by another car -> path cleared
+2026-06-19 13:16:19.764 [pool-1-thread-26] INFO  e.h.i.navigator.NavigationService - Navigator car 8 PLANNED: 17 steps, algo=ASTAR, searchCost=0ms, total=31ms, (6,0) -> (10,7)
+2026-06-19 13:16:19.770 [pool-1-thread-29] INFO  e.h.i.navigator.NavigationService - Navigator car 9: target selected (17,1) at distance 3
+2026-06-19 13:16:19.775 [pool-1-thread-29] INFO  e.h.i.navigator.NavigationService - Navigator car 9 PLANNED: 3 steps, algo=ASTAR, searchCost=0ms, total=39ms, (18,3) -> (17,1)
+2026-06-19 13:16:19.781 [pool-1-thread-25] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (14,8)->(15,8) | timing: total=40ms check=11706us queuePop=1624us getPos=2099us validate=2982us posUpdate=2245us illuminate=14418us routeCheck=510us stateTrans=1079us remainingSteps=1
+2026-06-19 13:16:19.781 [pool-1-thread-26] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (3,1)->(3,0) | timing: total=36ms check=2358us queuePop=545us getPos=2189us validate=2127us posUpdate=3112us illuminate=11072us routeCheck=605us stateTrans=1119us remainingSteps=3
+2026-06-19 13:16:19.781 [pool-1-thread-40] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (7,18)->(7,17) | timing: total=40ms check=11659us queuePop=1602us getPos=2145us validate=2717us posUpdate=2269us illuminate=14287us routeCheck=506us stateTrans=1121us remainingSteps=2
+2026-06-19 13:16:19.781 [pool-1-thread-48] INFO  edu.homework.inspection.car.CarAgent - Car 10 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:19.781 [pool-1-thread-48] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (8,9)->(9,9) | timing: total=41ms check=11715us queuePop=1434us getPos=2092us validate=3005us posUpdate=2355us illuminate=14838us routeCheck=583us stateTrans=1231us remainingSteps=0
+2026-06-19 13:16:19.783 [pool-1-thread-29] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (9,12)->(10,12) | timing: total=43ms check=2289us queuePop=10277us getPos=2424us validate=2943us posUpdate=3221us illuminate=16217us routeCheck=1009us stateTrans=2309us remainingSteps=3
+2026-06-19 13:16:19.785 [pool-1-thread-52] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (6,0)->(5,0) | timing: total=45ms check=1694us queuePop=1018us getPos=1401us validate=2026us posUpdate=3132us illuminate=9716us routeCheck=412us stateTrans=1058us remainingSteps=16
+2026-06-19 13:16:19.788 [pool-1-thread-41] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,12)->(10,11) | timing: total=47ms check=1497us queuePop=334us getPos=2527us validate=3986us posUpdate=2248us illuminate=7266us routeCheck=127us stateTrans=436us remainingSteps=2
+2026-06-19 13:16:19.790 [pool-1-thread-9] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (2,1)->(3,1) | timing: total=48ms check=1347us queuePop=1510us getPos=1467us validate=2969us posUpdate=4014us illuminate=5009us routeCheck=256us stateTrans=511us remainingSteps=4
+2026-06-19 13:16:20.931 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1176ms
+2026-06-19 13:16:20.944 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 40: car 2 at (9,10) dispatched to navigator 1
+2026-06-19 13:16:20.946 [pool-1-thread-30] INFO  e.h.i.navigator.NavigationService - Navigator processing car 2 at (9,10) map=20x20
+2026-06-19 13:16:20.946 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 40: car 10 at (9,9) dispatched to navigator 2
+2026-06-19 13:16:20.946 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 40: 10 cars, explored=79.7%, idle=2, assigned=2, cost=1203ms
+2026-06-19 13:16:20.950 [pool-1-thread-31] INFO  e.h.i.navigator.NavigationService - Navigator processing car 10 at (9,9) map=20x20
+2026-06-19 13:16:20.952 [pool-1-thread-30] INFO  e.h.i.navigator.NavigationService - Navigator car 2: target selected (10,7) at distance 4
+2026-06-19 13:16:20.957 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 40 took 1213ms (exceeded interval)
+2026-06-19 13:16:20.976 [pool-1-thread-30] INFO  e.h.i.navigator.NavigationService - Navigator car 2 PLANNED: 6 steps, algo=ASTAR, searchCost=0ms, total=30ms, (9,10) -> (10,7)
+2026-06-19 13:16:20.999 [pool-1-thread-31] INFO  e.h.i.navigator.NavigationService - Navigator car 10: target selected (10,7) at distance 3
+2026-06-19 13:16:21.001 [pool-1-thread-23] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (5,0)->(5,1) | timing: total=49ms check=16174us queuePop=2097us getPos=2080us validate=3416us posUpdate=2272us illuminate=16656us routeCheck=559us stateTrans=1488us remainingSteps=15
+2026-06-19 13:16:21.004 [pool-1-thread-11] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (9,10)->(8,10) | timing: total=33ms check=1906us queuePop=811us getPos=2738us validate=1762us posUpdate=5200us illuminate=14964us routeCheck=517us stateTrans=1391us remainingSteps=5
+2026-06-19 13:16:21.006 [pool-1-thread-31] INFO  e.h.i.navigator.NavigationService - Navigator car 10 PLANNED: 3 steps, algo=ASTAR, searchCost=0ms, total=55ms, (9,9) -> (10,7)
+2026-06-19 13:16:21.007 [pool-1-thread-57] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (3,1)->(4,1) | timing: total=30ms check=1233us queuePop=671us getPos=1168us validate=4574us posUpdate=3035us illuminate=14140us routeCheck=787us stateTrans=942us remainingSteps=3
+2026-06-19 13:16:21.007 [pool-1-thread-55] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (10,12)->(10,11) | timing: total=55ms check=4820us queuePop=2772us getPos=2526us validate=6191us posUpdate=2971us illuminate=14210us routeCheck=293us stateTrans=847us remainingSteps=2
+2026-06-19 13:16:21.008 [pool-1-thread-19] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (7,17)->(8,17) | timing: total=54ms check=2795us queuePop=1605us getPos=2127us validate=2958us posUpdate=6494us illuminate=16792us routeCheck=1139us stateTrans=1831us remainingSteps=1
+2026-06-19 13:16:21.008 [pool-1-thread-38] INFO  edu.homework.inspection.car.CarAgent - Car 1 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:21.008 [pool-1-thread-38] INFO  edu.homework.inspection.car.CarAgent - Car 1 MOVE (15,8)->(16,8) | timing: total=53ms check=1069us queuePop=562us getPos=3968us validate=1716us posUpdate=2987us illuminate=14270us routeCheck=500us stateTrans=915us remainingSteps=0
+2026-06-19 13:16:21.008 [pool-1-thread-24] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,11)->(10,10) | timing: total=34ms check=2799us queuePop=808us getPos=1103us validate=5639us posUpdate=3083us illuminate=15592us routeCheck=731us stateTrans=1302us remainingSteps=1
+2026-06-19 13:16:21.009 [pool-1-thread-12] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (18,3)->(17,3) | timing: total=55ms check=3496us queuePop=457us getPos=1238us validate=2226us posUpdate=2908us illuminate=13897us routeCheck=236us stateTrans=295us remainingSteps=2
+2026-06-19 13:16:21.013 [pool-1-thread-46] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (3,0)->(4,0) | timing: total=57ms check=875us queuePop=342us getPos=1262us validate=1238us posUpdate=1080us illuminate=2935us routeCheck=145us stateTrans=325us remainingSteps=2
+2026-06-19 13:16:21.547 [pool-2-thread-48] INFO  e.h.i.controller.ControllerMain - Controller received command: 0
+2026-06-19 13:16:21.547 [pool-2-thread-48] INFO  e.h.i.controller.ControllerAgent - Controller stopped at tick 41
+2026-06-19 13:16:21.547 [pool-1-thread-8] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 0
+2026-06-19 13:16:21.548 [pool-1-thread-8] INFO  e.h.i.recorder.RecorderService - Recorder stopped
+2026-06-19 13:16:21.548 [recorder-record] INFO  e.h.i.recorder.RecorderService - Record loop ended: 53 frames saved
+2026-06-19 13:16:22.194 [controller-tick-loop] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1220ms
+2026-06-19 13:16:22.204 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 41: car 1 at (16,8) dispatched to navigator 1
+2026-06-19 13:16:22.206 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 41: 10 cars, explored=80.0%, idle=1, assigned=1, cost=1249ms
+2026-06-19 13:16:22.206 [pool-1-thread-32] INFO  e.h.i.navigator.NavigationService - Navigator processing car 1 at (16,8) map=20x20
+2026-06-19 13:16:22.214 [controller-tick-loop] INFO  e.h.i.controller.ControllerAgent - Tick 41 took 1257ms (exceeded interval)
+2026-06-19 13:16:22.233 [pool-1-thread-32] INFO  e.h.i.navigator.NavigationService - Navigator car 1: target selected (12,7) at distance 5
+2026-06-19 13:16:22.247 [pool-1-thread-32] INFO  e.h.i.navigator.NavigationService - Navigator car 1 PLANNED: 5 steps, algo=ASTAR, searchCost=0ms, total=41ms, (16,8) -> (12,7)
+2026-06-19 13:16:22.259 [pool-1-thread-56] INFO  edu.homework.inspection.car.CarAgent - Car 4 MOVE (10,11)->(10,10) | timing: total=47ms check=12925us queuePop=486us getPos=2492us validate=3304us posUpdate=5731us illuminate=17504us routeCheck=516us stateTrans=1327us remainingSteps=1
+2026-06-19 13:16:22.260 [pool-1-thread-28] INFO  edu.homework.inspection.car.CarAgent - Car 10 MOVE (9,9)->(9,8) | timing: total=47ms check=12708us queuePop=1703us getPos=2070us validate=2394us posUpdate=7095us illuminate=16927us routeCheck=818us stateTrans=1065us remainingSteps=2
+2026-06-19 13:16:22.262 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 5 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:22.262 [pool-1-thread-34] INFO  edu.homework.inspection.car.CarAgent - Car 3 MOVE (4,0)->(5,0) | timing: total=46ms check=2275us queuePop=1226us getPos=946us validate=4874us posUpdate=4864us illuminate=11456us routeCheck=258us stateTrans=2487us remainingSteps=1
+2026-06-19 13:16:22.262 [pool-1-thread-43] INFO  edu.homework.inspection.car.CarAgent - Car 5 MOVE (8,17)->(8,16) | timing: total=34ms check=1987us queuePop=1057us getPos=1015us validate=5114us posUpdate=2417us illuminate=14120us routeCheck=800us stateTrans=1748us remainingSteps=0
+2026-06-19 13:16:22.263 [pool-1-thread-13] INFO  edu.homework.inspection.car.CarAgent - Car 6 MOVE (4,1)->(5,1) | timing: total=37ms check=2044us queuePop=794us getPos=1862us validate=2554us posUpdate=5190us illuminate=16792us routeCheck=607us stateTrans=1077us remainingSteps=2
+2026-06-19 13:16:22.264 [pool-1-thread-22] INFO  edu.homework.inspection.car.CarAgent - Car 2 MOVE (8,10)->(8,9) | timing: total=51ms check=1917us queuePop=446us getPos=1924us validate=3110us posUpdate=6369us illuminate=16115us routeCheck=449us stateTrans=881us remainingSteps=4
+2026-06-19 13:16:22.264 [pool-1-thread-58] INFO  edu.homework.inspection.car.CarAgent - Car 8 MOVE (5,1)->(4,1) | timing: total=32ms check=3646us queuePop=926us getPos=3944us validate=2099us posUpdate=3494us illuminate=13329us routeCheck=406us stateTrans=351us remainingSteps=14
+2026-06-19 13:16:22.266 [pool-1-thread-42] INFO  edu.homework.inspection.car.CarAgent - Car 7 ROUTE_DONE: arrived at target, path completed
+2026-06-19 13:16:22.266 [pool-1-thread-48] INFO  edu.homework.inspection.car.CarAgent - Car 9 MOVE (17,3)->(17,2) | timing: total=52ms check=1976us queuePop=542us getPos=1370us validate=2129us posUpdate=2790us illuminate=11560us routeCheck=292us stateTrans=421us remainingSteps=1
+2026-06-19 13:16:22.266 [pool-1-thread-42] INFO  edu.homework.inspection.car.CarAgent - Car 7 MOVE (10,10)->(9,10) | timing: total=36ms check=1914us queuePop=629us getPos=2098us validate=5407us posUpdate=4896us illuminate=15289us routeCheck=159us stateTrans=450us remainingSteps=0
+2026-06-19 13:16:41.767 [pool-1-thread-9] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 2
+2026-06-19 13:16:41.772 [pool-1-thread-9] INFO  e.h.i.recorder.RecorderService - Playback started
+2026-06-19 13:16:41.772 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback loop started
+2026-06-19 13:16:41.854 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/0 in 80ms, delay=500ms
+2026-06-19 13:16:42.374 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/1 in 5ms, delay=500ms
+2026-06-19 13:16:42.891 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/2 in 5ms, delay=500ms
+2026-06-19 13:16:43.410 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/3 in 6ms, delay=500ms
+2026-06-19 13:16:43.925 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/4 in 6ms, delay=500ms
+2026-06-19 13:16:44.437 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/5 in 5ms, delay=500ms
+2026-06-19 13:16:44.953 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/6 in 6ms, delay=500ms
+2026-06-19 13:16:45.473 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/7 in 8ms, delay=500ms
+2026-06-19 13:16:45.985 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/8 in 5ms, delay=500ms
+2026-06-19 13:16:46.507 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/9 in 4ms, delay=500ms
+2026-06-19 13:16:47.024 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/10 in 5ms, delay=500ms
+2026-06-19 13:16:47.543 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/11 in 5ms, delay=500ms
+2026-06-19 13:16:48.066 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/12 in 11ms, delay=250ms
+2026-06-19 13:16:48.336 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/13 in 4ms, delay=250ms
+2026-06-19 13:16:48.605 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/14 in 5ms, delay=250ms
+2026-06-19 13:16:48.869 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/15 in 6ms, delay=250ms
+2026-06-19 13:16:49.136 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/16 in 7ms, delay=250ms
+2026-06-19 13:16:49.400 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/17 in 5ms, delay=250ms
+2026-06-19 13:16:49.666 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/18 in 6ms, delay=250ms
+2026-06-19 13:16:49.931 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/19 in 5ms, delay=250ms
+2026-06-19 13:16:50.200 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/20 in 4ms, delay=250ms
+2026-06-19 13:16:50.469 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/21 in 5ms, delay=250ms
+2026-06-19 13:16:50.736 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/22 in 4ms, delay=250ms
+2026-06-19 13:16:51.005 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/23 in 5ms, delay=250ms
+2026-06-19 13:16:51.278 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/24 in 11ms, delay=250ms
+2026-06-19 13:16:51.540 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/25 in 5ms, delay=250ms
+2026-06-19 13:16:51.808 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/26 in 4ms, delay=250ms
+2026-06-19 13:16:52.075 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/27 in 5ms, delay=250ms
+2026-06-19 13:16:52.345 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/28 in 6ms, delay=250ms
+2026-06-19 13:16:52.615 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/29 in 5ms, delay=250ms
+2026-06-19 13:16:52.880 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/30 in 4ms, delay=250ms
+2026-06-19 13:16:53.146 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/31 in 4ms, delay=250ms
+2026-06-19 13:16:53.413 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/32 in 4ms, delay=250ms
+2026-06-19 13:16:53.686 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/33 in 8ms, delay=250ms
+2026-06-19 13:16:53.944 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/34 in 4ms, delay=250ms
+2026-06-19 13:16:54.214 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/35 in 8ms, delay=250ms
+2026-06-19 13:16:54.476 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/36 in 4ms, delay=250ms
+2026-06-19 13:16:54.743 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/37 in 4ms, delay=250ms
+2026-06-19 13:16:55.010 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/38 in 8ms, delay=250ms
+2026-06-19 13:16:55.275 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/39 in 4ms, delay=250ms
+2026-06-19 13:16:55.545 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/40 in 5ms, delay=250ms
+2026-06-19 13:16:55.814 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/41 in 6ms, delay=250ms
+2026-06-19 13:16:56.079 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/42 in 4ms, delay=250ms
+2026-06-19 13:16:56.347 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/43 in 5ms, delay=250ms
+2026-06-19 13:16:56.610 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/44 in 4ms, delay=250ms
+2026-06-19 13:16:56.877 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/45 in 5ms, delay=250ms
+2026-06-19 13:16:57.143 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/46 in 4ms, delay=250ms
+2026-06-19 13:16:57.418 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/47 in 8ms, delay=250ms
+2026-06-19 13:16:57.683 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/48 in 5ms, delay=250ms
+2026-06-19 13:16:57.949 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/49 in 7ms, delay=250ms
+2026-06-19 13:16:58.216 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/50 in 6ms, delay=250ms
+2026-06-19 13:16:58.479 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/51 in 5ms, delay=250ms
+2026-06-19 13:16:58.745 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback restored frame 1/52 in 4ms, delay=250ms
+2026-06-19 13:16:59.005 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback: 记录1已播放到最后一帧（52），自动停止
+2026-06-19 13:16:59.006 [recorder-playback] INFO  e.h.i.recorder.RecorderService - Playback loop ended
+2026-06-19 13:17:00.914 [pool-2-thread-50] INFO  e.h.i.controller.ControllerMain - Controller received command: 0
+2026-06-19 13:17:00.915 [pool-2-thread-50] INFO  e.h.i.controller.ControllerAgent - Controller stopped at tick 41
+2026-06-19 13:17:00.914 [pool-1-thread-10] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 0
+2026-06-19 13:17:00.915 [pool-1-thread-10] INFO  e.h.i.recorder.RecorderService - Recorder stopped
+2026-06-19 13:17:02.606 [pool-2-thread-51] INFO  e.h.i.controller.ControllerMain - Controller received command: 0
+2026-06-19 13:17:02.606 [pool-1-thread-11] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 0
+2026-06-19 13:17:02.608 [pool-2-thread-51] INFO  e.h.i.controller.ControllerAgent - Controller stopped at tick 41
+2026-06-19 13:17:02.608 [pool-1-thread-11] INFO  e.h.i.recorder.RecorderService - Recorder stopped
+2026-06-19 13:17:11.790 [pool-2-thread-52] INFO  e.h.i.controller.ControllerMain - Controller received command: 0
+2026-06-19 13:17:11.790 [pool-2-thread-52] INFO  e.h.i.controller.ControllerAgent - Controller stopped at tick 41
+2026-06-19 13:17:11.790 [pool-1-thread-12] INFO  e.h.inspection.recorder.RecorderMain - Recorder received command: 0
+2026-06-19 13:17:11.790 [pool-1-thread-12] INFO  e.h.i.recorder.RecorderService - Recorder stopped

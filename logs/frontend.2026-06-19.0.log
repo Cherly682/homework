@@ -1,0 +1,391 @@
+2026-06-19 13:13:58.304 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-19 13:13:58.505 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-19 13:13:58.666 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: localhost:6379/9
+2026-06-19 13:13:59.834 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-19 13:13:59.834 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-19 13:14:06.716 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=config role=Configurator
+2026-06-19 13:14:06.716 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 配置员登录成功
+2026-06-19 13:14:07.255 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel created: 20x20 area=400 maxCars=400 maxBlocks=80
+2026-06-19 13:14:07.339 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-19 13:14:07.339 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer initialized: RabbitMQ connected to localhost:5672
+2026-06-19 13:14:07.339 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView initialized: 20x20 timer=200ms
+2026-06-19 13:14:07.371 [AWT-EventQueue-0] INFO  Configurator.View.StatusPanel - StatusPanel initialized: monitoring every 2s
+2026-06-19 13:14:07.502 [AWT-EventQueue-0] INFO  Configurator.View.MainView - MainView initialized: 1060x800
+2026-06-19 13:14:07.502 [AWT-EventQueue-0] INFO  C.Controller.MainController - MainController initialized: default map=20x20
+2026-06-19 13:14:07.504 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-19 13:14:07.504 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - MainController (Configurator) opened for user: config
+2026-06-19 13:14:07.565 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cache re-allocated: 20x20
+2026-06-19 13:14:08.173 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:09.206 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:10.252 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:11.289 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:12.309 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:13.335 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #30: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:13.925 [AWT-EventQueue-0] INFO  C.Controller.MainController - Car manual placement mode ENABLED
+2026-06-19 13:14:14.377 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #35: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:14.701 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 1 added at (8,8)
+2026-06-19 13:14:14.701 [AWT-EventQueue-0] INFO  C.Controller.MainController - Car placed manually at (8,8), carCount=1
+2026-06-19 13:14:14.795 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[] new=[8,8]
+2026-06-19 13:14:15.203 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #40: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:15.623 [AWT-EventQueue-0] INFO  C.Controller.MainController - Car manual placement mode DISABLED
+2026-06-19 13:14:16.250 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #45: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:17.272 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #50: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:18.309 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #55: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:19.347 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #60: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:20.372 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #65: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:21.409 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #70: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:22.434 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #75: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:23.473 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #80: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:24.531 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #85: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:25.556 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #90: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:26.589 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #95: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:27.619 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #100: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:28.639 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #105: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:29.674 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #110: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:30.698 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #115: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:31.711 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #120: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:32.723 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #125: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:33.739 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #130: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:34.756 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #135: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:35.768 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #140: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:36.789 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #145: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:37.795 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #150: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:38.803 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #155: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:39.814 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #160: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:40.842 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #165: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:41.866 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #170: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:42.889 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #175: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:43.909 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #180: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:44.929 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #185: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:45.972 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #190: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:46.991 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #195: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:48.002 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #200: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:49.014 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #205: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:50.022 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #210: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:51.035 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #215: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:52.047 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #220: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:53.064 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #225: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:54.085 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #230: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:55.102 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #235: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:56.106 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #240: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:57.127 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #245: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:14:58.137 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #250: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:14:59.152 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #255: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:00.164 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #260: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:01.181 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #265: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:02.194 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #270: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:03.206 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #275: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:04.227 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #280: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:05.235 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #285: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:06.263 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #290: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:07.294 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #295: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:08.326 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #300: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:09.352 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #305: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:10.371 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #310: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:11.393 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #315: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:12.410 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #320: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:13.427 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #325: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:14.440 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #330: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:15.452 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #335: 1 cars, tiles=20x20, cost=1ms
+2026-06-19 13:15:16.460 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #340: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:17.481 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #345: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:18.517 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #350: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:19.539 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #355: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:20.558 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #360: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:20.996 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT START command (controller.start + save.start)
+2026-06-19 13:15:20.997 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 0 blocks from Redis blockview bitmap
+2026-06-19 13:15:20.998 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer started
+2026-06-19 13:15:20.999 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STARTED
+2026-06-19 13:15:20.999 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=true
+2026-06-19 13:15:21.787 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:22.809 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:23.826 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:24.436 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,8] new=[7,8]
+2026-06-19 13:15:24.854 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:25.874 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:26.883 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #30: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:27.090 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,8] new=[6,8]
+2026-06-19 13:15:27.928 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #35: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:28.536 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[6,8] new=[5,8]
+2026-06-19 13:15:28.952 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #40: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:29.763 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[5,8] new=[4,8]
+2026-06-19 13:15:29.965 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #45: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:30.983 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[4,8] new=[3,8]
+2026-06-19 13:15:30.988 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #50: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:32.012 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #55: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:32.215 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[3,8] new=[2,8]
+2026-06-19 13:15:33.040 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #60: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:33.446 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[2,8] new=[1,8]
+2026-06-19 13:15:34.058 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #65: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:34.461 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[1,8] new=[1,7]
+2026-06-19 13:15:35.082 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #70: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:35.492 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[1,7] new=[1,6]
+2026-06-19 13:15:36.113 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #75: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:36.310 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[1,6] new=[2,6]
+2026-06-19 13:15:37.130 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #80: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:37.332 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[2,6] new=[3,6]
+2026-06-19 13:15:38.150 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #85: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:39.177 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #90: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:39.790 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[3,6] new=[4,6]
+2026-06-19 13:15:40.191 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #95: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:41.006 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[4,6] new=[5,6]
+2026-06-19 13:15:41.216 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #100: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:42.241 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[5,6] new=[6,6]
+2026-06-19 13:15:42.243 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #105: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:43.258 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #110: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:43.471 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[6,6] new=[7,6]
+2026-06-19 13:15:44.287 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #115: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:44.897 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,6] new=[8,6]
+2026-06-19 13:15:45.306 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #120: 1 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:45.367 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-19 13:15:45.367 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer stopped at 00:24:370
+2026-06-19 13:15:45.368 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=false
+2026-06-19 13:15:45.368 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STOPPED
+2026-06-19 13:15:46.126 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,6] new=[9,6]
+2026-06-19 13:15:46.150 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration RESET
+2026-06-19 13:15:46.151 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-19 13:15:46.162 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - MapModel created: 20x20 area=400 maxCars=400 maxBlocks=80
+2026-06-19 13:15:46.162 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView model reset: 20x20
+2026-06-19 13:15:46.163 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cache re-allocated: 20x20
+2026-06-19 13:15:46.170 [AWT-EventQueue-0] INFO  Configurator.View.MainView - MainView updating MapView component
+2026-06-19 13:15:46.170 [AWT-EventQueue-0] INFO  C.Controller.MainController - Experiment reset complete: default map, A* algorithm
+2026-06-19 13:15:46.742 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:47.811 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:48.782 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 0 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:49.594 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 1 added at (19,12)
+2026-06-19 13:15:49.596 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 2 added at (4,16)
+2026-06-19 13:15:49.598 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 3 added at (7,2)
+2026-06-19 13:15:49.600 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 4 added at (1,17)
+2026-06-19 13:15:49.603 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 5 added at (9,18)
+2026-06-19 13:15:49.607 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 6 added at (9,7)
+2026-06-19 13:15:49.608 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 7 added at (11,18)
+2026-06-19 13:15:49.612 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 8 added at (5,0)
+2026-06-19 13:15:49.616 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 9 added at (7,4)
+2026-06-19 13:15:49.618 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Car 10 added at (4,11)
+2026-06-19 13:15:49.618 [AWT-EventQueue-0] INFO  C.Controller.MainController - Cars auto-added: 10 cars, total carCount=10
+2026-06-19 13:15:49.644 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[] new=[7,4, 9,18, 5,0, 19,12, 11,18, 9,7, 4,11, 7,2, 1,17, 4,16]
+2026-06-19 13:15:49.829 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:50.857 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:51.863 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #30: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:52.839 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (6,15) SET -> total=1
+2026-06-19 13:15:52.843 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (4,14) SET -> total=2
+2026-06-19 13:15:52.849 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (12,6) SET -> total=3
+2026-06-19 13:15:52.853 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (14,7) SET -> total=4
+2026-06-19 13:15:52.857 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (12,8) SET -> total=5
+2026-06-19 13:15:52.860 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (1,10) SET -> total=6
+2026-06-19 13:15:52.865 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (19,19) SET -> total=7
+2026-06-19 13:15:52.871 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (10,8) SET -> total=8
+2026-06-19 13:15:52.875 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (15,12) SET -> total=9
+2026-06-19 13:15:52.881 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (3,15) SET -> total=10
+2026-06-19 13:15:52.885 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (14,15) SET -> total=11
+2026-06-19 13:15:52.886 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (2,10) SET -> total=12
+2026-06-19 13:15:52.890 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (17,12) SET -> total=13
+2026-06-19 13:15:52.896 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,9) SET -> total=14
+2026-06-19 13:15:52.903 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (1,9) SET -> total=15
+2026-06-19 13:15:52.907 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (12,4) SET -> total=16
+2026-06-19 13:15:52.913 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,8) SET -> total=17
+2026-06-19 13:15:52.916 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (12,9) SET -> total=18
+2026-06-19 13:15:52.919 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (13,1) SET -> total=19
+2026-06-19 13:15:52.924 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (3,10) SET -> total=20
+2026-06-19 13:15:52.928 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (14,18) SET -> total=21
+2026-06-19 13:15:52.931 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (10,3) SET -> total=22
+2026-06-19 13:15:52.934 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (8,2) SET -> total=23
+2026-06-19 13:15:52.938 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (3,12) SET -> total=24
+2026-06-19 13:15:52.944 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (6,14) SET -> total=25
+2026-06-19 13:15:52.947 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (15,6) SET -> total=26
+2026-06-19 13:15:52.950 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (2,13) SET -> total=27
+2026-06-19 13:15:52.953 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,2) SET -> total=28
+2026-06-19 13:15:52.959 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,5) SET -> total=29
+2026-06-19 13:15:52.962 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,15) SET -> total=30
+2026-06-19 13:15:52.967 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (8,1) SET -> total=31
+2026-06-19 13:15:52.974 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (12,13) SET -> total=32
+2026-06-19 13:15:52.977 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (6,1) SET -> total=33
+2026-06-19 13:15:52.981 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (9,11) SET -> total=34
+2026-06-19 13:15:52.983 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (19,15) SET -> total=35
+2026-06-19 13:15:52.990 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (4,4) SET -> total=36
+2026-06-19 13:15:52.993 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (4,9) SET -> total=37
+2026-06-19 13:15:52.996 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (5,2) SET -> total=38
+2026-06-19 13:15:53.002 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (4,19) SET -> total=39
+2026-06-19 13:15:53.008 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,7) SET -> total=40
+2026-06-19 13:15:53.012 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (13,10) SET -> total=41
+2026-06-19 13:15:53.016 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (1,6) SET -> total=42
+2026-06-19 13:15:53.021 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (16,9) SET -> total=43
+2026-06-19 13:15:53.025 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (4,17) SET -> total=44
+2026-06-19 13:15:53.029 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (3,9) SET -> total=45
+2026-06-19 13:15:53.034 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,1) SET -> total=46
+2026-06-19 13:15:53.039 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,13) SET -> total=47
+2026-06-19 13:15:53.043 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (6,19) SET -> total=48
+2026-06-19 13:15:53.047 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (17,4) SET -> total=49
+2026-06-19 13:15:53.051 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (8,3) SET -> total=50
+2026-06-19 13:15:53.055 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (2,8) SET -> total=51
+2026-06-19 13:15:53.059 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (16,10) SET -> total=52
+2026-06-19 13:15:53.062 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (9,4) SET -> total=53
+2026-06-19 13:15:53.067 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (8,11) SET -> total=54
+2026-06-19 13:15:53.071 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (17,8) SET -> total=55
+2026-06-19 13:15:53.075 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (15,17) SET -> total=56
+2026-06-19 13:15:53.080 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (9,17) SET -> total=57
+2026-06-19 13:15:53.087 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (7,16) SET -> total=58
+2026-06-19 13:15:53.091 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,6) SET -> total=59
+2026-06-19 13:15:53.094 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (19,10) SET -> total=60
+2026-06-19 13:15:53.099 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (17,17) SET -> total=61
+2026-06-19 13:15:53.103 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,14) SET -> total=62
+2026-06-19 13:15:53.107 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (12,10) SET -> total=63
+2026-06-19 13:15:53.110 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,0) SET -> total=64
+2026-06-19 13:15:53.116 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (0,5) SET -> total=65
+2026-06-19 13:15:53.120 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (11,8) SET -> total=66
+2026-06-19 13:15:53.123 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (16,13) SET -> total=67
+2026-06-19 13:15:53.126 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (5,3) SET -> total=68
+2026-06-19 13:15:53.130 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (14,3) SET -> total=69
+2026-06-19 13:15:53.136 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (15,18) SET -> total=70
+2026-06-19 13:15:53.139 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (7,11) SET -> total=71
+2026-06-19 13:15:53.144 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (7,0) SET -> total=72
+2026-06-19 13:15:53.149 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (13,3) SET -> total=73
+2026-06-19 13:15:53.153 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (15,19) SET -> total=74
+2026-06-19 13:15:53.156 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,7) SET -> total=75
+2026-06-19 13:15:53.160 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (6,17) SET -> total=76
+2026-06-19 13:15:53.164 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (18,11) SET -> total=77
+2026-06-19 13:15:53.169 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (9,2) SET -> total=78
+2026-06-19 13:15:53.173 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (1,1) SET -> total=79
+2026-06-19 13:15:53.176 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Block (13,13) SET -> total=80
+2026-06-19 13:15:53.177 [AWT-EventQueue-0] INFO  C.Controller.MainController - Blocks auto-added: 80 blocks, total blockCount=80
+2026-06-19 13:15:53.208 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #35: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:54.138 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #40: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:54.401 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT START command (controller.start + save.start)
+2026-06-19 13:15:54.401 [AWT-EventQueue-0] INFO  Configurator.Model.MapModel - Loaded 80 blocks from Redis blockview bitmap
+2026-06-19 13:15:54.402 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer started
+2026-06-19 13:15:54.402 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STARTED
+2026-06-19 13:15:54.402 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=true
+2026-06-19 13:15:55.164 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #5: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:55.773 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,4, 9,18, 5,0, 19,12, 11,18, 9,7, 4,11, 7,2, 1,17, 4,16] new=[6,4, 8,18, 4,0, 18,12, 11,18, 8,7, 4,11, 6,2, 0,17, 3,16]
+2026-06-19 13:15:56.185 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #10: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:57.004 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[6,4, 8,18, 4,0, 18,12, 11,18, 8,7, 4,11, 6,2, 0,17, 3,16] new=[6,4, 7,18, 4,0, 18,13, 10,18, 7,7, 3,11, 6,2, 0,16, 4,16]
+2026-06-19 13:15:57.209 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #15: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:58.229 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #20: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:58.427 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[6,4, 7,18, 4,0, 18,13, 10,18, 7,7, 3,11, 6,2, 0,16, 4,16] new=[7,4, 6,18, 3,0, 18,14, 10,18, 6,7, 3,11, 7,2, 0,15, 5,16]
+2026-06-19 13:15:59.245 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #25: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:15:59.685 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,4, 6,18, 3,0, 18,14, 10,18, 6,7, 3,11, 7,2, 0,15, 5,16] new=[7,4, 5,18, 3,0, 18,14, 10,18, 6,7, 2,11, 7,2, 0,14, 5,16]
+2026-06-19 13:15:59.851 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,4, 5,18, 3,0, 18,14, 10,18, 6,7, 2,11, 7,2, 0,14, 5,16] new=[8,4, 5,18, 2,0, 17,14, 11,18, 5,7, 2,11, 7,3, 0,14, 5,15]
+2026-06-19 13:16:00.267 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #30: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:00.924 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 5,18, 2,0, 17,14, 11,18, 5,7, 2,11, 7,3, 0,14, 5,15] new=[8,4, 5,18, 2,0, 17,14, 11,18, 5,7, 1,11, 7,3, 0,13, 5,15]
+2026-06-19 13:16:01.084 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 5,18, 2,0, 17,14, 11,18, 5,7, 1,11, 7,3, 0,13, 5,15] new=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13, 5,14]
+2026-06-19 13:16:01.290 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #35: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:02.305 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13, 5,14] new=[8,5, 3,18, 0,0, 15,14, 12,17, 3,7, 1,11, 8,4, 1,13, 5,13]
+2026-06-19 13:16:02.306 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #40: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:03.320 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #45: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:03.538 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,5, 3,18, 0,0, 15,14, 12,17, 3,7, 1,11, 8,4, 1,13, 5,13] new=[9,5, 2,18, 0,0, 15,14, 12,16, 3,7, 2,11, 7,4, 1,14, 5,12]
+2026-06-19 13:16:03.730 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[9,5, 2,18, 0,0, 15,14, 12,16, 3,7, 2,11, 7,4, 1,14, 5,12] new=[9,5, 2,18, 0,0, 14,14, 12,16, 2,7, 2,11, 7,4, 1,14, 5,12]
+2026-06-19 13:16:04.343 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #50: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:04.961 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[9,5, 2,18, 0,0, 14,14, 12,16, 2,7, 2,11, 7,4, 1,14, 5,12] new=[10,5, 1,18, 1,0, 13,14, 12,16, 2,7, 3,11, 6,4, 2,14, 6,12]
+2026-06-19 13:16:05.373 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #55: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:06.227 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[10,5, 1,18, 1,0, 13,14, 12,16, 2,7, 3,11, 6,4, 2,14, 6,12] new=[10,5, 1,18, 1,0, 13,14, 11,16, 2,7, 3,11, 6,5, 3,14, 7,12]
+2026-06-19 13:16:06.395 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[10,5, 1,18, 1,0, 13,14, 11,16, 2,7, 3,11, 6,5, 3,14, 7,12] new=[11,5, 0,18, 2,0, 12,14, 11,16, 2,6, 4,11, 6,5, 3,14, 7,12]
+2026-06-19 13:16:06.397 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #60: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:07.410 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #65: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:07.614 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[11,5, 0,18, 2,0, 12,14, 11,16, 2,6, 4,11, 6,5, 3,14, 7,12] new=[12,5, 0,19, 2,1, 12,14, 10,16, 2,5, 5,11, 5,5, 3,13, 7,12]
+2026-06-19 13:16:08.424 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #70: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:08.858 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[12,5, 0,19, 2,1, 12,14, 10,16, 2,5, 5,11, 5,5, 3,13, 7,12] new=[12,5, 1,19, 2,1, 12,14, 10,16, 2,5, 5,11, 5,5, 4,13, 8,12]
+2026-06-19 13:16:09.043 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[12,5, 1,19, 2,1, 12,14, 10,16, 2,5, 5,11, 5,5, 4,13, 8,12] new=[13,5, 1,19, 2,2, 13,14, 9,16, 2,4, 5,11, 4,5, 4,13, 8,12]
+2026-06-19 13:16:09.455 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #75: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:10.284 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[13,5, 1,19, 2,2, 13,14, 9,16, 2,4, 5,11, 4,5, 4,13, 8,12] new=[13,5, 1,19, 2,2, 14,14, 9,16, 2,4, 5,11, 4,5, 4,13, 9,12]
+2026-06-19 13:16:10.474 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[13,5, 1,19, 2,2, 14,14, 9,16, 2,4, 5,11, 4,5, 4,13, 9,12] new=[14,5, 2,19, 2,2, 14,14, 8,16, 2,3, 5,10, 3,5, 5,13, 9,12]
+2026-06-19 13:16:10.475 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #80: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:11.496 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #85: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:11.695 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[14,5, 2,19, 2,2, 14,14, 8,16, 2,3, 5,10, 3,5, 5,13, 9,12] new=[15,5, 3,19, 3,2, 14,13, 8,15, 1,3, 5,9, 3,4, 6,13, 10,12]
+2026-06-19 13:16:12.521 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #90: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:13.134 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[15,5, 3,19, 3,2, 14,13, 8,15, 1,3, 5,9, 3,4, 6,13, 10,12] new=[16,5, 3,18, 4,2, 14,12, 8,14, 0,3, 5,9, 3,3, 7,13, 11,12]
+2026-06-19 13:16:13.545 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #95: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:14.417 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,5, 3,18, 4,2, 14,12, 8,14, 0,3, 5,9, 3,3, 7,13, 11,12] new=[16,5, 4,18, 4,2, 14,11, 8,14, 1,3, 6,9, 4,3, 8,13, 11,11]
+2026-06-19 13:16:14.560 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,5, 4,18, 4,2, 14,11, 8,14, 1,3, 6,9, 4,3, 8,13, 11,11] new=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3, 6,9, 4,3, 8,13, 11,11]
+2026-06-19 13:16:14.562 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #100: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:15.571 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #105: 10 cars, tiles=20x20, cost=1ms
+2026-06-19 13:16:15.985 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3, 6,9, 4,3, 8,13, 11,11] new=[16,3, 5,18, 5,1, 14,10, 10,14, 2,3, 7,9, 4,2, 8,13, 11,10]
+2026-06-19 13:16:16.604 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #110: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:17.218 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,3, 5,18, 5,1, 14,10, 10,14, 2,3, 7,9, 4,2, 8,13, 11,10] new=[17,3, 6,18, 5,0, 14,9, 10,13, 2,2, 7,9, 3,2, 9,13, 10,10]
+2026-06-19 13:16:17.635 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #115: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:18.658 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[17,3, 6,18, 5,0, 14,9, 10,13, 2,2, 7,9, 3,2, 9,13, 10,10] new=[18,3, 7,18, 6,0, 14,8, 10,12, 2,1, 8,9, 3,1, 9,12, 9,10]
+2026-06-19 13:16:18.660 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #120: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:19.673 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #125: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:19.875 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[18,3, 7,18, 6,0, 14,8, 10,12, 2,1, 8,9, 3,1, 9,12, 9,10] new=[18,3, 7,17, 5,0, 15,8, 10,11, 3,1, 9,9, 3,0, 10,12, 9,10]
+2026-06-19 13:16:20.693 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #130: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:21.093 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[18,3, 7,17, 5,0, 15,8, 10,11, 3,1, 9,9, 3,0, 10,12, 9,10] new=[17,3, 8,17, 5,1, 16,8, 10,10, 4,1, 9,9, 4,0, 10,11, 8,10]
+2026-06-19 13:16:21.545 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-19 13:16:21.546 [AWT-EventQueue-0] INFO  Configurator.View.MainView - Timer stopped at 00:27:145
+2026-06-19 13:16:21.546 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView exploration state changed: isStart=false
+2026-06-19 13:16:21.546 [AWT-EventQueue-0] INFO  C.Controller.MainController - Exploration STOPPED
+2026-06-19 13:16:21.709 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #135: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:22.328 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[17,3, 8,17, 5,1, 16,8, 10,10, 4,1, 9,9, 4,0, 10,11, 8,10] new=[17,2, 8,16, 4,1, 16,8, 9,10, 5,1, 9,8, 5,0, 10,10, 8,9]
+2026-06-19 13:16:22.731 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #140: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:23.549 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView render #145: 10 cars, tiles=20x20, cost=0ms
+2026-06-19 13:16:23.767 [AWT-EventQueue-0] INFO  Utils.NavigationBar - 切换账号: 关闭当前窗口，打开登录界面
+2026-06-19 13:16:23.856 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-19 13:16:23.971 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-19 13:16:33.337 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-19 13:16:33.337 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-19 13:16:34.292 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400
+2026-06-19 13:16:34.295 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 20x20 定时器=500ms
+2026-06-19 13:16:34.342 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到1条记录
+2026-06-19 13:16:34.356 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=52
+2026-06-19 13:16:34.357 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-19 13:16:34.454 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-19 13:16:34.466 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-19 13:16:34.466 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-19 13:16:34.487 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[17,2, 8,16, 4,1, 16,8, 9,10, 5,1, 9,8, 5,0, 10,10, 8,9] new=[]
+2026-06-19 13:16:36.151 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=52
+2026-06-19 13:16:36.151 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-19 13:15:54) (fileNo=1)
+2026-06-19 13:16:36.223 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[] new=[7,4, 9,18, 5,0, 19,12, 11,18, 9,7, 4,11, 7,2, 1,17, 4,16]
+2026-06-19 13:16:38.348 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-19 13:16:39.931 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=1.0x
+2026-06-19 13:16:41.765 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-19 13:16:41.766 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-19 13:16:43.409 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=1.0x
+2026-06-19 13:16:43.564 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,4, 9,18, 5,0, 19,12, 11,18, 9,7, 4,11, 7,2, 1,17, 4,16] new=[6,4, 8,18, 4,0, 18,12, 11,18, 8,7, 4,11, 6,2, 0,17, 3,16]
+2026-06-19 13:16:44.592 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[6,4, 8,18, 4,0, 18,12, 11,18, 8,7, 4,11, 6,2, 0,17, 3,16] new=[6,4, 7,18, 4,0, 18,13, 10,18, 7,7, 3,11, 6,2, 0,16, 4,16]
+2026-06-19 13:16:46.013 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[6,4, 7,18, 4,0, 18,13, 10,18, 7,7, 3,11, 6,2, 0,16, 4,16] new=[7,4, 6,18, 3,0, 18,14, 10,18, 6,7, 3,11, 7,2, 0,15, 5,16]
+2026-06-19 13:16:47.654 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,4, 6,18, 3,0, 18,14, 10,18, 6,7, 3,11, 7,2, 0,15, 5,16] new=[8,4, 5,18, 2,0, 17,14, 11,18, 5,7, 2,11, 7,3, 0,14, 5,15]
+2026-06-19 13:16:47.866 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 速度切换: 2.0x, 定时器=250ms
+2026-06-19 13:16:47.866 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放速度: 2.0x
+2026-06-19 13:16:48.235 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #40: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=2.0x
+2026-06-19 13:16:48.460 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 5,18, 2,0, 17,14, 11,18, 5,7, 2,11, 7,3, 0,14, 5,15] new=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13, 5,14]
+2026-06-19 13:16:48.868 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13, 5,14] new=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13]
+2026-06-19 13:16:49.071 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13] new=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13, 5,14]
+2026-06-19 13:16:49.277 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,4, 4,18, 1,0, 16,14, 12,18, 4,7, 1,11, 7,4, 0,13, 5,14] new=[8,5, 3,18, 0,0, 15,14, 12,17, 3,7, 1,11, 8,4, 1,13, 5,13]
+2026-06-19 13:16:49.679 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[8,5, 3,18, 0,0, 15,14, 12,17, 3,7, 1,11, 8,4, 1,13, 5,13] new=[9,5, 2,18, 0,0, 14,14, 12,16, 2,7, 2,11, 7,4, 1,14, 5,12]
+2026-06-19 13:16:50.501 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[9,5, 2,18, 0,0, 14,14, 12,16, 2,7, 2,11, 7,4, 1,14, 5,12] new=[10,5, 1,18, 1,0, 13,14, 12,16, 2,7, 3,11, 6,4, 2,14, 6,12]
+2026-06-19 13:16:50.801 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #50: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=2.0x
+2026-06-19 13:16:51.114 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[10,5, 1,18, 1,0, 13,14, 12,16, 2,7, 3,11, 6,4, 2,14, 6,12] new=[11,5, 0,18, 2,0, 12,14, 11,16, 2,6, 4,11, 6,5, 3,14, 7,12]
+2026-06-19 13:16:51.930 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[11,5, 0,18, 2,0, 12,14, 11,16, 2,6, 4,11, 6,5, 3,14, 7,12] new=[12,5, 0,19, 2,1, 12,14, 10,16, 2,5, 5,11, 5,5, 3,13, 7,12]
+2026-06-19 13:16:52.552 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[12,5, 0,19, 2,1, 12,14, 10,16, 2,5, 5,11, 5,5, 3,13, 7,12] new=[13,5, 1,19, 2,2, 13,14, 9,16, 2,4, 5,11, 4,5, 4,13, 8,12]
+2026-06-19 13:16:53.163 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[13,5, 1,19, 2,2, 13,14, 9,16, 2,4, 5,11, 4,5, 4,13, 8,12] new=[14,5, 2,19, 2,2, 14,14, 8,16, 2,3, 5,10, 3,5, 5,13, 9,12]
+2026-06-19 13:16:53.374 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #60: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=2.0x
+2026-06-19 13:16:53.973 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[14,5, 2,19, 2,2, 14,14, 8,16, 2,3, 5,10, 3,5, 5,13, 9,12] new=[15,5, 3,19, 3,2, 14,13, 8,15, 1,3, 5,9, 3,4, 6,13, 10,12]
+2026-06-19 13:16:54.586 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[15,5, 3,19, 3,2, 14,13, 8,15, 1,3, 5,9, 3,4, 6,13, 10,12] new=[16,5, 3,18, 4,2, 14,12, 8,14, 0,3, 5,9, 3,3, 7,13, 11,12]
+2026-06-19 13:16:55.398 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,5, 3,18, 4,2, 14,12, 8,14, 0,3, 5,9, 3,3, 7,13, 11,12] new=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3, 6,9, 4,3, 8,13, 11,11]
+2026-06-19 13:16:55.814 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3, 6,9, 4,3, 8,13, 11,11] new=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3]
+2026-06-19 13:16:55.923 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #70: 10 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=2.0x
+2026-06-19 13:16:56.016 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3] new=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3, 6,9, 4,3, 8,13, 11,11]
+2026-06-19 13:16:56.221 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,4, 4,18, 4,1, 14,11, 9,14, 1,3, 6,9, 4,3, 8,13, 11,11] new=[16,3, 5,18, 5,1, 14,10, 10,14, 2,3, 7,9, 4,2, 8,13, 11,10]
+2026-06-19 13:16:56.627 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[16,3, 5,18, 5,1, 14,10, 10,14, 2,3, 7,9, 4,2, 8,13, 11,10] new=[17,3, 6,18, 5,0, 14,9, 10,13, 2,2, 7,9, 3,2, 9,13, 10,10]
+2026-06-19 13:16:57.445 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[17,3, 6,18, 5,0, 14,9, 10,13, 2,2, 7,9, 3,2, 9,13, 10,10] new=[18,3, 7,18, 6,0, 14,8, 10,12, 2,1, 8,9, 3,1, 9,12, 9,10]
+2026-06-19 13:16:58.058 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[18,3, 7,18, 6,0, 14,8, 10,12, 2,1, 8,9, 3,1, 9,12, 9,10] new=[18,3, 7,17, 5,0, 15,8, 10,11, 3,1, 9,9, 3,0, 10,12, 9,10]
+2026-06-19 13:16:58.481 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #80: 5 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=2.0x
+2026-06-19 13:16:58.870 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[18,3, 7,17, 5,0, 15,8, 10,11, 3,1, 9,9, 3,0, 10,12, 9,10] new=[17,3, 8,17, 5,1, 16,8, 10,10, 4,1, 9,9, 4,0, 10,11, 8,10]
+2026-06-19 13:17:00.912 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-19 13:17:01.040 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #90: 10 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=2.0x
+2026-06-19 13:17:01.292 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400
+2026-06-19 13:17:01.292 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 地图已重置
+2026-06-19 13:17:01.298 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView: resetDisplay 完成, 20x20
+2026-06-19 13:17:01.366 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-19 13:17:01.367 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=52
+2026-06-19 13:17:01.370 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放重置完成
+2026-06-19 13:17:01.387 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[17,3, 8,17, 5,1, 16,8, 10,10, 4,1, 9,9, 4,0, 10,11, 8,10] new=[7,4, 9,18, 5,0, 19,12, 11,18, 9,7, 4,11, 7,2, 1,17, 4,16]
+2026-06-19 13:17:02.604 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-19 13:17:02.969 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 20x20 area=400
+2026-06-19 13:17:02.970 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel: 地图已重置
+2026-06-19 13:17:02.974 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView: resetDisplay 完成, 20x20
+2026-06-19 13:17:02.976 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=52
+2026-06-19 13:17:02.979 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放重置完成
+2026-06-19 13:17:03.001 [AWT-EventQueue-0] INFO  Configurator.View.MapView - MapView cars updated: old=[7,4, 9,18, 5,0, 19,12, 11,18, 9,7, 4,11, 7,2, 1,17, 4,16] new=[]
+2026-06-19 13:17:05.109 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 0 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=2.0x
+2026-06-19 13:17:07.644 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 0 辆小车, 地图=20x20, tileSize=35, 耗时=0ms, 速度=2.0x
+2026-06-19 13:17:10.182 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 0 辆小车, 地图=20x20, tileSize=35, 耗时=1ms, 速度=2.0x
+2026-06-19 13:17:11.790 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)

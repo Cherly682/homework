@@ -1,0 +1,18 @@
+2026-06-19 13:13:46.123 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 78ms
+2026-06-19 13:13:47.587 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1449ms
+2026-06-19 13:13:47.591 [main] INFO  e.h.inspection.tools.DefaultDataTool - RabbitMQ topology declared on localhost:5672/ in 1561ms
+2026-06-19 13:13:47.593 [main] INFO  e.h.inspection.common.RedisProvider - Redis pool created: localhost:6379/9
+2026-06-19 13:13:47.774 [main] INFO  e.h.inspection.tools.DefaultDataTool - Default users written: admin/config/analyst
+2026-06-19 13:13:47.775 [main] INFO  e.h.inspection.tools.DefaultDataTool - Initialization completed
+2026-06-19 13:13:47.777 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connection closed
+2026-06-19 13:13:47.778 [main] INFO  e.h.inspection.common.RedisProvider - Redis pool closing
+2026-06-19 13:13:48.667 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 54ms
+2026-06-19 13:13:49.932 [main] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (400 cars, 8 navigators) in 1259ms
+2026-06-19 13:13:49.935 [main] INFO  e.h.inspection.launcher.LauncherMain - RabbitMQ topology declared
+2026-06-19 13:13:49.936 [main] INFO  e.h.inspection.launcher.LauncherMain - JAR directory: E:\Desktop\homework\InspectionBackend
+2026-06-19 13:13:52.008 [main] INFO  e.h.inspection.launcher.LauncherMain - Started controller.jar (pid=152152)
+2026-06-19 13:13:53.514 [main] INFO  e.h.inspection.launcher.LauncherMain - Started navigator.jar (pid=152256)
+2026-06-19 13:13:55.324 [main] INFO  e.h.inspection.launcher.LauncherMain - Started car.jar (pid=148192)
+2026-06-19 13:13:57.232 [main] INFO  e.h.inspection.launcher.LauncherMain - Started recorder.jar (pid=148696)
+2026-06-19 13:13:57.735 [main] INFO  e.h.inspection.launcher.LauncherMain - All components started in 9139ms
+2026-06-19 13:13:57.735 [main] INFO  e.h.inspection.launcher.LauncherMain - Controller/Navigator/Car/Recorder running as independent processes

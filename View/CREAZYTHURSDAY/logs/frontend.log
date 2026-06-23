@@ -1,0 +1,78 @@
+2026-06-22 14:43:39.632 [main] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-22 14:43:39.634 [main] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-22 14:43:39.635 [main] INFO  Utils.ConfigManager - Redis: localhost:6379/9 (pool max=50)
+2026-06-22 14:43:39.635 [main] INFO  Utils.ConfigManager - RabbitMQ: localhost:5672/ (user=guest)
+2026-06-22 14:43:39.635 [main] INFO  Utils.ConfigManager - Log dir: logs
+2026-06-22 14:43:39.635 [main] INFO  Utils.ConfigManager - ==========================================
+2026-06-22 14:43:39.756 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-22 14:43:39.837 [AWT-EventQueue-0] ERROR Login.Main.Main - Frontend startup failed: Can't read input file!
+javax.imageio.IIOException: Can't read input file!
+	at java.desktop/javax.imageio.ImageIO.read(ImageIO.java:1308)
+	at Login.View.LoginView.initialize(LoginView.java:49)
+	at Login.View.LoginView.<init>(LoginView.java:29)
+	at Login.Main.Main.lambda$main$0(Main.java:23)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+2026-06-22 14:56:45.509 [main] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-22 14:56:45.512 [main] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-22 14:56:45.512 [main] INFO  Utils.ConfigManager - Redis: localhost:6379/9 (pool max=50)
+2026-06-22 14:56:45.512 [main] INFO  Utils.ConfigManager - RabbitMQ: localhost:5672/ (user=guest)
+2026-06-22 14:56:45.512 [main] INFO  Utils.ConfigManager - Log dir: logs
+2026-06-22 14:56:45.512 [main] INFO  Utils.ConfigManager - ==========================================
+2026-06-22 14:56:45.629 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-22 14:56:45.855 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-22 14:56:46.014 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: localhost:6379/9
+2026-06-22 14:56:46.344 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-22 14:56:46.345 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-22 14:56:49.018 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-22 14:56:49.019 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-22 16:31:18.603 [main] INFO  Utils.ConfigManager - ConfigManager: 已加载 config.properties
+2026-06-22 16:31:18.608 [main] INFO  Utils.ConfigManager - ========== 当前配置（密码已隐藏）==========
+2026-06-22 16:31:18.608 [main] INFO  Utils.ConfigManager - Redis  : localhost:6379/9
+2026-06-22 16:31:18.608 [main] INFO  Utils.ConfigManager - RabbitMQ: localhost:5672/ (user=guest)
+2026-06-22 16:31:18.608 [main] INFO  Utils.ConfigManager - Log dir: logs
+2026-06-22 16:31:18.608 [main] INFO  Utils.ConfigManager - ==========================================
+2026-06-22 16:31:18.608 [main] INFO  Utils.ConfigManager - CONFIG: 本地模式 (开发环境)
+2026-06-22 16:31:18.732 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend starting...
+2026-06-22 16:31:18.970 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView initialized
+2026-06-22 16:31:19.117 [AWT-EventQueue-0] INFO  Utils.RedisConnect - RedisConnect pool initialized: localhost:6379/9
+2026-06-22 16:31:19.600 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView shown
+2026-06-22 16:31:19.601 [AWT-EventQueue-0] INFO  Login.Main.Main - Frontend launched: login window shown
+2026-06-22 16:31:39.520 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - Login SUCCESS: user=analyst role=Analyst
+2026-06-22 16:31:39.520 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView dialog: 分析员登录成功
+2026-06-22 16:31:40.693 [AWT-EventQueue-0] INFO  Analyst.Model.PlaybackModel - PlaybackModel初始化: 15x15 area=225
+2026-06-22 16:31:40.695 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 初始化: 15x15 定时器=500ms
+2026-06-22 16:31:40.737 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放记录面板: 找到2条记录
+2026-06-22 16:31:40.751 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 回放进度滑块: lastView=13
+2026-06-22 16:31:40.752 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - PlaybackView 初始化完成
+2026-06-22 16:31:40.778 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - PlaybackController 初始化完成
+2026-06-22 16:31:40.786 [AWT-EventQueue-0] INFO  Login.View.LoginView - LoginView closed
+2026-06-22 16:31:40.786 [AWT-EventQueue-0] INFO  Login.Controller.LoginController - PlaybackController (Analyst) opened for user: analyst
+2026-06-22 16:31:45.276 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #10: 0 辆小车, 地图=15x15, tileSize=46, 耗时=1ms, 速度=1.0x
+2026-06-22 16:31:45.791 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=2 frame=0 result=true
+2026-06-22 16:31:45.792 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=13
+2026-06-22 16:31:45.792 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 2 (2026-06-22 16:26:19) (fileNo=2)
+2026-06-22 16:31:48.235 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer lazy-connected to RabbitMQ
+2026-06-22 16:31:48.237 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT PLAYBACK command (save.start=2)
+2026-06-22 16:31:48.237 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放开始指令已发送
+2026-06-22 16:31:49.383 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #20: 20 辆小车, 地图=15x15, tileSize=46, 耗时=14ms, 速度=1.0x
+2026-06-22 16:31:54.450 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #30: 20 辆小车, 地图=15x15, tileSize=46, 耗时=0ms, 速度=1.0x
+2026-06-22 16:31:55.518 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)
+2026-06-22 16:31:55.519 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放: 地图已完全探索，自动停止
+2026-06-22 16:31:59.548 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #40: 20 辆小车, 地图=15x15, tileSize=46, 耗时=0ms, 速度=1.0x
+2026-06-22 16:32:00.769 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 回放进度跳转: fileNo=1 frame=0 result=true
+2026-06-22 16:32:00.770 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackView - 进度滑块已刷新: lastView=13
+2026-06-22 16:32:00.771 [AWT-EventQueue-0] INFO  A.Controller.PlaybackController - 已选择记录: 记录 1 (2026-06-22 16:25:44) (fileNo=1)
+2026-06-22 16:32:03.113 [AWT-EventQueue-0] INFO  Analyst.View.PlaybackMapView - PlaybackMapView 渲染 #50: 10 辆小车, 地图=10x10, tileSize=70, 耗时=0ms, 速度=1.0x
+2026-06-22 16:32:03.776 [AWT-EventQueue-0] INFO  Utils.StartProducer - StartProducer: SENT STOP command (controller.start=0 + save.start=0)

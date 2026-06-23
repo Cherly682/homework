@@ -1,0 +1,31 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< edu.homework.inspection:launcher >------------------
+[INFO] Building launcher 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.3.0:java (default-cli) @ launcher ---
+2026-06-16 15:02:11.170 [edu.homework.inspection.launcher.LauncherMain.main()] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ connected to localhost:5672// in 66ms
+2026-06-16 15:02:11.234 [edu.homework.inspection.launcher.LauncherMain.main()] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 55ms
+2026-06-16 15:02:11.238 [edu.homework.inspection.launcher.LauncherMain.main()] INFO  e.h.inspection.launcher.LauncherMain - Topology declared, starting components...
+2026-06-16 15:02:11.240 [edu.homework.inspection.launcher.LauncherMain.main()] INFO  e.h.inspection.launcher.LauncherMain - All components started in 150ms
+2026-06-16 15:02:11.299 [launcher-car-manager] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 57ms
+2026-06-16 15:02:11.304 [launcher-navigator] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 62ms
+2026-06-16 15:02:11.304 [launcher-controller] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 61ms
+2026-06-16 15:02:11.304 [launcher-recorder] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 60ms
+2026-06-16 15:02:11.305 [launcher-car-manager] INFO  edu.homework.inspection.car.CarMain - CarMain starting CarManager
+2026-06-16 15:02:11.305 [launcher-car-manager] INFO  e.homework.inspection.car.CarManager - CarManager scanning for cars (max 5)
+2026-06-16 15:02:11.305 [launcher-navigator] INFO  e.h.i.navigator.NavigatorMain - NavigatorMain starting 4 workers
+2026-06-16 15:02:11.308 [launcher-navigator] INFO  e.h.i.navigator.NavigatorMain - NavigatorMain: all 4 workers started in 67ms
+2026-06-16 15:02:11.308 [launcher-car-manager] INFO  e.h.inspection.common.RedisProvider - Redis pool created: localhost:6379/9
+2026-06-16 15:02:11.310 [launcher-recorder] INFO  e.h.inspection.recorder.RecorderMain - Recorder listening on save.start
+2026-06-16 15:02:11.310 [launcher-controller] INFO  e.h.i.controller.ControllerMain - Controller listening on controller.start
+2026-06-16 15:02:11.364 [navigator-4] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 51ms
+2026-06-16 15:02:11.365 [navigator-1] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 55ms
+2026-06-16 15:02:11.365 [navigator-2] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 52ms
+2026-06-16 15:02:11.367 [navigator-3] INFO  e.h.inspection.common.RabbitProvider - RabbitMQ topology declared (5 cars, 4 navigators) in 56ms
+2026-06-16 15:02:11.417 [navigator-1] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 1 listening on navigator.no1 (startup=108ms)
+2026-06-16 15:02:11.417 [navigator-2] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 2 listening on navigator.no2 (startup=108ms)
+2026-06-16 15:02:11.417 [navigator-3] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 3 listening on navigator.no3 (startup=108ms)
+2026-06-16 15:02:11.417 [navigator-4] INFO  e.h.i.navigator.NavigationWorker - Navigator worker 4 listening on navigator.no4 (startup=108ms)

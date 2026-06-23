@@ -1,0 +1,15 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< edu.homework.inspection:launcher >------------------
+[INFO] Building launcher 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.3.0:java (default-cli) @ launcher ---
+InspectionBackend launcher started. Press Ctrl+C to stop.
+Controller listening on controller.start
+Recorder listening on save.start
+Navigator worker 4 listening on navigator.no4
+Navigator worker 2 listening on navigator.no2
+Navigator worker 1 listening on navigator.no1
+Navigator worker 3 listening on navigator.no3
