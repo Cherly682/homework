@@ -11,28 +11,6 @@ import java.io.InputStream;
  * ============================================================
  * 【图片加载工具 —— ImageLoader】
  * ============================================================
- *
- * 【这个类是干什么的？】
- * 程序运行需要加载各种图片资源（小车图标、logo、背景图等）。
- * 开发时这些图片在文件系统的 /images/ 目录下，
- * 但打包成 JAR 文件后，它们被压缩在 JAR 包内部，不能再用文件路径访问。
- *
- * ImageLoader 解决了这个问题——它优先从 classpath（JAR 内部）加载，
- * 这样无论是开发环境还是打包后运行，都能正确找到图片。
- *
- * 【什么是 classpath？】
- * classpath 是 Java 程序查找 .class 文件和资源文件的"搜索路径"。
- * 就像 Windows 的 PATH 环境变量——系统只在 PATH 里的目录找你输入的命令。
- * Java 只在 classpath 指定的位置找它需要的文件。
- *
- * JAR 包本质上就是一个 zip 压缩包，classpath 可以指向 JAR 包的内部。
- *
- * 【类比理解】
- * 就像你手机相册里的照片：
- * - 手机没插 SD 卡时（开发环境），照片在手机内存里
- * - 插了 SD 卡后（JAR 打包），照片移到了 SD 卡
- * - 但相册 App 不管照片在哪，它总是能找到并显示
- * - ImageLoader 就是帮程序"不管图片在哪都能找到"的工具
  */
 public class ImageLoader {
     private static final Logger log = LoggerFactory.getLogger(ImageLoader.class);

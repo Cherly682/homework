@@ -80,7 +80,6 @@ public class MainFrame extends JFrame {
 
     private void initializeController() {
         // ==================== 刷新按钮 ====================
-        // 从 Redis 重新加载并显示所有用户
         userView.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

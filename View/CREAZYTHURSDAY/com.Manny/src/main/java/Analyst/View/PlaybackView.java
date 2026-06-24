@@ -88,15 +88,7 @@ public class PlaybackView extends JFrame {
         createRightPanel();
     }
 
-    /**
-     * 每 500ms 轮询一次 Redis 中的当前帧号（order_view），
-     * 同步滑块位置和进度文字。
-     *
-     * 同时检测总帧数（last_view）的变化：
-     * 如果总帧数变大了（新的回放数据写入），自动扩展滑块范围。
-     *
-     * updatingFromTimer 标记：防止定时器程序化设置滑块值时触发 ChangeListener。
-     */
+    /** 每 500ms 轮询 Redis 读取回放独立进度字段（playback_order_view / playback_last_view），同步滑块和文字。 */
     private void startProgressUpdater() {
         progressUpdateTimer = new javax.swing.Timer(500, e -> {
             try {

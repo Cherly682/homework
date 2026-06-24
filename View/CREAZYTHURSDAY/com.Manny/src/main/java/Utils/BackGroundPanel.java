@@ -11,9 +11,6 @@ public class BackGroundPanel extends JPanel {
 
     public BackGroundPanel(Image backIcon) {
         this.backIcon = backIcon;
-        // this.backIcon 指的是"这个对象自己的 backIcon 字段"
-        // 等号右边的 backIcon 指的是参数传入的值
-        // 用 this 来区分两者
     }
 
 

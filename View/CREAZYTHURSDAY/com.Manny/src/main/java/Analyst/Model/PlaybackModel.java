@@ -95,8 +95,8 @@ public class PlaybackModel {
         for (String key : scanKeys(PLAYBACK_PREFIX + CARS_KEY + "*")) {
             jedis.del(key);
         }
-        // 重置当前帧标记，但保留 last_view
-        jedis.hdel(SAVE_KEY, ORDER_FILE_NUM_KEY, "order_view", "start_view");
+        // 重置回放元数据
+        jedis.hdel(SAVE_KEY, "playback_order_file_num", "playback_order_view", "start_view");
         initFromRedis();
         log.info("PlaybackModel: 地图已重置（已清理回放命名空间）");
     }
@@ -105,12 +105,6 @@ public class PlaybackModel {
     public int getTileSize() { return tileSize; }
     public int getArea() { return area; }
 
-    /**
-     * 从 Redis 同步最新地图尺寸。
-     * 当配置员在其他客户端修改地图大小时，
-     * 调用此方法可自动更新本地缓存的 mapSize/tileSize/area/blocks。
-     * 返回 true 表示尺寸发生了变化。
-     */
     public boolean syncMapSizeFromRedis() {
         ensureConnection();
         // 回放模式下读取独立的 playback: 命名空间，避免受配置员改地图影响
@@ -168,12 +162,12 @@ public class PlaybackModel {
     // ==================== 回放控制 ====================
 
     public void setExplorationChoice(String choice) {
-        jedis.hset(SAVE_KEY, ORDER_FILE_NUM_KEY, choice);
+        jedis.hset(SAVE_KEY, "playback_order_file_num", choice);
         log.debug("PlaybackModel: exploration choice set to {}", choice);
     }
 
     public int getCurrentFileNo() {
-        String val = jedis.hget(SAVE_KEY, ORDER_FILE_NUM_KEY);
+        String val = jedis.hget(SAVE_KEY, "playback_order_file_num");
         if (val != null && !val.trim().isEmpty()) {
             return Integer.parseInt(val.trim());
         }
@@ -187,17 +181,17 @@ public class PlaybackModel {
     }
 
     public void setOrderView(int index) {
-        jedis.hset(SAVE_KEY, "order_view", String.valueOf(index));
-        log.debug("PlaybackModel: order_view set to {}", index);
+        jedis.hset(SAVE_KEY, "playback_order_view", String.valueOf(index));
+        log.debug("PlaybackModel: playback_order_view set to {}", index);
     }
 
     public int getOrderView() {
-        String val = jedis.hget(SAVE_KEY, "order_view");
+        String val = jedis.hget(SAVE_KEY, "playback_order_view");
         return val != null ? Integer.parseInt(val) : 0;
     }
 
     public int getLastView() {
-        String val = jedis.hget(SAVE_KEY, "last_view");
+        String val = jedis.hget(SAVE_KEY, "playback_last_view");
         return val != null ? Integer.parseInt(val) : 0;
     }
 
@@ -219,11 +213,11 @@ public class PlaybackModel {
             } catch (NumberFormatException ignored) {}
         }
         if (maxFrame >= 0) {
-            jedis.hset(SAVE_KEY, "last_view", String.valueOf(maxFrame));
-            log.info("PlaybackModel: 记录{} 总帧数已更新 -> last_view={}", fileNo, maxFrame);
+            jedis.hset(SAVE_KEY, "playback_last_view", String.valueOf(maxFrame));
+            log.info("PlaybackModel: 记录{} 总帧数已更新 -> playback_last_view={}", fileNo, maxFrame);
         } else {
-            jedis.hset(SAVE_KEY, "last_view", "0");
-            log.warn("PlaybackModel: 记录{} 无帧数据，last_view 设为 0", fileNo);
+            jedis.hset(SAVE_KEY, "playback_last_view", "0");
+            log.warn("PlaybackModel: 记录{} 无帧数据，playback_last_view 设为 0", fileNo);
         }
     }
 
@@ -317,8 +311,8 @@ public class PlaybackModel {
                 }
             }
 
-            //更新当前帧标记
-            jedis.hset(SAVE_KEY, "order_view", String.valueOf(frame));
+            //更新当前帧标记（回放独立字段）
+            jedis.hset(SAVE_KEY, "playback_order_view", String.valueOf(frame));
 
             //刷新本地障碍物缓存
             getBlocks();

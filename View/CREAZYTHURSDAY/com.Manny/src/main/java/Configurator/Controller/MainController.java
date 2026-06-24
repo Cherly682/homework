@@ -410,8 +410,8 @@ public class MainController {
                 }
             } else {
                 if (mainView.isTimerRunning()) {
-                    log.info("UI同步: Redis计时器标记已清除，停止本地计时器");
-                    mainView.stopTimer();
+                    log.info("UI同步: Redis计时器标记已清除，重置本地计时器");
+                    mainView.resetTimer();
                 }
             }
         } catch (Exception ex) {
