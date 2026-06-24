@@ -64,6 +64,30 @@ public class MapView extends JPanel {
                 model.getMapSize(), model.getMapSize());
     }
 
+    /**
+     * 确保 Redis 连接可用。如果当前连接已断开，自动从连接池获取新连接。
+     */
+    private void ensureConnection() {
+        try {
+            if (jedis == null || !jedis.isConnected() || !"PONG".equals(jedis.ping())) {
+                renewConnection();
+            }
+        } catch (Exception e) {
+            log.warn("MapView Redis connection check failed, renewing: {}", e.getMessage());
+            renewConnection();
+        }
+    }
+
+    private void renewConnection() {
+        try {
+            if (jedis != null) {
+                try { jedis.close(); } catch (Exception ignored) {}
+            }
+        } catch (Exception ignored) {}
+        jedis = RedisConnect.getConnected();
+        log.info("MapView: Redis connection renewed");
+    }
+
     //BFS可达性判断
     public boolean isFallExplored() {
         Set<String> reachable = bfsReachableLocal();
@@ -143,6 +167,7 @@ public class MapView extends JPanel {
 
    //批量拉取bitmap降低时间复杂度
     private void updateCacheFromRedis() {
+        ensureConnection();
         long t0 = System.nanoTime();
 
         // 从 Redis 同步最新地图尺寸（修复多客户端同步问题）

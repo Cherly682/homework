@@ -24,6 +24,30 @@ public class UserModel {
     // 获取 Redis 连接
     private Jedis jedis = RedisConnect.getConnected();
 
+    /**
+     * 确保 Redis 连接可用。如果当前连接已断开，自动从连接池获取新连接。
+     */
+    private void ensureConnection() {
+        try {
+            if (jedis == null || !jedis.isConnected() || !"PONG".equals(jedis.ping())) {
+                renewConnection();
+            }
+        } catch (Exception e) {
+            log.warn("UserModel Redis connection check failed, renewing: {}", e.getMessage());
+            renewConnection();
+        }
+    }
+
+    private void renewConnection() {
+        try {
+            if (jedis != null) {
+                try { jedis.close(); } catch (Exception ignored) {}
+            }
+        } catch (Exception ignored) {}
+        jedis = RedisConnect.getConnected();
+        log.info("UserModel: Redis connection renewed");
+    }
+
     // ==================== 构造方法 ====================
 
     public UserModel() { }
@@ -60,6 +84,7 @@ public class UserModel {
     // ==================== 核心业务逻辑 ====================
 
     public boolean validate() {
+        ensureConnection();
         try {
             // 拼接 Redis key
             String key = USERS_KEY_PREFIX + username;

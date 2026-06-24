@@ -19,8 +19,33 @@ public class UsersModel {
 
     private final String USERS_KEY_PREFIX = "Users:";
 
+    /**
+     * 确保 Redis 连接可用。如果当前连接已断开，自动从连接池获取新连接。
+     */
+    private void ensureConnection() {
+        try {
+            if (jedis == null || !jedis.isConnected() || !"PONG".equals(jedis.ping())) {
+                renewConnection();
+            }
+        } catch (Exception e) {
+            log.warn("UsersModel Redis connection check failed, renewing: {}", e.getMessage());
+            renewConnection();
+        }
+    }
+
+    private void renewConnection() {
+        try {
+            if (jedis != null) {
+                try { jedis.close(); } catch (Exception ignored) {}
+            }
+        } catch (Exception ignored) {}
+        jedis = RedisConnect.getConnected();
+        log.info("UsersModel: Redis connection renewed");
+    }
+
 
     public List<UserModel> getAllUsers() {
+        ensureConnection();
         List<UserModel> users = new ArrayList<>();
 
 
@@ -38,6 +63,7 @@ public class UsersModel {
 
 
     public void addUser(String username, String password, String role) {
+        ensureConnection();
         UserModel user = new UserModel(username, password, role);
         String key = USERS_KEY_PREFIX + username;
         jedis.hset(key, "password", user.getPassword());  // 已经是加密后的密码
@@ -47,6 +73,7 @@ public class UsersModel {
 
 
     public void deleteUser(String username) {
+        ensureConnection();
         String key = USERS_KEY_PREFIX + username;
         jedis.del(key);  // 删除整条记录
         log.info("UsersModel: user deleted username={}", username);
@@ -54,6 +81,7 @@ public class UsersModel {
 
 
     public void updateUser(String username, String password, String role) {
+        ensureConnection();
         String key = USERS_KEY_PREFIX + username;
         // 只有传入了非空的密码时才更新密码
         if (password != null && !password.trim().isEmpty()) {

@@ -105,15 +105,15 @@ public class CarAgent implements Runnable {
 
             // Step 4.5: 原子抢占目标格子，防止两车同时移动到同一位置
             String reserveKey = "car_reserve:" + next.getX() + ":" + next.getY();
-            long reserved = jedis.setnx(reserveKey, String.valueOf(id));
-            if (reserved == 0) {
+            String reserved = jedis.set(reserveKey, String.valueOf(id),
+                    redis.clients.jedis.params.SetParams.setParams().nx().ex(5));
+            if (!"OK".equals(reserved)) {
                 // 目标格已被其他小车抢占
                 jedis.del(taskQueue);
                 Blackboard.setCarState(jedis, id, CarState.IDLE);
                 log.warn("Car {} COLLISION_AVOIDED: target {} already reserved by another car -> path cleared", id, next);
                 return;
             }
-            jedis.expire(reserveKey, 5);
             long tReserve = System.nanoTime();
 
             // Step 5: execute move

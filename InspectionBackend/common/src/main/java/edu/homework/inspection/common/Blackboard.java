@@ -41,7 +41,7 @@ public final class Blackboard {
     public static List<Integer> existingCarIds(Jedis jedis) {
         List<Integer> ids = new ArrayList<>();
         String cursor = "0";
-        ScanParams params = new ScanParams().match(Keys.CARS_PREFIX + "*").count(20);
+        ScanParams params = new ScanParams().match(Keys.CARS_PREFIX + "*").count(500);
         do {
             ScanResult<String> result = jedis.scan(cursor, params);
             cursor = result.getCursor();
@@ -62,8 +62,9 @@ public final class Blackboard {
 
     public static Point getCarPoint(Jedis jedis, int id) {
         String key = Keys.carKey(id);
-        String x = jedis.hget(key, "x");
-        String y = jedis.hget(key, "y");
+        java.util.List<String> values = jedis.hmget(key, "x", "y");
+        String x = values.get(0);
+        String y = values.get(1);
         if (x == null || y == null) {
             return null;
         }
@@ -88,8 +89,8 @@ public final class Blackboard {
     public static void setCarState(Jedis jedis, int id, CarState state) {
         long t0 = System.nanoTime();
         jedis.hset(Keys.carKey(id), "state", String.valueOf(state.code()));
-        log.debug("Blackboard setCarState car={} {}->{}  {}us",
-                id, jedis.hget(Keys.carKey(id), "state"), state, NANOSECONDS.toMicros(System.nanoTime() - t0));
+        log.debug("Blackboard setCarState car={} -> {}  {}us",
+                id, state, NANOSECONDS.toMicros(System.nanoTime() - t0));
     }
 
     public static boolean isBlocked(Jedis jedis, int width, Point point) {

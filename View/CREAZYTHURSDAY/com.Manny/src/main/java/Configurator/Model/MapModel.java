@@ -55,6 +55,31 @@ public class MapModel {
                 mapSize, mapSize, area, area, (int) (area * MAX_BLOCKS_RATIO));
     }
 
+    /**
+     * 确保 Redis 连接可用。如果当前连接已断开，自动从连接池获取新连接。
+     * 所有需要访问 Redis 的公共方法应在开头调用此方法。
+     */
+    private void ensureConnection() {
+        try {
+            if (jedis == null || !jedis.isConnected() || !"PONG".equals(jedis.ping())) {
+                renewConnection();
+            }
+        } catch (Exception e) {
+            log.warn("Redis connection check failed, renewing: {}", e.getMessage());
+            renewConnection();
+        }
+    }
+
+    private void renewConnection() {
+        try {
+            if (jedis != null) {
+                try { jedis.close(); } catch (Exception ignored) {}
+            }
+        } catch (Exception ignored) {}
+        jedis = RedisConnect.getConnected();
+        log.info("MapModel: Redis connection renewed");
+    }
+
 
     private void initialize() {
         // 只写入配置信息，不删除 Redis 中已有的地图状态
@@ -80,6 +105,7 @@ public class MapModel {
 
 
     public List<String> scanKeys(String pattern) {
+        ensureConnection();
         List<String> keys = new ArrayList<>();
         String cursor = "0";
         ScanParams params = new ScanParams().match(pattern).count(100);
@@ -104,6 +130,7 @@ public class MapModel {
      * 返回 true 表示尺寸发生了变化。
      */
     public boolean syncMapSizeFromRedis() {
+        ensureConnection();
         String widthStr = jedis.get("map_width");
         if (widthStr != null && !widthStr.trim().isEmpty()) {
             int newSize = Integer.parseInt(widthStr.trim());
@@ -129,6 +156,7 @@ public class MapModel {
 
 
     public boolean isPositionExplored(int x, int y) {
+        ensureConnection();
         long index = (long) x * mapSize + y;
         return jedis.getbit(MAPVIEW_KEY, index);
     }
@@ -143,6 +171,7 @@ public class MapModel {
 
 
     public void addCar(int x, int y) {
+        ensureConnection();
         // 先检查上限（carCount 还未递增）
         if (carCount >= area) {
             log.warn("Max car count reached: {}", carCount);
@@ -208,6 +237,7 @@ public class MapModel {
 
 
     public void addBlock(int x, int y) {
+        ensureConnection();
         try {
             // 检查上限
             if (blockCount >= (int) (area * MAX_BLOCKS_RATIO)) {
@@ -238,6 +268,7 @@ public class MapModel {
 
 
     public void autoAddBlock(int nums) {
+        ensureConnection();
         int maxTries = area * 10;  // 最大尝试次数
         while (nums > 0) {
             if (blockCount >= (int) (area * MAX_BLOCKS_RATIO)) { return; }
@@ -276,6 +307,7 @@ public class MapModel {
 
 
     public void getBlocksFromRedis() {
+        ensureConnection();
         int cnt = 0;
         Blocks.clear();
         byte[] bitmap = jedis.get(ALL_BLOCKVIEW_KEY.getBytes());
@@ -296,7 +328,7 @@ public class MapModel {
         this.blockCount = cnt;  // 同步计数器
     }
 
-    public void setAStarAlgorithm()      { jedis.set(ALGORITHM_KEY, ASTAR_VALUE); }
-    public void setASTAR2Algorithm()     { jedis.set(ALGORITHM_KEY, ASTAR2_VALUE); }
-    public void setDIJKASTRAAlgorithm()  { jedis.set(ALGORITHM_KEY, DIJKASTRA_VALUE); }
+    public void setAStarAlgorithm()      { ensureConnection(); jedis.set(ALGORITHM_KEY, ASTAR_VALUE); }
+    public void setASTAR2Algorithm()     { ensureConnection(); jedis.set(ALGORITHM_KEY, ASTAR2_VALUE); }
+    public void setDIJKASTRAAlgorithm()  { ensureConnection(); jedis.set(ALGORITHM_KEY, DIJKASTRA_VALUE); }
 }

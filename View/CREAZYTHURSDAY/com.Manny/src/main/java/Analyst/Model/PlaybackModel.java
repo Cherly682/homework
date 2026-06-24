@@ -42,6 +42,30 @@ public class PlaybackModel {
         initFromRedis();
     }
 
+    /**
+     * 确保 Redis 连接可用。如果当前连接已断开，自动从连接池获取新连接。
+     */
+    private void ensureConnection() {
+        try {
+            if (jedis == null || !jedis.isConnected() || !"PONG".equals(jedis.ping())) {
+                renewConnection();
+            }
+        } catch (Exception e) {
+            log.warn("PlaybackModel Redis connection check failed, renewing: {}", e.getMessage());
+            renewConnection();
+        }
+    }
+
+    private void renewConnection() {
+        try {
+            if (jedis != null) {
+                try { jedis.close(); } catch (Exception ignored) {}
+            }
+        } catch (Exception ignored) {}
+        jedis = RedisConnect.getConnected();
+        log.info("PlaybackModel: Redis connection renewed");
+    }
+
 
     private void initFromRedis() {
         // 只读：不向共享 Redis 写入默认值，避免覆盖配置员的地图设置
@@ -60,6 +84,7 @@ public class PlaybackModel {
 
 
     public void resetMap() {
+        ensureConnection();
         // 退出播放模式，PlaybackMapView 停止读取 Redis
         playbackMode = false;
         // 清理回放命名空间的残留数据（不影响配置员的实时数据）
@@ -87,6 +112,7 @@ public class PlaybackModel {
      * 返回 true 表示尺寸发生了变化。
      */
     public boolean syncMapSizeFromRedis() {
+        ensureConnection();
         // 回放模式下读取独立的 playback: 命名空间，避免受配置员改地图影响
         String widthStr = jedis.get(PLAYBACK_PREFIX + "map_width");
         if (widthStr == null || widthStr.trim().isEmpty()) {
@@ -216,6 +242,7 @@ public class PlaybackModel {
 
 
     public boolean restoreFrame(int fileNo, int frame) {
+        ensureConnection();
         // 进入播放模式：告诉 PlaybackMapView 可以开始从 Redis 读取帧数据
         playbackMode = true;
         try {
@@ -308,6 +335,7 @@ public class PlaybackModel {
 
 
     public void loadFirstFrame(int fileNo) {
+        ensureConnection();
         restoreFrame(fileNo, 0);
     }
 

@@ -2,6 +2,7 @@ package Analyst.View;
 
 import Analyst.Model.PlaybackModel;
 import Utils.ImageLoader;
+import Utils.RedisConnect;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
@@ -74,6 +75,30 @@ public class PlaybackMapView extends JPanel {
         });
         timer.start();
         log.info("PlaybackMapView 初始化: {}x{} 定时器={}ms", size, size, getTimerDelay());
+    }
+
+    /**
+     * 确保 Redis 连接可用。如果当前连接已断开，自动从连接池获取新连接。
+     */
+    private void ensureConnection() {
+        try {
+            if (jedis == null || !jedis.isConnected() || !"PONG".equals(jedis.ping())) {
+                renewConnection();
+            }
+        } catch (Exception e) {
+            log.warn("PlaybackMapView Redis connection check failed, renewing: {}", e.getMessage());
+            renewConnection();
+        }
+    }
+
+    private void renewConnection() {
+        try {
+            if (jedis != null) {
+                try { jedis.close(); } catch (Exception ignored) {}
+            }
+        } catch (Exception ignored) {}
+        jedis = RedisConnect.getConnected();
+        log.info("PlaybackMapView: Redis connection renewed");
     }
 
 
@@ -156,6 +181,7 @@ public class PlaybackMapView extends JPanel {
         if (!playbackModel.isPlaybackMode()) {
             return;
         }
+        ensureConnection();
         long t0 = System.nanoTime();
 
         // 从 Redis 同步最新地图尺寸
