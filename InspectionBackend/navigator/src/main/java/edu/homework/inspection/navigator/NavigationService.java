@@ -9,8 +9,13 @@ import edu.homework.inspection.common.RouteAlgorithm;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
+import redis.clients.jedis.Pipeline;
+import redis.clients.jedis.Response;
 
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import static java.util.concurrent.TimeUnit.NANOSECONDS;
 
@@ -59,8 +64,11 @@ public class NavigationService {
             pathValues[i] = path.get(i).toQueueValue();
         }
         jedis.rpush(queueKey, pathValues);
-        jedis.hset(Keys.carKey(carNo), "endx", String.valueOf(target.getX()));
-        jedis.hset(Keys.carKey(carNo), "endy", String.valueOf(target.getY()));
+        // 合并 endx/endy 为一次 HMSET
+        Map<String, String> endPoint = new HashMap<>();
+        endPoint.put("endx", String.valueOf(target.getX()));
+        endPoint.put("endy", String.valueOf(target.getY()));
+        jedis.hmset(Keys.carKey(carNo), endPoint);
         jedis.rpush("Viewqueue:" + task.getCarId(), String.valueOf(costMillis));
         log.debug("Navigator car {}: path written to Redis in {}us", carNo, NANOSECONDS.toMicros(System.nanoTime() - tWritePath));
 
@@ -86,14 +94,23 @@ public class NavigationService {
     }
 
     private void markOtherCarsAsBlocked(Jedis jedis, GridMap map, int currentCarNo) {
+        List<Integer> allCars = Blackboard.existingCarIds(jedis);
+        if (allCars.size() <= 1) return;  // 只有本车，无需标记
+
+        // Pipeline 批量获取所有其他小车位置（替代逐个 HMGET，~399 次 → 1 次 sync）
+        Pipeline pipeline = jedis.pipelined();
+        Map<Integer, Response<java.util.List<String>>> responses = new LinkedHashMap<>();
+        for (Integer otherCar : allCars) {
+            if (otherCar == currentCarNo) continue;
+            responses.put(otherCar, pipeline.hmget(Keys.carKey(otherCar), "x", "y"));
+        }
+        pipeline.sync();
+
         int count = 0;
-        for (Integer otherCar : Blackboard.existingCarIds(jedis)) {
-            if (otherCar == currentCarNo) {
-                continue;
-            }
-            Point point = Blackboard.getCarPoint(jedis, otherCar);
-            if (point != null) {
-                map.setBlocked(point, true);
+        for (Map.Entry<Integer, Response<java.util.List<String>>> entry : responses.entrySet()) {
+            java.util.List<String> values = entry.getValue().get();
+            if (values.get(0) != null && values.get(1) != null) {
+                map.setBlocked(new Point(Integer.parseInt(values.get(0)), Integer.parseInt(values.get(1))), true);
                 count++;
             }
         }

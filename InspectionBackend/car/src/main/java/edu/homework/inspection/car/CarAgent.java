@@ -123,7 +123,7 @@ public class CarAgent implements Runnable {
             Blackboard.setCarPoint(jedis, id, next, direction);
             jedis.del(reserveKey);
             long tPosUpdate = System.nanoTime();
-            Blackboard.illuminate3x3(jedis, width, height, next);
+            Blackboard.illuminate3x3Lua(jedis, width, height, next);
             long tIlluminate = System.nanoTime();
             long remainingSteps = jedis.llen(taskQueue);
             long tFinalCheck = System.nanoTime();

@@ -132,6 +132,31 @@ public final class Blackboard {
             illuminateIfOpen(jedis, width, height, cx + 1, cy + 1);
     }
 
+    /** Lua 脚本：在 Redis 服务端完成 3×3 点亮（含对角线视线检测），将多次 SETBIT/GETBIT 合并为一次 EVAL */
+    private static final String ILLUMINATE_3X3_LUA =
+        "local w, h, cx, cy = tonumber(ARGV[1]), tonumber(ARGV[2]), tonumber(ARGV[3]), tonumber(ARGV[4])\n" +
+        "local function inMap(x,y) return x>=0 and x<h and y>=0 and y<w end\n" +
+        "local function isBlocked(x,y) if not inMap(x,y) then return true end\n" +
+        "  return redis.call('GETBIT', KEYS[2], x*w+y) == 1 end\n" +
+        "local function light(x,y) if inMap(x,y) and not isBlocked(x,y) then\n" +
+        "  redis.call('SETBIT', KEYS[1], x*w+y, 1) end end\n" +
+        "light(cx,cy); light(cx-1,cy); light(cx+1,cy); light(cx,cy-1); light(cx,cy+1)\n" +
+        "if not isBlocked(cx,cy-1) or not isBlocked(cx-1,cy) then light(cx-1,cy-1) end\n" +
+        "if not isBlocked(cx,cy+1) or not isBlocked(cx-1,cy) then light(cx-1,cy+1) end\n" +
+        "if not isBlocked(cx,cy-1) or not isBlocked(cx+1,cy) then light(cx+1,cy-1) end\n" +
+        "if not isBlocked(cx,cy+1) or not isBlocked(cx+1,cy) then light(cx+1,cy+1) end\n" +
+        "return 1";
+
+    /**
+     * 使用 Lua 脚本在 Redis 服务端执行 3×3 点亮，将原 5-22 次 Redis 往返合并为 1 次 EVAL。
+     */
+    public static void illuminate3x3Lua(Jedis jedis, int width, int height, Point center) {
+        jedis.eval(ILLUMINATE_3X3_LUA, 2,
+                Keys.MAP_VIEW, Keys.BLOCK_VIEW,
+                String.valueOf(width), String.valueOf(height),
+                String.valueOf(center.getX()), String.valueOf(center.getY()));
+    }
+
     private static boolean inMap(int width, int height, int x, int y) {
         return x >= 0 && x < height && y >= 0 && y < width;
     }
@@ -146,6 +171,11 @@ public final class Blackboard {
         if (inMap(width, height, x, y) && !isBlocked(jedis, width, new Point(x, y))) {
             jedis.setbit(Keys.MAP_VIEW, new Point(x, y).index(width), true);
         }
+    }
+
+    /** 纯本地计算版本：使用已加载的位图，零 Redis 调用。Controller 应在 tick 顶部预读位图后传入。 */
+    public static double exploredRatio(int width, int height, byte[] blockBytes, byte[] mapBytes) {
+        return exploredRatioLocal(width, height, blockBytes, mapBytes);
     }
 
     public static double exploredRatio(Jedis jedis) {
@@ -176,15 +206,31 @@ public final class Blackboard {
     }
 
     /**
-     * BFS 从小车位置出发，检查可达区域内所有非障碍格子是否均已探索。
-     * 不可达区域（被障碍物包围的格子）不参与判断，避免因地图不连通导致巡检永不停止。
-     *
-     * @return true 表示所有可达格子均已探索（即巡检可结束）
+     * 使用预加载数据的版本。Controller 在 tick 顶部一次读取 map 元数据和 cars 列表，
+     * 避免 isFullyExplored 内部重复 SCAN + GET，节省 ~844 次 Redis 往返/tick。
+     */
+    public static boolean isFullyExplored(Jedis jedis, List<Integer> cars, int width, int height,
+                                          byte[] blockBytes, byte[] mapBytes) {
+        Set<Point> reachable = bfsReachableLocal(jedis, cars, width, height, blockBytes);
+        if (reachable.isEmpty()) {
+            return exploredRatioLocal(width, height, blockBytes, mapBytes) >= 1.0d;
+        }
+        for (Point p : reachable) {
+            long idx = (long) p.getX() * width + p.getY();
+            int byteIdx = (int) (idx / 8);
+            int bitIdx = 7 - (int) (idx % 8);
+            boolean explored = mapBytes != null && byteIdx < mapBytes.length && ((mapBytes[byteIdx] >> bitIdx) & 1) != 0;
+            if (!explored) return false;
+        }
+        return true;
+    }
+
+    /**
+     * BFS 从小车位置出发，检查可达区域内所有非障碍格子是否均已探索（原版，自己读 Redis）。
      */
     public static boolean isFullyExplored(Jedis jedis) {
         int width = mapWidth(jedis);
         int height = mapHeight(jedis);
-        // 批量加载位图到本地内存，避免 BFS 中逐格 GETBIT
         byte[] blockBytes = jedis.get(Keys.BLOCK_VIEW.getBytes());
         byte[] mapBytes = jedis.get(Keys.MAP_VIEW.getBytes());
         Set<Point> reachable = bfsReachableLocal(jedis, width, height, blockBytes);
@@ -228,6 +274,47 @@ public final class Blackboard {
     /**
      * BFS 从所有小车位置出发，返回可达的非障碍格子集合（使用本地 blockBytes，零 Redis 调用）。
      */
+    /**
+     * BFS 从所有小车位置出发，返回可达的非障碍格子集合（使用本地 blockBytes，零 Redis 调用）。
+     * 控制器预加载版：使用已获取的 cars 列表，避免内部再次 SCAN。
+     */
+    private static Set<Point> bfsReachableLocal(Jedis jedis, List<Integer> cars, int width, int height, byte[] blockBytes) {
+        Set<Point> visited = new HashSet<>();
+        Queue<Point> queue = new ArrayDeque<>();
+
+        for (Integer carId : cars) {
+            Point pos = getCarPoint(jedis, carId);
+            if (pos != null) {
+                long idx = (long) pos.getX() * width + pos.getY();
+                int byteIdx = (int) (idx / 8);
+                int bitIdx = 7 - (int) (idx % 8);
+                boolean blocked = blockBytes != null && byteIdx < blockBytes.length && ((blockBytes[byteIdx] >> bitIdx) & 1) != 0;
+                if (!blocked && visited.add(pos)) {
+                    queue.add(pos);
+                }
+            }
+        }
+
+        int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        while (!queue.isEmpty()) {
+            Point cur = queue.poll();
+            for (int[] d : dirs) {
+                int nx = cur.getX() + d[0];
+                int ny = cur.getY() + d[1];
+                if (nx < 0 || nx >= height || ny < 0 || ny >= width) continue;
+                long idx = (long) nx * width + ny;
+                int byteIdx = (int) (idx / 8);
+                int bitIdx = 7 - (int) (idx % 8);
+                boolean blocked = blockBytes != null && byteIdx < blockBytes.length && ((blockBytes[byteIdx] >> bitIdx) & 1) != 0;
+                if (!blocked) {
+                    Point next = new Point(nx, ny);
+                    if (visited.add(next)) queue.add(next);
+                }
+            }
+        }
+        return visited;
+    }
+
     private static Set<Point> bfsReachableLocal(Jedis jedis, int width, int height, byte[] blockBytes) {
         Set<Point> visited = new HashSet<>();
         Queue<Point> queue = new ArrayDeque<>();
