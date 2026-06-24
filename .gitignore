@@ -38,6 +38,9 @@ CLAUDE.md
 # src/main/resources/config.properties
 # src/main/resources/application.properties
 
+# --- 脚本连接配置（含主机IP/密码，不提交）---
+scripts/connection.conf
+
 # --- 临时文件 ---
 *.tmp
 *.bak
