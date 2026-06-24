@@ -118,7 +118,7 @@ $modules = @(
 
 foreach ($mod in $modules) {
     $runScript = Join-Path $ScriptDir "run-$($mod.Name).ps1"
-    Start-Process pwsh -ArgumentList "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$runScript`"" -WindowStyle Normal
+    Start-Process powershell -ArgumentList "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$runScript`"" -WindowStyle Normal
     Write-Host "  [OK] $($mod.Title)" -ForegroundColor Green
     Start-Sleep -Milliseconds 500
 }

@@ -140,7 +140,7 @@ if ($backends.Count -gt 0) {
     foreach ($b in $backends) {
         $info = $backendInfo[$b]
         $runScript = Join-Path $ScriptDir $info.Script
-        Start-Process pwsh -ArgumentList "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$runScript`"" -WindowStyle Normal
+        Start-Process powershell -ArgumentList "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "`"$runScript`"" -WindowStyle Normal
         Write-Host "  [OK] $($info.Title)" -ForegroundColor Green
         Start-Sleep -Milliseconds 500
     }
